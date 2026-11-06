@@ -1,11 +1,11 @@
 {
- "taken_at": "2026-11-06T15:29:56.251885+00:00",
+ "taken_at": "2026-11-06T15:39:23.842046+00:00",
  "repos": [
   {
    "name": "thedotmack/claude-mem",
    "url": "https://github.com/thedotmack/claude-mem",
    "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-   "stars": 113837,
+   "stars": 113839,
    "forks": 9877,
    "created_at": "2025-08-31T20:50:03Z",
    "pushed_at": "2026-11-06T11:52:18Z",
@@ -41,10 +41,10 @@
    "name": "paperclipai/paperclip",
    "url": "https://github.com/paperclipai/paperclip",
    "description": "The open-source app everyone uses to manage agents at work",
-   "stars": 111651,
+   "stars": 111653,
    "forks": 18483,
    "created_at": "2026-03-02T15:01:51Z",
-   "pushed_at": "2026-11-06T15:31:43Z",
+   "pushed_at": "2026-11-06T15:39:09Z",
    "topics": [
     "acpx",
     "agent-orchestration",
@@ -115,7 +115,7 @@
    "name": "Egonex-AI/Understand-Anything",
    "url": "https://github.com/Egonex-AI/Understand-Anything",
    "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-   "stars": 91065,
+   "stars": 91069,
    "forks": 7781,
    "created_at": "2026-03-15T02:30:51Z",
    "pushed_at": "2026-11-06T06:40:28Z",
@@ -153,7 +153,7 @@
    "stars": 70742,
    "forks": 5834,
    "created_at": "2025-12-03T01:40:05Z",
-   "pushed_at": "2026-11-06T15:31:22Z",
+   "pushed_at": "2026-11-06T15:36:41Z",
    "topics": [
     "ai",
     "ai-agents",
@@ -181,7 +181,7 @@
    "name": "ayghri/i-have-adhd",
    "url": "https://github.com/ayghri/i-have-adhd",
    "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-   "stars": 60308,
+   "stars": 60309,
    "forks": 3519,
    "created_at": "2026-05-13T20:42:06Z",
    "pushed_at": "2026-10-19T19:46:23Z",
@@ -203,7 +203,7 @@
    "name": "coreyhaines31/marketingskills",
    "url": "https://github.com/coreyhaines31/marketingskills",
    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-   "stars": 58844,
+   "stars": 58849,
    "forks": 8611,
    "created_at": "2026-01-15T19:45:23Z",
    "pushed_at": "2026-11-04T19:01:33Z",
@@ -242,7 +242,7 @@
    "name": "K-Dense-AI/scientific-agent-skills",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-   "stars": 56301,
+   "stars": 56302,
    "forks": 4957,
    "created_at": "2025-10-19T20:54:15Z",
    "pushed_at": "2026-11-02T09:23:27Z",
@@ -360,7 +360,7 @@
    "name": "alirezarezvani/claude-skills",
    "url": "https://github.com/alirezarezvani/claude-skills",
    "description": "410 Claude Code skills & agent skills & plugins (120+ Agents, custom commands, 410+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
-   "stars": 29398,
+   "stars": 29399,
    "forks": 4079,
    "created_at": "2025-10-19T04:04:05Z",
    "pushed_at": "2026-11-05T06:58:08Z",
@@ -465,8 +465,8 @@
    "name": "JimLiu/baoyu-skills",
    "url": "https://github.com/JimLiu/baoyu-skills",
    "description": "",
-   "stars": 27354,
-   "forks": 2983,
+   "stars": 27355,
+   "forks": 2984,
    "created_at": "2026-01-13T03:04:56Z",
    "pushed_at": "2026-11-02T19:25:27Z",
    "topics": [
@@ -485,7 +485,7 @@
    "name": "titanwings/distilly",
    "url": "https://github.com/titanwings/distilly",
    "description": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.",
-   "stars": 26416,
+   "stars": 26417,
    "forks": 2250,
    "created_at": "2026-03-30T05:22:23Z",
    "pushed_at": "2026-10-13T05:57:17Z",
@@ -542,7 +542,7 @@
    "name": "teng-lin/notebooklm-py",
    "url": "https://github.com/teng-lin/notebooklm-py",
    "description": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to Gemini Notebook's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
-   "stars": 20136,
+   "stars": 20137,
    "forks": 2678,
    "created_at": "2026-01-07T15:27:19Z",
    "pushed_at": "2026-11-06T13:39:11Z",
@@ -574,7 +574,7 @@
    "name": "Vincentwei1021/video-shotcraft",
    "url": "https://github.com/Vincentwei1021/video-shotcraft",
    "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
-   "stars": 17412,
+   "stars": 17414,
    "forks": 1657,
    "created_at": "2026-07-19T11:44:41Z",
    "pushed_at": "2026-10-29T16:17:26Z",
@@ -682,7 +682,7 @@
    "name": "google/elephant-goldfish-model",
    "url": "https://github.com/google/elephant-goldfish-model",
    "description": "Open-source skills for designing and reviewing software with AI agents",
-   "stars": 12900,
+   "stars": 12906,
    "forks": 935,
    "created_at": "2026-09-13T16:31:06Z",
    "pushed_at": "2026-11-06T11:52:10Z",
@@ -735,7 +735,7 @@
    "name": "SnailSploit/Claude-Red",
    "url": "https://github.com/SnailSploit/Claude-Red",
    "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-   "stars": 10438,
+   "stars": 10440,
    "forks": 1398,
    "created_at": "2026-03-04T05:52:35Z",
    "pushed_at": "2026-10-12T15:02:40Z",
@@ -795,7 +795,7 @@
    "name": "anbeime/skill",
    "url": "https://github.com/anbeime/skill",
    "description": "收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across document processing, content creation, programming, machine learning, automated workflows, and many more domains.",
-   "stars": 9244,
+   "stars": 9245,
    "forks": 820,
    "created_at": "2026-02-02T09:12:57Z",
    "pushed_at": "2026-11-06T08:59:08Z",
@@ -830,7 +830,7 @@
    "name": "Ryze-AI-Adgent/open-seo-mcp-skills",
    "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
    "description": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
-   "stars": 8896,
+   "stars": 8897,
    "forks": 398,
    "created_at": "2026-08-29T23:37:01Z",
    "pushed_at": "2026-10-27T08:57:55Z",
@@ -868,8 +868,8 @@
    "name": "WenyuChiou/awesome-agentic-ai-zh",
    "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
    "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-   "stars": 8645,
-   "forks": 1069,
+   "stars": 8647,
+   "forks": 1071,
    "created_at": "2026-05-04T22:18:51Z",
    "pushed_at": "2026-11-02T15:55:21Z",
    "topics": [
@@ -990,7 +990,7 @@
    "name": "irinabuht12-oss/marketing-skills",
    "url": "https://github.com/irinabuht12-oss/marketing-skills",
    "description": "Claude skills for marketing: 49 free marketing skills for Claude Code and claude.ai (Google Ads, Meta Ads, SEO, AI visibility) + the Ryze Google Ads MCP / Meta Ads MCP: claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
-   "stars": 6917,
+   "stars": 6918,
    "forks": 572,
    "created_at": "2026-01-21T10:15:35Z",
    "pushed_at": "2026-10-27T08:57:53Z",
@@ -1123,7 +1123,7 @@
    "name": "QingYunA/answer-me-with-html",
    "url": "https://github.com/QingYunA/answer-me-with-html",
    "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
-   "stars": 5715,
+   "stars": 5717,
    "forks": 370,
    "created_at": "2026-10-02T09:57:40Z",
    "pushed_at": "2026-11-05T07:38:21Z",
@@ -1152,8 +1152,8 @@
    "name": "Jakeschincariol/day-trader-skill",
    "url": "https://github.com/Jakeschincariol/day-trader-skill",
    "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
-   "stars": 5713,
-   "forks": 1407,
+   "stars": 5714,
+   "forks": 1408,
    "created_at": "2026-10-20T14:17:54Z",
    "pushed_at": "2026-10-20T14:18:00Z",
    "topics": [
@@ -1211,7 +1211,7 @@
    "name": "elementalsouls/Claude-BugHunter",
    "url": "https://github.com/elementalsouls/Claude-BugHunter",
    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-   "stars": 5459,
+   "stars": 5461,
    "forks": 836,
    "created_at": "2026-05-05T11:22:32Z",
    "pushed_at": "2026-11-06T12:11:10Z",
@@ -1270,7 +1270,7 @@
     "vision-transformer"
    ],
    "categories": [],
-   "age_days": 257.3,
+   "age_days": 257.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -1369,7 +1369,7 @@
    "name": "zenstory-ai/drama-skills",
    "url": "https://github.com/zenstory-ai/drama-skills",
    "description": "AI 短剧与漫剧制作 skill 合集：小说改剧本、角色设定三视图、分镜脚本、生图/生视频提示词与成片审片，适配 Claude Code / Codex 等 ｜ Open-source agent skills for AI short dramas & motion comics",
-   "stars": 3859,
+   "stars": 3861,
    "forks": 692,
    "created_at": "2026-07-16T16:11:19Z",
    "pushed_at": "2026-11-06T12:28:47Z",
@@ -1441,7 +1441,7 @@
    "name": "rebelytics/one-skill-to-rule-them-all",
    "url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
    "description": "The meta-skill that improves your skills, including itself. Turns the corrections, judgement calls and repeated workflows of your sessions (autonomous or human-led) into small skill updates and new skill candidates, each with its evidence and reason. Nothing touches a skill until you approve it. Augmented Expertise in practice. CC BY 4.0.",
-   "stars": 3753,
+   "stars": 3754,
    "forks": 372,
    "created_at": "2026-02-15T19:18:12Z",
    "pushed_at": "2026-11-06T15:24:06Z",
@@ -1494,7 +1494,7 @@
     "subagents"
    ],
    "categories": [],
-   "age_days": 469.5,
+   "age_days": 469.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -1531,7 +1531,7 @@
    "name": "Ar9av/obsidian-wiki",
    "url": "https://github.com/Ar9av/obsidian-wiki",
    "description": "Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System for Agents",
-   "stars": 3693,
+   "stars": 3692,
    "forks": 371,
    "created_at": "2026-04-06T06:20:10Z",
    "pushed_at": "2026-11-05T09:28:11Z",
@@ -1698,7 +1698,7 @@
    "name": "oil-oil/oil-ui",
    "url": "https://github.com/oil-oil/oil-ui",
    "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
-   "stars": 2846,
+   "stars": 2847,
    "forks": 162,
    "created_at": "2026-09-30T03:55:35Z",
    "pushed_at": "2026-11-04T04:32:05Z",
@@ -1933,7 +1933,7 @@
    "categories": [
     "marketing"
    ],
-   "age_days": 25.3,
+   "age_days": 25.4,
    "delta_24h": 84,
    "mode": "procjena",
    "growth_pct": 4.1
@@ -1970,7 +1970,7 @@
    "name": "arjun988/blender-skills",
    "url": "https://github.com/arjun988/blender-skills",
    "description": "94 specialist Blender skills for Cursor, Claude Code, Kiro & Codex -> MCP-powered production pipeline from blockout to engine export.",
-   "stars": 1967,
+   "stars": 1968,
    "forks": 167,
    "created_at": "2026-07-05T08:36:06Z",
    "pushed_at": "2026-11-06T08:42:41Z",
@@ -2015,9 +2015,9 @@
     "dizajn"
    ],
    "age_days": 5.4,
-   "delta_24h": 355,
+   "delta_24h": 354,
    "mode": "procjena",
-   "growth_pct": 22.7
+   "growth_pct": 22.6
   },
   {
    "name": "XiaoMaColtAI/math-modeling-skill",
@@ -2170,7 +2170,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 171.9,
+   "age_days": 172.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -2179,7 +2179,7 @@
    "name": "DUNHKpcc/Claude-Guardian",
    "url": "https://github.com/DUNHKpcc/Claude-Guardian",
    "description": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude防封实战 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups.",
-   "stars": 1802,
+   "stars": 1803,
    "forks": 237,
    "created_at": "2026-10-15T06:09:53Z",
    "pushed_at": "2026-11-06T02:14:27Z",
@@ -2191,15 +2191,15 @@
    ],
    "categories": [],
    "age_days": 22.4,
-   "delta_24h": 80,
+   "delta_24h": 81,
    "mode": "procjena",
-   "growth_pct": 4.6
+   "growth_pct": 4.7
   },
   {
    "name": "morganlinton/BeautifulRust",
    "url": "https://github.com/morganlinton/BeautifulRust",
    "description": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.",
-   "stars": 1740,
+   "stars": 1741,
    "forks": 92,
    "created_at": "2026-10-23T03:01:11Z",
    "pushed_at": "2026-11-02T20:01:30Z",
@@ -2282,8 +2282,8 @@
    "name": "zhuyansen/awesome-claude-video-skills",
    "url": "https://github.com/zhuyansen/awesome-claude-video-skills",
    "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
-   "stars": 1654,
-   "forks": 159,
+   "stars": 1655,
+   "forks": 160,
    "created_at": "2026-09-27T04:06:05Z",
    "pushed_at": "2026-11-05T17:38:22Z",
    "topics": [
@@ -2447,7 +2447,7 @@
    "name": "undefined-ui/second-brain-os",
    "url": "https://github.com/undefined-ui/second-brain-os",
    "description": "Guides and resources for AI engineers: an agents course, five handbooks, a hands-on second-brain project and a vetted reading list.",
-   "stars": 1488,
+   "stars": 1489,
    "forks": 254,
    "created_at": "2026-09-07T15:08:13Z",
    "pushed_at": "2026-11-03T21:52:55Z",
@@ -2502,7 +2502,7 @@
    "name": "alexgreensh/anidoodle",
    "url": "https://github.com/alexgreensh/anidoodle",
    "description": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
-   "stars": 1384,
+   "stars": 1385,
    "forks": 134,
    "created_at": "2026-09-22T11:20:47Z",
    "pushed_at": "2026-11-05T20:35:49Z",
@@ -2572,7 +2572,7 @@
    "stars": 1327,
    "forks": 176,
    "created_at": "2026-10-03T01:38:22Z",
-   "pushed_at": "2026-11-05T05:53:49Z",
+   "pushed_at": "2026-11-06T15:37:29Z",
    "topics": [
     "ai-agents",
     "ai-education",
@@ -2634,7 +2634,7 @@
    "name": "NiazMorshed2007/reanimate",
    "url": "https://github.com/NiazMorshed2007/reanimate",
    "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
-   "stars": 1292,
+   "stars": 1294,
    "forks": 119,
    "created_at": "2026-10-29T06:20:59Z",
    "pushed_at": "2026-10-31T12:49:35Z",
@@ -2748,7 +2748,7 @@
     "vibe-coding"
    ],
    "categories": [],
-   "age_days": 39.4,
+   "age_days": 39.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -2839,7 +2839,7 @@
    "name": "juliobsz/skills",
    "url": "https://github.com/juliobsz/skills",
    "description": "An agent skill that builds award-caliber websites from one line",
-   "stars": 1165,
+   "stars": 1166,
    "forks": 52,
    "created_at": "2026-10-12T00:07:32Z",
    "pushed_at": "2026-10-26T15:35:41Z",
@@ -3307,7 +3307,7 @@
    "name": "liustack/modsearch",
    "url": "https://github.com/liustack/modsearch",
    "description": "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. | 🥇 全网最强的 DeepSeek Harness 免费联网搜索插件，免费免注册免 API key。为不能联网的模型补上搜索，问网页或 X，拿回结构化 JSON 证据（搜索、抓取、引用）。",
-   "stars": 945,
+   "stars": 946,
    "forks": 38,
    "created_at": "2026-02-22T07:12:53Z",
    "pushed_at": "2026-10-28T11:03:36Z",
@@ -3333,7 +3333,7 @@
     "web-search"
    ],
    "categories": [],
-   "age_days": 257.3,
+   "age_days": 257.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -3816,7 +3816,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 22.8,
+   "age_days": 22.9,
    "delta_24h": 32,
    "mode": "procjena",
    "growth_pct": 4.5
@@ -3871,7 +3871,7 @@
     "terraform"
    ],
    "categories": [],
-   "age_days": 256.2,
+   "age_days": 256.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -4191,6 +4191,39 @@
    "growth_pct": 0.0
   },
   {
+   "name": "HeyChengC/wallstreet-explainer",
+   "url": "https://github.com/HeyChengC/wallstreet-explainer",
+   "description": "华尔街式财经/科技解读短片 skill：设计思路、风格语言，以及找片、截图、配音、渲染和混音工具。",
+   "stars": 615,
+   "forks": 133,
+   "created_at": "2026-10-18T09:33:56Z",
+   "pushed_at": "2026-11-05T09:06:48Z",
+   "topics": [
+    "agent-skills",
+    "ai-video",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "douyin",
+    "explainer-video",
+    "finance",
+    "motion-graphics",
+    "short-video",
+    "skill",
+    "text-to-video",
+    "video-editing",
+    "video-generation"
+   ],
+   "categories": [
+    "biznis",
+    "dizajn"
+   ],
+   "age_days": 19.3,
+   "delta_24h": 32,
+   "mode": "procjena",
+   "growth_pct": 5.5
+  },
+  {
    "name": "EricTechPro/super-board",
    "url": "https://github.com/EricTechPro/super-board",
    "description": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install.",
@@ -4219,39 +4252,6 @@
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
-  },
-  {
-   "name": "HeyChengC/wallstreet-explainer",
-   "url": "https://github.com/HeyChengC/wallstreet-explainer",
-   "description": "华尔街式财经/科技解读短片 skill：设计思路、风格语言，以及找片、截图、配音、渲染和混音工具。",
-   "stars": 615,
-   "forks": 133,
-   "created_at": "2026-10-18T09:33:56Z",
-   "pushed_at": "2026-11-05T09:06:48Z",
-   "topics": [
-    "agent-skills",
-    "ai-video",
-    "claude-code",
-    "claude-skills",
-    "codex",
-    "douyin",
-    "explainer-video",
-    "finance",
-    "motion-graphics",
-    "short-video",
-    "skill",
-    "text-to-video",
-    "video-editing",
-    "video-generation"
-   ],
-   "categories": [
-    "biznis",
-    "dizajn"
-   ],
-   "age_days": 19.2,
-   "delta_24h": 32,
-   "mode": "procjena",
-   "growth_pct": 5.5
   },
   {
    "name": "anombyte93/prd-taskmaster",
@@ -4283,7 +4283,7 @@
    "name": "zenstory-ai/video-recap-skills",
    "url": "https://github.com/zenstory-ai/video-recap-skills",
    "description": "AI 视频解说全流程 skill 包：自动切镜头、看画面写解说词、配音合成成片，支持一键导出可编辑的剪映/CapCut 草稿，无需 GPU ｜ Agent skills that turn videos into narrated recaps & editable CapCut drafts",
-   "stars": 605,
+   "stars": 606,
    "forks": 112,
    "created_at": "2026-05-02T14:50:41Z",
    "pushed_at": "2026-11-06T14:32:02Z",
@@ -4602,7 +4602,7 @@
     "video-generation"
    ],
    "categories": [],
-   "age_days": 9.2,
+   "age_days": 9.3,
    "delta_24h": 59,
    "mode": "procjena",
    "growth_pct": 12.2
@@ -4655,7 +4655,7 @@
     "vibecoding"
    ],
    "categories": [],
-   "age_days": 237.1,
+   "age_days": 237.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -4845,7 +4845,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 162.1,
+   "age_days": 162.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -5001,6 +5001,41 @@
    "growth_pct": 0.0
   },
   {
+   "name": "mhfed/vn-law-check",
+   "url": "https://github.com/mhfed/vn-law-check",
+   "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
+   "stars": 456,
+   "forks": 99,
+   "created_at": "2026-11-02T09:22:02Z",
+   "pushed_at": "2026-11-05T10:34:21Z",
+   "topics": [
+    "agent-md",
+    "agent-skills",
+    "claude-code",
+    "claude-plugin",
+    "claude-skills",
+    "compliance",
+    "copilot-instructions",
+    "cursor-rules",
+    "data-protection",
+    "ecommerce",
+    "legal-tech",
+    "pdpl",
+    "privacy",
+    "skills",
+    "vibe-coding",
+    "vietnam",
+    "vietnam-law"
+   ],
+   "categories": [
+    "biznis"
+   ],
+   "age_days": 4.3,
+   "delta_24h": 107,
+   "mode": "procjena",
+   "growth_pct": 30.7
+  },
+  {
    "name": "redfox-data/redfox-community",
    "url": "https://github.com/redfox-data/redfox-community",
    "description": "红狐数据（RedFoxHub） 技能合集：面向 Agent 的可复用 SKILL 集合，覆盖灵感、选题、文案创作、数据复盘等场景，持续更新。",
@@ -5036,7 +5071,7 @@
    "stars": 455,
    "forks": 49,
    "created_at": "2025-12-20T12:00:04Z",
-   "pushed_at": "2026-11-06T15:22:54Z",
+   "pushed_at": "2026-11-06T15:39:06Z",
    "topics": [
     "ai-skills",
     "claude",
@@ -5047,78 +5082,7 @@
     "skills"
    ],
    "categories": [],
-   "age_days": 321.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "mhfed/vn-law-check",
-   "url": "https://github.com/mhfed/vn-law-check",
-   "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
-   "stars": 455,
-   "forks": 99,
-   "created_at": "2026-11-02T09:22:02Z",
-   "pushed_at": "2026-11-05T10:34:21Z",
-   "topics": [
-    "agent-md",
-    "agent-skills",
-    "claude-code",
-    "claude-plugin",
-    "claude-skills",
-    "compliance",
-    "copilot-instructions",
-    "cursor-rules",
-    "data-protection",
-    "ecommerce",
-    "legal-tech",
-    "pdpl",
-    "privacy",
-    "skills",
-    "vibe-coding",
-    "vietnam",
-    "vietnam-law"
-   ],
-   "categories": [
-    "biznis"
-   ],
-   "age_days": 4.3,
-   "delta_24h": 107,
-   "mode": "procjena",
-   "growth_pct": 30.7
-  },
-  {
-   "name": "sanjay3290/ai-skills",
-   "url": "https://github.com/sanjay3290/ai-skills",
-   "description": "24 cross-platform agent skills for Claude Code, Cursor, Codex & Gemini CLI — databases, messaging, research, TTS, DevOps, and Google Workspace",
-   "stars": 452,
-   "forks": 49,
-   "created_at": "2025-12-22T18:51:46Z",
-   "pushed_at": "2026-11-02T21:35:18Z",
-   "topics": [
-    "agent-skills",
-    "ai-skills",
-    "atlassian",
-    "azure-devops",
-    "claude-code",
-    "claude-skills",
-    "codex",
-    "cursor",
-    "deep-research",
-    "elevenlabs",
-    "gemini-cli",
-    "google-workspace",
-    "imagen",
-    "mcp",
-    "mysql",
-    "notebooklm",
-    "postgresql",
-    "telegram",
-    "text-to-speech",
-    "whatsapp"
-   ],
-   "categories": [],
-   "age_days": 318.9,
+   "age_days": 321.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -5162,6 +5126,42 @@
    "delta_24h": 16,
    "mode": "procjena",
    "growth_pct": 3.7
+  },
+  {
+   "name": "sanjay3290/ai-skills",
+   "url": "https://github.com/sanjay3290/ai-skills",
+   "description": "24 cross-platform agent skills for Claude Code, Cursor, Codex & Gemini CLI — databases, messaging, research, TTS, DevOps, and Google Workspace",
+   "stars": 452,
+   "forks": 49,
+   "created_at": "2025-12-22T18:51:46Z",
+   "pushed_at": "2026-11-02T21:35:18Z",
+   "topics": [
+    "agent-skills",
+    "ai-skills",
+    "atlassian",
+    "azure-devops",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "cursor",
+    "deep-research",
+    "elevenlabs",
+    "gemini-cli",
+    "google-workspace",
+    "imagen",
+    "mcp",
+    "mysql",
+    "notebooklm",
+    "postgresql",
+    "telegram",
+    "text-to-speech",
+    "whatsapp"
+   ],
+   "categories": [],
+   "age_days": 318.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
   },
   {
    "name": "boshu2/agentops",
@@ -5223,7 +5223,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 240.3,
+   "age_days": 240.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -5352,7 +5352,7 @@
    "name": "artemnovitckii/claude-animation-skills",
    "url": "https://github.com/artemnovitckii/claude-animation-skills",
    "description": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph.",
-   "stars": 425,
+   "stars": 426,
    "forks": 54,
    "created_at": "2026-11-01T02:53:31Z",
    "pushed_at": "2026-11-01T02:53:37Z",
@@ -5401,7 +5401,7 @@
    "name": "appariciojunior/video-editor-skills",
    "url": "https://github.com/appariciojunior/video-editor-skills",
    "description": "Skills that teach Claude Code to be a first-pass video editor in DaVinci Resolve: transcript cuts, vlog pacing, B-roll, music & SFX, clean captions, motion graphics, YouTube export. CC BY-NC 4.0 (no commercial use).",
-   "stars": 419,
+   "stars": 420,
    "forks": 59,
    "created_at": "2026-10-23T07:51:02Z",
    "pushed_at": "2026-10-23T07:51:07Z",
@@ -5440,7 +5440,7 @@
     "skills"
    ],
    "categories": [],
-   "age_days": 240.4,
+   "age_days": 240.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -5658,7 +5658,7 @@
     "writing-tools"
    ],
    "categories": [],
-   "age_days": 266.7,
+   "age_days": 266.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -5724,42 +5724,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "jaechang-hits/SciAgent-Skills",
-   "url": "https://github.com/jaechang-hits/SciAgent-Skills",
-   "description": "197 bioinformatics & life science skills for Claude Code and AI agents — BixBench 92.0% accuracy. RNA-seq, single-cell, drug discovery, proteomics, and more. Powers OmicsHorizon.",
-   "stars": 385,
-   "forks": 45,
-   "created_at": "2026-02-18T02:50:16Z",
-   "pushed_at": "2026-11-04T08:04:56Z",
-   "topics": [
-    "ai-agent",
-    "bioinformatics",
-    "biostatistics",
-    "bixbench",
-    "cheminformatics",
-    "claude-code",
-    "claude-plugin",
-    "claude-skills",
-    "computational-biology",
-    "drug-discovery",
-    "genomics",
-    "life-sciences",
-    "omicshorizon",
-    "open-source",
-    "proteomics",
-    "rna-seq",
-    "scientific-computing",
-    "scientific-skills",
-    "single-cell",
-    "skills-library"
-   ],
-   "categories": [],
-   "age_days": 261.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "aerovato/container",
    "url": "https://github.com/aerovato/container",
    "description": "Persistent Linux workspaces for agentic development.",
@@ -5791,6 +5755,42 @@
    ],
    "categories": [],
    "age_days": 302.0,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "jaechang-hits/SciAgent-Skills",
+   "url": "https://github.com/jaechang-hits/SciAgent-Skills",
+   "description": "197 bioinformatics & life science skills for Claude Code and AI agents — BixBench 92.0% accuracy. RNA-seq, single-cell, drug discovery, proteomics, and more. Powers OmicsHorizon.",
+   "stars": 385,
+   "forks": 45,
+   "created_at": "2026-02-18T02:50:16Z",
+   "pushed_at": "2026-11-04T08:04:56Z",
+   "topics": [
+    "ai-agent",
+    "bioinformatics",
+    "biostatistics",
+    "bixbench",
+    "cheminformatics",
+    "claude-code",
+    "claude-plugin",
+    "claude-skills",
+    "computational-biology",
+    "drug-discovery",
+    "genomics",
+    "life-sciences",
+    "omicshorizon",
+    "open-source",
+    "proteomics",
+    "rna-seq",
+    "scientific-computing",
+    "scientific-skills",
+    "single-cell",
+    "skills-library"
+   ],
+   "categories": [],
+   "age_days": 261.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -6127,7 +6127,7 @@
     "genshijin"
    ],
    "categories": [],
-   "age_days": 213.9,
+   "age_days": 214.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -6155,8 +6155,8 @@
    "name": "morluto/rea",
    "url": "https://github.com/morluto/rea",
    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-   "stars": 436796,
-   "forks": 108325,
+   "stars": 436819,
+   "forks": 108330,
    "created_at": "2026-04-14T00:51:32Z",
    "pushed_at": "2026-11-06T15:21:44Z",
    "topics": [
@@ -6208,8 +6208,8 @@
    "name": "DietrichGebert/ponytail",
    "url": "https://github.com/DietrichGebert/ponytail",
    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-   "stars": 185648,
-   "forks": 10273,
+   "stars": 185650,
+   "forks": 10274,
    "created_at": "2026-06-12T00:52:37Z",
    "pushed_at": "2026-10-29T11:59:31Z",
    "topics": [
@@ -6234,8 +6234,8 @@
    "name": "addyosmani/agent-skills",
    "url": "https://github.com/addyosmani/agent-skills",
    "description": "Production-grade engineering skills for AI coding agents.",
-   "stars": 113659,
-   "forks": 11879,
+   "stars": 113660,
+   "forks": 11880,
    "created_at": "2026-02-15T20:20:26Z",
    "pushed_at": "2026-11-01T19:24:49Z",
    "topics": [
@@ -6256,7 +6256,7 @@
    "name": "Leonxlnx/taste-skill",
    "url": "https://github.com/Leonxlnx/taste-skill",
    "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-   "stars": 111075,
+   "stars": 111076,
    "forks": 7460,
    "created_at": "2026-02-19T21:44:05Z",
    "pushed_at": "2026-11-05T01:12:12Z",
@@ -6285,10 +6285,10 @@
    "name": "nexu-io/open-design",
    "url": "https://github.com/nexu-io/open-design",
    "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
-   "stars": 106267,
+   "stars": 106270,
    "forks": 12096,
    "created_at": "2026-04-28T04:25:20Z",
-   "pushed_at": "2026-11-06T10:18:14Z",
+   "pushed_at": "2026-11-06T15:40:39Z",
    "topics": [
     "agent-skills",
     "ai-design",
@@ -6323,7 +6323,7 @@
    "name": "pbakaus/impeccable",
    "url": "https://github.com/pbakaus/impeccable",
    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-   "stars": 104499,
+   "stars": 104508,
    "forks": 6205,
    "created_at": "2025-11-16T01:52:04Z",
    "pushed_at": "2026-11-05T22:22:37Z",
@@ -6346,10 +6346,10 @@
    "name": "career-ops-hq/career-ops",
    "url": "https://github.com/career-ops-hq/career-ops",
    "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
-   "stars": 80634,
-   "forks": 14838,
+   "stars": 80636,
+   "forks": 14839,
    "created_at": "2026-04-04T18:21:18Z",
-   "pushed_at": "2026-11-06T15:07:51Z",
+   "pushed_at": "2026-11-06T15:39:27Z",
    "topics": [
     "agent-skills",
     "ai-agent",
@@ -6382,7 +6382,7 @@
    "name": "blader/humanizer",
    "url": "https://github.com/blader/humanizer",
    "description": "Agent skill that removes signs of AI-generated writing from text",
-   "stars": 65520,
+   "stars": 65521,
    "forks": 5180,
    "created_at": "2026-01-18T05:30:15Z",
    "pushed_at": "2026-10-28T07:17:33Z",
@@ -6437,7 +6437,7 @@
    "name": "hesreallyhim/awesome-claude-code",
    "url": "https://github.com/hesreallyhim/awesome-claude-code",
    "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
-   "stars": 57385,
+   "stars": 57386,
    "forks": 4919,
    "created_at": "2025-04-19T20:55:59Z",
    "pushed_at": "2026-11-06T15:06:21Z",
@@ -6472,7 +6472,7 @@
    "name": "VoltAgent/awesome-openclaw-skills",
    "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
    "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
-   "stars": 53580,
+   "stars": 53581,
    "forks": 5070,
    "created_at": "2026-01-25T09:22:32Z",
    "pushed_at": "2026-10-30T13:21:07Z",
@@ -6500,7 +6500,7 @@
    "name": "CherryHQ/cherry-studio",
    "url": "https://github.com/CherryHQ/cherry-studio",
    "description": "Your AI workspace for models, agents, and productivity.",
-   "stars": 53305,
+   "stars": 53304,
    "forks": 5186,
    "created_at": "2024-05-24T01:56:26Z",
    "pushed_at": "2026-11-06T15:24:14Z",
@@ -6611,7 +6611,7 @@
    "name": "github/awesome-copilot",
    "url": "https://github.com/github/awesome-copilot",
    "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
-   "stars": 40875,
+   "stars": 40876,
    "forks": 5304,
    "created_at": "2025-06-11T16:57:39Z",
    "pushed_at": "2026-11-06T13:41:04Z",
@@ -6695,7 +6695,7 @@
    "stars": 33112,
    "forks": 3471,
    "created_at": "2023-08-16T16:16:33Z",
-   "pushed_at": "2026-11-06T15:01:34Z",
+   "pushed_at": "2026-11-06T15:33:40Z",
    "topics": [
     "agent-memory",
     "agent-skills",
@@ -6817,7 +6817,7 @@
    "name": "agentskills/agentskills",
    "url": "https://github.com/agentskills/agentskills",
    "description": "Specification and documentation for Agent Skills",
-   "stars": 27007,
+   "stars": 27008,
    "forks": 2000,
    "created_at": "2025-12-16T15:47:19Z",
    "pushed_at": "2026-11-04T19:47:27Z",
@@ -6936,7 +6936,7 @@
    "url": "https://github.com/KKKKhazix/khazix-skills",
    "description": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
    "stars": 22029,
-   "forks": 2315,
+   "forks": 2316,
    "created_at": "2026-04-06T07:37:02Z",
    "pushed_at": "2026-11-03T21:50:31Z",
    "topics": [
@@ -6960,7 +6960,7 @@
    "name": "citrolabs/ego-lite",
    "url": "https://github.com/citrolabs/ego-lite",
    "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-   "stars": 21883,
+   "stars": 21884,
    "forks": 1241,
    "created_at": "2026-04-16T12:51:09Z",
    "pushed_at": "2026-11-06T04:58:08Z",
@@ -7150,7 +7150,7 @@
    "name": "lemomo-ai/lemo-opuscar",
    "url": "https://github.com/lemomo-ai/lemo-opuscar",
    "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
-   "stars": 12922,
+   "stars": 12925,
    "forks": 1500,
    "created_at": "2026-09-26T10:10:41Z",
    "pushed_at": "2026-10-31T14:53:23Z",
@@ -7332,10 +7332,10 @@
    "name": "mvschwarz/openrig",
    "url": "https://github.com/mvschwarz/openrig",
    "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
-   "stars": 8691,
+   "stars": 8692,
    "forks": 725,
    "created_at": "2026-04-01T06:22:40Z",
-   "pushed_at": "2026-11-06T14:56:01Z",
+   "pushed_at": "2026-11-06T15:32:39Z",
    "topics": [
     "agent-harness",
     "agent-orchestration",
@@ -7391,7 +7391,7 @@
    "name": "Gentleman-Programming/gentle-ai",
    "url": "https://github.com/Gentleman-Programming/gentle-ai",
    "description": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
-   "stars": 8477,
+   "stars": 8478,
    "forks": 882,
    "created_at": "2026-02-27T23:28:01Z",
    "pushed_at": "2026-11-06T15:30:29Z",
@@ -7424,7 +7424,7 @@
    "name": "miqdadbadjuber/anti-slop",
    "url": "https://github.com/miqdadbadjuber/anti-slop",
    "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
-   "stars": 8461,
+   "stars": 8463,
    "forks": 568,
    "created_at": "2026-08-07T10:29:56Z",
    "pushed_at": "2026-11-05T11:11:47Z",
@@ -7640,7 +7640,7 @@
    "name": "Devin-AXIS/iPolloWork",
    "url": "https://github.com/Devin-AXIS/iPolloWork",
    "description": "Enterprise-grade, local-first Agent Workbench for people and agent teams. A unified multi-engine workspace for Codex Harness, DeepSeek Harness, and OpenCode, with unified plugins and Skills, multi-agent projects and tasks, and editable code, documents, presentations, design, and video.",
-   "stars": 7405,
+   "stars": 7406,
    "forks": 1135,
    "created_at": "2025-08-25T03:57:40Z",
    "pushed_at": "2026-11-06T09:23:22Z",
@@ -7676,8 +7676,8 @@
    "name": "gamedev-skills/awesome-gamedev-agent-skills",
    "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
    "description": "77 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill for your engine and task. Runs in Claude Code, Cursor, Kiro, Codex, Copilot, Gemini CLI and more.",
-   "stars": 7137,
-   "forks": 694,
+   "stars": 7140,
+   "forks": 695,
    "created_at": "2026-06-24T07:18:39Z",
    "pushed_at": "2026-10-28T03:10:14Z",
    "topics": [
@@ -7904,7 +7904,7 @@
    "name": "Oldcircle/geo-sleuth",
    "url": "https://github.com/Oldcircle/geo-sleuth",
    "description": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
-   "stars": 6227,
+   "stars": 6229,
    "forks": 774,
    "created_at": "2026-09-18T08:51:34Z",
    "pushed_at": "2026-11-05T08:11:52Z",
@@ -8101,7 +8101,7 @@
    "name": "patch-gg/pixelfx",
    "url": "https://github.com/patch-gg/pixelfx",
    "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-   "stars": 5522,
+   "stars": 5523,
    "forks": 729,
    "created_at": "2026-10-30T06:43:25Z",
    "pushed_at": "2026-10-31T08:44:14Z",
@@ -8119,7 +8119,7 @@
     "dizajn"
    ],
    "age_days": 7.4,
-   "delta_24h": 750,
+   "delta_24h": 749,
    "mode": "procjena",
    "growth_pct": 15.7
   },
@@ -8213,7 +8213,7 @@
     "vscode"
    ],
    "categories": [],
-   "age_days": 1738.9,
+   "age_days": 1739.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -8298,7 +8298,7 @@
     "second-brain"
    ],
    "categories": [],
-   "age_days": 227.1,
+   "age_days": 227.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -8814,7 +8814,7 @@
    "url": "https://github.com/wesammustafa/Claude-Code-Quest",
    "description": "Claude Code guide in three levels, Beginner to Advanced: hands-on lessons with checked exercises, every volatile fact cited to its source. Independent community guide.",
    "stars": 3619,
-   "forks": 414,
+   "forks": 415,
    "created_at": "2025-08-17T14:45:39Z",
    "pushed_at": "2026-11-06T01:01:12Z",
    "topics": [
@@ -8849,7 +8849,7 @@
    "name": "himself65/finance-skills",
    "url": "https://github.com/himself65/finance-skills",
    "description": "A collection of skills for AI financial analysis.",
-   "stars": 3509,
+   "stars": 3508,
    "forks": 396,
    "created_at": "2026-03-13T23:56:06Z",
    "pushed_at": "2026-11-04T06:45:41Z",
@@ -8862,7 +8862,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 237.6,
+   "age_days": 237.7,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -8915,7 +8915,7 @@
     "web-testing-automation"
    ],
    "categories": [],
-   "age_days": 382.7,
+   "age_days": 382.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -9083,7 +9083,7 @@
    "name": "jeremylongshore/tons-of-skills-marketplace",
    "url": "https://github.com/jeremylongshore/tons-of-skills-marketplace",
    "description": "Model-agnostic agent-skills platform with a harness-free canonical layer, verified adapters, and the ccpi package manager. Explore at tonsofskills.com.",
-   "stars": 2902,
+   "stars": 2901,
    "forks": 429,
    "created_at": "2025-10-10T01:01:00Z",
    "pushed_at": "2026-11-06T07:08:22Z",
@@ -9220,8 +9220,8 @@
    "name": "JuneYaooo/rea-video",
    "url": "https://github.com/JuneYaooo/rea-video",
    "description": "Reverse-engineer any video, shot by shot: tells whether each shot was filmed, AI-generated or coded, how the captions, cuts and audio were made, and how to remake it. 逆向一切视频，逐镜拆出制作方式并给出复刻方案。",
-   "stars": 2676,
-   "forks": 373,
+   "stars": 2682,
+   "forks": 374,
    "created_at": "2026-10-29T16:15:01Z",
    "pushed_at": "2026-11-06T10:55:01Z",
    "topics": [
@@ -9247,7 +9247,7 @@
    "age_days": 8.0,
    "delta_24h": 336,
    "mode": "procjena",
-   "growth_pct": 14.4
+   "growth_pct": 14.3
   },
   {
    "name": "AgriciDaniel/claude-blog",
@@ -9344,7 +9344,7 @@
    "name": "alchaincyf/huashu-motion",
    "url": "https://github.com/alchaincyf/huashu-motion",
    "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
-   "stars": 2435,
+   "stars": 2437,
    "forks": 246,
    "created_at": "2026-10-18T12:19:27Z",
    "pushed_at": "2026-10-22T12:19:37Z",
@@ -9371,7 +9371,7 @@
    "url": "https://github.com/DenisSergeevitch/agents-best-practices",
    "description": "Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
    "stars": 2419,
-   "forks": 219,
+   "forks": 220,
    "created_at": "2026-05-15T21:32:21Z",
    "pushed_at": "2026-10-19T00:12:05Z",
    "topics": [
@@ -9391,7 +9391,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 174.7,
+   "age_days": 174.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -9747,6 +9747,30 @@
    "growth_pct": 0.0
   },
   {
+   "name": "maxrave-dev/kotlin-footguns",
+   "url": "https://github.com/maxrave-dev/kotlin-footguns",
+   "description": "Battle-tested agent skills mapping the footguns of Kotlin, Compose Multiplatform and the desktop JVM — mined from a production music app, not from documentation.",
+   "stars": 2030,
+   "forks": 9,
+   "created_at": "2026-08-20T08:46:15Z",
+   "pushed_at": "2026-10-29T04:27:53Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "android",
+    "claude-code",
+    "compose-multiplatform",
+    "jetpack-compose",
+    "kotlin",
+    "kotlin-multiplatform"
+   ],
+   "categories": [],
+   "age_days": 78.3,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "DenisSergeevitch/ex-ussr-kinship-research",
    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
    "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
@@ -9769,30 +9793,6 @@
    "delta_24h": 166,
    "mode": "procjena",
    "growth_pct": 8.9
-  },
-  {
-   "name": "maxrave-dev/kotlin-footguns",
-   "url": "https://github.com/maxrave-dev/kotlin-footguns",
-   "description": "Battle-tested agent skills mapping the footguns of Kotlin, Compose Multiplatform and the desktop JVM — mined from a production music app, not from documentation.",
-   "stars": 2029,
-   "forks": 9,
-   "created_at": "2026-08-20T08:46:15Z",
-   "pushed_at": "2026-10-29T04:27:53Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "android",
-    "claude-code",
-    "compose-multiplatform",
-    "jetpack-compose",
-    "kotlin",
-    "kotlin-multiplatform"
-   ],
-   "categories": [],
-   "age_days": 78.3,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
   },
   {
    "name": "coji/natural-japanese",
@@ -9878,7 +9878,7 @@
    "name": "Gentleman-Programming/gentle-shell",
    "url": "https://github.com/Gentleman-Programming/gentle-shell",
    "description": "Gentle Shell is a Pi-native workspace for AI-assisted development, bringing parallel coding agents, live tasks, Git diffs, persistent memory, and permission controls into one terminal interface. Powered by Gentle AI and Organic Driven Development (ODD).",
-   "stars": 1884,
+   "stars": 1885,
    "forks": 258,
    "created_at": "2026-05-10T10:11:33Z",
    "pushed_at": "2026-11-06T15:26:49Z",
@@ -10260,7 +10260,7 @@
     "video"
    ],
    "categories": [],
-   "age_days": 110.3,
+   "age_days": 110.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -10472,7 +10472,7 @@
    "name": "michaelshimeles/rstack",
    "url": "https://github.com/michaelshimeles/rstack",
    "description": "Agent skills and an AGENTS.md workflow template — isolate in worktrees, build to a service layer, prove with evidence, ship with before/after proof and Greptile review loops. For Claude Code, Cursor, and Codex.",
-   "stars": 1453,
+   "stars": 1454,
    "forks": 245,
    "created_at": "2026-03-05T17:40:23Z",
    "pushed_at": "2026-11-05T15:04:32Z",
@@ -10508,7 +10508,7 @@
     "specification"
    ],
    "categories": [],
-   "age_days": 217.5,
+   "age_days": 217.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -10598,7 +10598,7 @@
     "skills"
    ],
    "categories": [],
-   "age_days": 940.0,
+   "age_days": 940.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -10641,8 +10641,8 @@
    "name": "shanraisshan/claude-code-best-practice",
    "url": "https://github.com/shanraisshan/claude-code-best-practice",
    "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-   "stars": 68688,
-   "forks": 6841,
+   "stars": 68689,
+   "forks": 6842,
    "created_at": "2025-10-31T14:15:28Z",
    "pushed_at": "2026-11-06T06:44:02Z",
    "topics": [
@@ -10812,7 +10812,7 @@
    "name": "specstoryai/getspecstory",
    "url": "https://github.com/specstoryai/getspecstory",
    "description": "Install our local first extensions for your favorite AI IDE or Terminal Agent. Process your histories into reusable skills with Lore. Sync your conversations to the cloud. File issues and requests.",
-   "stars": 1368,
+   "stars": 1369,
    "forks": 93,
    "created_at": "2024-12-13T18:05:13Z",
    "pushed_at": "2026-11-06T14:35:38Z",
@@ -10944,7 +10944,7 @@
    "stars": 844,
    "forks": 114,
    "created_at": "2025-10-10T00:17:03Z",
-   "pushed_at": "2026-11-06T15:17:38Z",
+   "pushed_at": "2026-11-06T15:37:14Z",
    "topics": [
     "agent-communication",
     "agent-skills",
@@ -11501,30 +11501,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "tamtom/play-console-cli",
-   "url": "https://github.com/tamtom/play-console-cli",
-   "description": "Fast CLI for Google Play Console, for developers optimized for your agentic development flows",
-   "stars": 290,
-   "forks": 29,
-   "created_at": "2026-02-05T10:46:42Z",
-   "pushed_at": "2026-11-02T09:15:48Z",
-   "topics": [
-    "claude-code",
-    "claude-code-skills",
-    "claude-skills",
-    "cli",
-    "codex",
-    "codex-skills",
-    "google-play",
-    "google-play-store"
-   ],
-   "categories": [],
-   "age_days": 274.2,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "majiayu000/spellbook",
    "url": "https://github.com/majiayu000/spellbook",
    "description": "Cross-runtime skills for Claude Code, Codex, and multi-agent workflows.",
@@ -11561,6 +11537,30 @@
    "growth_pct": 0.0
   },
   {
+   "name": "tamtom/play-console-cli",
+   "url": "https://github.com/tamtom/play-console-cli",
+   "description": "Fast CLI for Google Play Console, for developers optimized for your agentic development flows",
+   "stars": 290,
+   "forks": 29,
+   "created_at": "2026-02-05T10:46:42Z",
+   "pushed_at": "2026-11-02T09:15:48Z",
+   "topics": [
+    "claude-code",
+    "claude-code-skills",
+    "claude-skills",
+    "cli",
+    "codex",
+    "codex-skills",
+    "google-play",
+    "google-play-store"
+   ],
+   "categories": [],
+   "age_days": 274.2,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "OneMoh/html-explainer",
    "url": "https://github.com/OneMoh/html-explainer",
    "description": "把一个主题做成有配音、字幕、封面的讲解分析类视频 —— 全本地、用 HTML 写画面，稳定音画同步。 面向 AI 编程智能体的确定性 HTML → MP4 渲染流水线。",
@@ -11588,7 +11588,7 @@
     "workbuddy-skills"
    ],
    "categories": [],
-   "age_days": 46.4,
+   "age_days": 46.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -11643,7 +11643,7 @@
     "web-search"
    ],
    "categories": [],
-   "age_days": 311.8,
+   "age_days": 311.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -12369,7 +12369,7 @@
    "stars": 117,
    "forks": 2,
    "created_at": "2026-06-28T20:26:01Z",
-   "pushed_at": "2026-11-06T07:34:57Z",
+   "pushed_at": "2026-11-06T15:35:09Z",
    "topics": [
     "claude",
     "claude-ai",
@@ -12550,7 +12550,7 @@
     "token-compression"
    ],
    "categories": [],
-   "age_days": 235.3,
+   "age_days": 235.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -13409,7 +13409,7 @@
     "vibecoding"
    ],
    "categories": [],
-   "age_days": 303.1,
+   "age_days": 303.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -13650,7 +13650,7 @@
     "subagents"
    ],
    "categories": [],
-   "age_days": 223.7,
+   "age_days": 223.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -13807,7 +13807,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 1.1,
+   "age_days": 1.2,
    "delta_24h": 34,
    "mode": "procjena",
    "growth_pct": 680.0
@@ -13882,6 +13882,29 @@
    "growth_pct": 0.0
   },
   {
+   "name": "xx-hub/craft-your-textbook",
+   "url": "https://github.com/xx-hub/craft-your-textbook",
+   "description": "本项目是 Socratopia（破卷）生态的衍生项目，是其\"造书\"环节的方法论沉淀，已固化为一个可复用的 skill。 让你具备亲手为自己造一本教材的能力——把一本教材（或一个领域的知识）加工成 AI 老师能拿去上课的教学蓝本。有教师用书时，造出来的书还能直接针对应试（见第四节）。",
+   "stars": 38,
+   "forks": 8,
+   "created_at": "2026-07-13T02:21:37Z",
+   "pushed_at": "2026-11-05T04:35:51Z",
+   "topics": [
+    "claude-code",
+    "claude-code-skills",
+    "education",
+    "pedagogy",
+    "skills",
+    "socratic-method",
+    "textbook"
+   ],
+   "categories": [],
+   "age_days": 116.6,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "saadshahd/moo.md",
    "url": "https://github.com/saadshahd/moo.md",
    "description": "A Claude Code plugin that keeps you understanding what you sign to own.",
@@ -13900,29 +13923,6 @@
    ],
    "categories": [],
    "age_days": 342.0,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "xx-hub/craft-your-textbook",
-   "url": "https://github.com/xx-hub/craft-your-textbook",
-   "description": "本项目是 Socratopia（破卷）生态的衍生项目，是其\"造书\"环节的方法论沉淀，已固化为一个可复用的 skill。 让你具备亲手为自己造一本教材的能力——把一本教材（或一个领域的知识）加工成 AI 老师能拿去上课的教学蓝本。有教师用书时，造出来的书还能直接针对应试（见第四节）。",
-   "stars": 38,
-   "forks": 8,
-   "created_at": "2026-07-13T02:21:37Z",
-   "pushed_at": "2026-11-05T04:35:51Z",
-   "topics": [
-    "claude-code",
-    "claude-code-skills",
-    "education",
-    "pedagogy",
-    "skills",
-    "socratic-method",
-    "textbook"
-   ],
-   "categories": [],
-   "age_days": 116.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -14160,24 +14160,24 @@
    "growth_pct": 0.0
   },
   {
-   "name": "thoughtbot/rails-consultant",
-   "url": "https://github.com/thoughtbot/rails-consultant",
-   "description": "A collection of skills for Rails development and consulting with an emphasis on learning, communication, and client success.",
+   "name": "novoads/agent-skills",
+   "url": "https://github.com/novoads/agent-skills",
+   "description": "AI video and image ads for marketers, built in Claude Code or Cursor and priced by a live estimate first.",
    "stars": 28,
-   "forks": 1,
-   "created_at": "2026-03-13T19:15:44Z",
-   "pushed_at": "2026-10-30T15:01:00Z",
+   "forks": 4,
+   "created_at": "2026-08-02T21:15:47Z",
+   "pushed_at": "2026-10-17T21:04:12Z",
    "topics": [
     "agent-skills",
-    "claude-code-consulting",
-    "claude-code-plugin",
-    "claude-code-rails",
-    "claude-code-skill",
+    "ai-ads",
+    "claude-code",
     "claude-code-skills",
-    "claude-skills"
+    "ugc-ads"
    ],
-   "categories": [],
-   "age_days": 237.8,
+   "categories": [
+    "marketing"
+   ],
+   "age_days": 95.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -14207,24 +14207,24 @@
    "growth_pct": 0.0
   },
   {
-   "name": "novoads/agent-skills",
-   "url": "https://github.com/novoads/agent-skills",
-   "description": "AI video and image ads for marketers, built in Claude Code or Cursor and priced by a live estimate first.",
+   "name": "thoughtbot/rails-consultant",
+   "url": "https://github.com/thoughtbot/rails-consultant",
+   "description": "A collection of skills for Rails development and consulting with an emphasis on learning, communication, and client success.",
    "stars": 28,
-   "forks": 4,
-   "created_at": "2026-08-02T21:15:47Z",
-   "pushed_at": "2026-10-17T21:04:12Z",
+   "forks": 1,
+   "created_at": "2026-03-13T19:15:44Z",
+   "pushed_at": "2026-10-30T15:01:00Z",
    "topics": [
     "agent-skills",
-    "ai-ads",
-    "claude-code",
+    "claude-code-consulting",
+    "claude-code-plugin",
+    "claude-code-rails",
+    "claude-code-skill",
     "claude-code-skills",
-    "ugc-ads"
+    "claude-skills"
    ],
-   "categories": [
-    "marketing"
-   ],
-   "age_days": 95.8,
+   "categories": [],
+   "age_days": 237.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -14650,34 +14650,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "joaquimscosta/arkhe-claude-plugins",
-   "url": "https://github.com/joaquimscosta/arkhe-claude-plugins",
-   "description": "Supercharge Claude Code with 109 specialized components — 22 agents, 32 commands, 55 skills across 13 modular plugins. Deep reasoning, autonomous dev loops, DDD architecture, design system enforcement, git automation, and more.",
-   "stars": 22,
-   "forks": 5,
-   "created_at": "2025-10-24T15:27:58Z",
-   "pushed_at": "2026-10-16T01:27:35Z",
-   "topics": [
-    "ai-agents",
-    "ai-developer-tools",
-    "anthropic",
-    "claude-code",
-    "claude-code-agents",
-    "claude-code-plugins",
-    "claude-code-skills",
-    "code-review",
-    "git-automation",
-    "prompt-engineering"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 378.0,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "bovinphang/frontend-craft",
    "url": "https://github.com/bovinphang/frontend-craft",
    "description": "frontend-craft is a universal frontend plugin that brings the same opinionated engineering standards to all 15 AI coding assistants.",
@@ -14711,6 +14683,34 @@
     "dizajn"
    ],
    "age_days": 234.2,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "joaquimscosta/arkhe-claude-plugins",
+   "url": "https://github.com/joaquimscosta/arkhe-claude-plugins",
+   "description": "Supercharge Claude Code with 109 specialized components — 22 agents, 32 commands, 55 skills across 13 modular plugins. Deep reasoning, autonomous dev loops, DDD architecture, design system enforcement, git automation, and more.",
+   "stars": 22,
+   "forks": 5,
+   "created_at": "2025-10-24T15:27:58Z",
+   "pushed_at": "2026-10-16T01:27:35Z",
+   "topics": [
+    "ai-agents",
+    "ai-developer-tools",
+    "anthropic",
+    "claude-code",
+    "claude-code-agents",
+    "claude-code-plugins",
+    "claude-code-skills",
+    "code-review",
+    "git-automation",
+    "prompt-engineering"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 378.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -14965,42 +14965,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "manifestack/manifestack",
-   "url": "https://github.com/manifestack/manifestack",
-   "description": "Know what your stack will cost before the bill arrives. Free agent skill for Claude Code, Cursor and Codex: prices every service at your usage, finds the bills, limits and compliance gaps ahead, each with a fix.",
-   "stars": 16,
-   "forks": 2,
-   "created_at": "2026-10-06T10:38:56Z",
-   "pushed_at": "2026-10-11T14:08:28Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "ai-tools",
-    "anthropic",
-    "billing",
-    "claude",
-    "claude-code",
-    "claude-code-plugin",
-    "claude-code-skills",
-    "claude-skills",
-    "cloud-costs",
-    "codex",
-    "coding-agent",
-    "cost-optimization",
-    "cursor",
-    "github-copilot",
-    "openai-codex",
-    "tech-stack",
-    "vibe-coding",
-    "windsurf"
-   ],
-   "categories": [],
-   "age_days": 31.2,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "alex-feel/claude-code-toolbox",
    "url": "https://github.com/alex-feel/claude-code-toolbox",
    "description": "Claude Code Toolbox — automated installers and environment configuration framework for Claude Code with one-line setup across Windows, macOS, and Linux.",
@@ -15056,6 +15020,42 @@
    ],
    "categories": [],
    "age_days": 51.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "manifestack/manifestack",
+   "url": "https://github.com/manifestack/manifestack",
+   "description": "Know what your stack will cost before the bill arrives. Free agent skill for Claude Code, Cursor and Codex: prices every service at your usage, finds the bills, limits and compliance gaps ahead, each with a fix.",
+   "stars": 16,
+   "forks": 2,
+   "created_at": "2026-10-06T10:38:56Z",
+   "pushed_at": "2026-10-11T14:08:28Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "ai-tools",
+    "anthropic",
+    "billing",
+    "claude",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-code-skills",
+    "claude-skills",
+    "cloud-costs",
+    "codex",
+    "coding-agent",
+    "cost-optimization",
+    "cursor",
+    "github-copilot",
+    "openai-codex",
+    "tech-stack",
+    "vibe-coding",
+    "windsurf"
+   ],
+   "categories": [],
+   "age_days": 31.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -15171,7 +15171,7 @@
    "stars": 15,
    "forks": 3,
    "created_at": "2026-04-27T19:26:00Z",
-   "pushed_at": "2026-11-05T16:24:19Z",
+   "pushed_at": "2026-11-06T15:30:58Z",
    "topics": [
     "ai-content",
     "ai-tools",
@@ -15266,7 +15266,7 @@
    "stars": 15,
    "forks": 2,
    "created_at": "2026-08-09T17:27:16Z",
-   "pushed_at": "2026-11-06T15:24:34Z",
+   "pushed_at": "2026-11-06T15:32:34Z",
    "topics": [
     "claude",
     "claude-code",
@@ -15369,7 +15369,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 112.1,
+   "age_days": 112.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -15501,7 +15501,7 @@
     "skill-md"
    ],
    "categories": [],
-   "age_days": 127.1,
+   "age_days": 127.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -15572,7 +15572,7 @@
     "usage-limits"
    ],
    "categories": [],
-   "age_days": 24.4,
+   "age_days": 24.5,
    "delta_24h": 1,
    "mode": "procjena",
    "growth_pct": 8.3
@@ -15771,36 +15771,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "Parth1811/JevFlow",
-   "url": "https://github.com/Parth1811/JevFlow",
-   "description": "A Claude Code plugin that keeps your AI agents honest. Claude plans tasks as phases with checks, and when it tries to stop, Jevflow runs them and asks Jev if the work is really done. Many agents, one plan, with a live viewer to watch it all.",
-   "stars": 12,
-   "forks": 0,
-   "created_at": "2026-09-24T14:17:06Z",
-   "pushed_at": "2026-10-25T19:05:27Z",
-   "topics": [
-    "claude",
-    "claude-code",
-    "claude-code-hooks",
-    "claude-code-marketplace",
-    "claude-code-plugin",
-    "claude-code-plugins",
-    "claude-code-plugins-marketplace",
-    "claude-code-skill",
-    "claude-code-skills",
-    "claude-code-subagents",
-    "jev",
-    "jev-ai",
-    "typesafe-ai",
-    "typesafe-jev"
-   ],
-   "categories": [],
-   "age_days": 43.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "1gr14/agents-party",
    "url": "https://github.com/1gr14/agents-party",
    "description": "/party — the skill that lets your agent sessions talk to each other. Claude Code, Cursor, Codex or any other agent: an open-standard skill plus the CLI behind it, on one machine or across machines.",
@@ -15833,6 +15803,36 @@
    "growth_pct": 0.0
   },
   {
+   "name": "Parth1811/JevFlow",
+   "url": "https://github.com/Parth1811/JevFlow",
+   "description": "A Claude Code plugin that keeps your AI agents honest. Claude plans tasks as phases with checks, and when it tries to stop, Jevflow runs them and asks Jev if the work is really done. Many agents, one plan, with a live viewer to watch it all.",
+   "stars": 12,
+   "forks": 0,
+   "created_at": "2026-09-24T14:17:06Z",
+   "pushed_at": "2026-10-25T19:05:27Z",
+   "topics": [
+    "claude",
+    "claude-code",
+    "claude-code-hooks",
+    "claude-code-marketplace",
+    "claude-code-plugin",
+    "claude-code-plugins",
+    "claude-code-plugins-marketplace",
+    "claude-code-skill",
+    "claude-code-skills",
+    "claude-code-subagents",
+    "jev",
+    "jev-ai",
+    "typesafe-ai",
+    "typesafe-jev"
+   ],
+   "categories": [],
+   "age_days": 43.1,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "claude-world/skills-optimizer",
    "url": "https://github.com/claude-world/skills-optimizer",
    "description": "Compress Claude Code agents & skills with semantic verification — 6:1 compression, 100% semantic preservation",
@@ -15852,6 +15852,29 @@
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
+  },
+  {
+   "name": "suntianc/paseo-matt-workloop",
+   "url": "https://github.com/suntianc/paseo-matt-workloop",
+   "description": "Paseo 多 Agent workloop：整合 Matt Pocock skills，支持 npx 安装与更新。",
+   "stars": 11,
+   "forks": 0,
+   "created_at": "2026-10-26T02:18:38Z",
+   "pushed_at": "2026-11-06T13:37:00Z",
+   "topics": [
+    "agent",
+    "claude-code-skills",
+    "codex-skill",
+    "matt-pocock",
+    "paseo",
+    "skills",
+    "workloop"
+   ],
+   "categories": [],
+   "age_days": 11.6,
+   "delta_24h": 1,
+   "mode": "procjena",
+   "growth_pct": 10.0
   },
   {
    "name": "EthanYoQ/Skill-hub",
@@ -15878,58 +15901,7 @@
     "skills"
    ],
    "categories": [],
-   "age_days": 205.8,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "suntianc/paseo-matt-workloop",
-   "url": "https://github.com/suntianc/paseo-matt-workloop",
-   "description": "Paseo 多 Agent workloop：整合 Matt Pocock skills，支持 npx 安装与更新。",
-   "stars": 11,
-   "forks": 0,
-   "created_at": "2026-10-26T02:18:38Z",
-   "pushed_at": "2026-11-06T13:37:00Z",
-   "topics": [
-    "agent",
-    "claude-code-skills",
-    "codex-skill",
-    "matt-pocock",
-    "paseo",
-    "skills",
-    "workloop"
-   ],
-   "categories": [],
-   "age_days": 11.5,
-   "delta_24h": 1,
-   "mode": "procjena",
-   "growth_pct": 10.0
-  },
-  {
-   "name": "framework-creator/framework-builder",
-   "url": "https://github.com/framework-creator/framework-builder",
-   "description": "Build reusable, agent-readable frameworks from any domain expertise. Open methodology + worked examples from a 1,250+ framework library.",
-   "stars": 11,
-   "forks": 0,
-   "created_at": "2026-03-30T18:16:34Z",
-   "pushed_at": "2026-10-31T01:18:44Z",
-   "topics": [
-    "agent-readable",
-    "ai-skills",
-    "claude",
-    "claude-code",
-    "claude-code-skills",
-    "claude-skills",
-    "copilot",
-    "cursor",
-    "frameworks",
-    "methodology",
-    "skills",
-    "systematic-thinking"
-   ],
-   "categories": [],
-   "age_days": 220.9,
+   "age_days": 205.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -16010,34 +15982,63 @@
    "growth_pct": 0.0
   },
   {
-   "name": "TurboKach/claude-code-setup",
-   "url": "https://github.com/TurboKach/claude-code-setup",
-   "description": "Claude Code setup: opinionated CLAUDE.md, a feature pipeline skill (plan → delegated execute → codex cross-review → ship), pinned role agents, parallel subagent fan-out, and a one-command installer with self-update.",
+   "name": "framework-creator/framework-builder",
+   "url": "https://github.com/framework-creator/framework-builder",
+   "description": "Build reusable, agent-readable frameworks from any domain expertise. Open methodology + worked examples from a 1,250+ framework library.",
    "stars": 11,
    "forks": 0,
-   "created_at": "2026-06-21T07:33:50Z",
-   "pushed_at": "2026-10-31T08:44:00Z",
+   "created_at": "2026-03-30T18:16:34Z",
+   "pushed_at": "2026-10-31T01:18:44Z",
    "topics": [
-    "agentic-coding",
-    "ai-agents",
-    "ai-coding",
-    "anthropic",
+    "agent-readable",
+    "ai-skills",
     "claude",
     "claude-code",
-    "claude-code-agents",
     "claude-code-skills",
-    "claude-md",
-    "code-review",
-    "codex",
-    "developer-tools",
-    "dotfiles",
-    "llm",
-    "multi-agent",
-    "subagents",
-    "workflow"
+    "claude-skills",
+    "copilot",
+    "cursor",
+    "frameworks",
+    "methodology",
+    "skills",
+    "systematic-thinking"
    ],
    "categories": [],
-   "age_days": 138.3,
+   "age_days": 220.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "23blocks-OS/ai-maestro-plugins",
+   "url": "https://github.com/23blocks-OS/ai-maestro-plugins",
+   "description": "Build complete AI agents — 150+ personalities + 7 skills + messaging + identity. The skill builder for AI Maestro.",
+   "stars": 11,
+   "forks": 6,
+   "created_at": "2026-02-09T20:57:33Z",
+   "pushed_at": "2026-11-06T01:25:12Z",
+   "topics": [
+    "agent-messaging",
+    "agent-personalities",
+    "agent-skills",
+    "agentic-ai",
+    "ai-agents",
+    "ai-coding-assistant",
+    "ai-company",
+    "ai-maestro",
+    "ai-orchestration",
+    "ai-workforce",
+    "autonomous-agents",
+    "claude-code",
+    "claude-code-plugins",
+    "claude-code-skills",
+    "composable-plugins",
+    "developer-tools",
+    "multi-agent-systems",
+    "plugin-builder"
+   ],
+   "categories": [],
+   "age_days": 269.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -16079,7 +16080,7 @@
    "name": "Adkid-Zephyr/anti-defensive-writing-Skill",
    "url": "https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill",
    "description": "极致轻量｜阻止论文的防御性写作 | Anti-defensive writing for academic papers — 学术写作原则 Skill + prompt pack (CN/EN)",
-   "stars": 5342,
+   "stars": 5344,
    "forks": 121,
    "created_at": "2026-08-11T18:02:07Z",
    "pushed_at": "2026-10-27T13:01:00Z",
@@ -16718,7 +16719,7 @@
     "svg"
    ],
    "categories": [],
-   "age_days": 26.1,
+   "age_days": 26.2,
    "delta_24h": 10,
    "mode": "procjena",
    "growth_pct": 4.2
@@ -16781,7 +16782,7 @@
     "word"
    ],
    "categories": [],
-   "age_days": 186.3,
+   "age_days": 186.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -16839,7 +16840,7 @@
    "name": "ddkbs/sketchy",
    "url": "https://github.com/ddkbs/sketchy",
    "description": "A layout engine for AI diagrams: the model says what to draw, Sketchy figures out where. Hand-drawn, interactive, in Claude, Cursor and VS Code.",
-   "stars": 222,
+   "stars": 223,
    "forks": 18,
    "created_at": "2026-10-08T18:07:20Z",
    "pushed_at": "2026-11-04T11:40:19Z",
@@ -16941,7 +16942,7 @@
    "stars": 190,
    "forks": 22,
    "created_at": "2026-06-26T03:57:19Z",
-   "pushed_at": "2026-11-05T22:18:35Z",
+   "pushed_at": "2026-11-06T15:35:45Z",
    "topics": [
     "ai-agents",
     "anthropic",
@@ -17224,6 +17225,29 @@
    "growth_pct": 0.0
   },
   {
+   "name": "adhiprib/humanizer-indonesia",
+   "url": "https://github.com/adhiprib/humanizer-indonesia",
+   "description": "Membuat tulisan AI lebih luwes dan enak dibaca, bukan untuk mengelabui deteksi AI",
+   "stars": 128,
+   "forks": 20,
+   "created_at": "2026-10-24T05:21:12Z",
+   "pushed_at": "2026-10-25T16:14:09Z",
+   "topics": [
+    "academic-writing",
+    "ai-writing",
+    "bahasa-indonesia",
+    "claude",
+    "claude-skill",
+    "humanizer",
+    "indonesian"
+   ],
+   "categories": [],
+   "age_days": 13.4,
+   "delta_24h": 10,
+   "mode": "procjena",
+   "growth_pct": 8.5
+  },
+  {
    "name": "mankidev/codixel",
    "url": "https://github.com/mankidev/codixel",
    "description": "Pixel art skill for Claude Code: how to make good pixel, animated game sprite out, effects etc.",
@@ -17258,29 +17282,6 @@
    "delta_24h": 22,
    "mode": "procjena",
    "growth_pct": 20.8
-  },
-  {
-   "name": "adhiprib/humanizer-indonesia",
-   "url": "https://github.com/adhiprib/humanizer-indonesia",
-   "description": "Membuat tulisan AI lebih luwes dan enak dibaca, bukan untuk mengelabui deteksi AI",
-   "stars": 128,
-   "forks": 20,
-   "created_at": "2026-10-24T05:21:12Z",
-   "pushed_at": "2026-10-25T16:14:09Z",
-   "topics": [
-    "academic-writing",
-    "ai-writing",
-    "bahasa-indonesia",
-    "claude",
-    "claude-skill",
-    "humanizer",
-    "indonesian"
-   ],
-   "categories": [],
-   "age_days": 13.4,
-   "delta_24h": 10,
-   "mode": "procjena",
-   "growth_pct": 8.5
   },
   {
    "name": "vikashjeyaraman/opencouncil-contract-inspector",
@@ -17410,7 +17411,7 @@
    "stars": 114,
    "forks": 1,
    "created_at": "2026-06-28T19:19:34Z",
-   "pushed_at": "2026-11-06T07:34:51Z",
+   "pushed_at": "2026-11-06T15:35:16Z",
    "topics": [
     "advisor-strategy",
     "ai-coding",
@@ -17526,7 +17527,7 @@
     "biznis",
     "dizajn"
    ],
-   "age_days": 58.9,
+   "age_days": 59.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -17817,7 +17818,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 258.5,
+   "age_days": 258.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -18499,31 +18500,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "suoha888/suoha-serenity-skill",
-   "url": "https://github.com/suoha888/suoha-serenity-skill",
-   "description": "我把 Serenity 的研究方法做成了一个 AI Skill：输入任意一只 A股、港股、美股代码，它会告诉你这家公司是不是真卡点、值不值得深挖、估值还有多少空间，以及出现什么情况说明看错了。",
-   "stars": 45,
-   "forks": 3,
-   "created_at": "2026-10-19T13:22:12Z",
-   "pushed_at": "2026-10-22T10:26:33Z",
-   "topics": [
-    "a-shares",
-    "claude-skill",
-    "equity-research",
-    "hong-kong-stocks",
-    "investment-research",
-    "sec-edgar",
-    "serenity",
-    "supply-chain",
-    "us-stocks"
-   ],
-   "categories": [],
-   "age_days": 18.1,
-   "delta_24h": 2,
-   "mode": "procjena",
-   "growth_pct": 4.7
-  },
-  {
    "name": "gfargo/tui-design-skill",
    "url": "https://github.com/gfargo/tui-design-skill",
    "description": "Claude Skill for building clean, professional terminal UIs & CLIs — covers Bubble Tea, Ratatui, Textual, and Ink across Go, Rust, Python, and TypeScript",
@@ -18607,10 +18583,35 @@
     "writing-tools"
    ],
    "categories": [],
-   "age_days": 202.1,
+   "age_days": 202.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
+  },
+  {
+   "name": "suoha888/suoha-serenity-skill",
+   "url": "https://github.com/suoha888/suoha-serenity-skill",
+   "description": "我把 Serenity 的研究方法做成了一个 AI Skill：输入任意一只 A股、港股、美股代码，它会告诉你这家公司是不是真卡点、值不值得深挖、估值还有多少空间，以及出现什么情况说明看错了。",
+   "stars": 45,
+   "forks": 3,
+   "created_at": "2026-10-19T13:22:12Z",
+   "pushed_at": "2026-10-22T10:26:33Z",
+   "topics": [
+    "a-shares",
+    "claude-skill",
+    "equity-research",
+    "hong-kong-stocks",
+    "investment-research",
+    "sec-edgar",
+    "serenity",
+    "supply-chain",
+    "us-stocks"
+   ],
+   "categories": [],
+   "age_days": 18.1,
+   "delta_24h": 2,
+   "mode": "procjena",
+   "growth_pct": 4.7
   },
   {
    "name": "backblaze-labs/claude-skill-b2-cloud-storage",
@@ -18933,35 +18934,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "powerofjinbo/phdtaketaketake",
-   "url": "https://github.com/powerofjinbo/phdtaketaketake",
-   "description": "Connection-first PhD advisor matcher — find the right advisor by network strength, not h-index. Quantitative 4.0 scoring across Connection, Publication, Experience, GPA.",
-   "stars": 33,
-   "forks": 3,
-   "created_at": "2026-05-06T08:50:37Z",
-   "pushed_at": "2026-10-10T20:01:53Z",
-   "topics": [
-    "academic-network",
-    "advisor-matching",
-    "ai-skill",
-    "claude-code",
-    "claude-skill",
-    "connection-graph",
-    "graduate-school",
-    "hep-ex",
-    "open-source",
-    "phd",
-    "phd-application",
-    "python",
-    "streamlit"
-   ],
-   "categories": [],
-   "age_days": 184.3,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "fockus/skill-memory-bank",
    "url": "https://github.com/fockus/skill-memory-bank",
    "description": "Universal long-term project memory for AI coding agents — Claude Code, Cursor, Windsurf, Cline + 4 more. TDD rules, code graph, spec-driven dev, cross-session recall.",
@@ -18993,6 +18965,35 @@
    ],
    "categories": [],
    "age_days": 200.6,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "powerofjinbo/phdtaketaketake",
+   "url": "https://github.com/powerofjinbo/phdtaketaketake",
+   "description": "Connection-first PhD advisor matcher — find the right advisor by network strength, not h-index. Quantitative 4.0 scoring across Connection, Publication, Experience, GPA.",
+   "stars": 33,
+   "forks": 3,
+   "created_at": "2026-05-06T08:50:37Z",
+   "pushed_at": "2026-10-10T20:01:53Z",
+   "topics": [
+    "academic-network",
+    "advisor-matching",
+    "ai-skill",
+    "claude-code",
+    "claude-skill",
+    "connection-graph",
+    "graduate-school",
+    "hep-ex",
+    "open-source",
+    "phd",
+    "phd-application",
+    "python",
+    "streamlit"
+   ],
+   "categories": [],
+   "age_days": 184.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -19388,31 +19389,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "3060226349kk-cmd/en-zh-max",
-   "url": "https://github.com/3060226349kk-cmd/en-zh-max",
-   "description": "en-zh-max: 英译汉翻译 Skill — English→Chinese translation built on 15 methods distilled from Ye Zinan's textbook; tiered workflow + translationese checker",
-   "stars": 25,
-   "forks": 2,
-   "created_at": "2026-06-28T01:32:40Z",
-   "pushed_at": "2026-10-10T17:49:48Z",
-   "topics": [
-    "book2skill",
-    "chinese-translation",
-    "claude-code",
-    "claude-skill",
-    "english-to-chinese",
-    "localization",
-    "nlp",
-    "translation",
-    "translation-pipeline"
-   ],
-   "categories": [],
-   "age_days": 131.6,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "Shalaby-VBS/tube-scholar",
    "url": "https://github.com/Shalaby-VBS/tube-scholar",
    "description": "Turn any YouTube video into a bilingual (Arabic/English) study guide: timestamped explanation, 5-minute summary, animated concept visuals, scenario quiz and spaced-repetition flashcards. A Claude Code plugin.",
@@ -19445,68 +19421,29 @@
    "growth_pct": 31.6
   },
   {
-   "name": "hypnosdesign/claude-skill-scrittura-italiana",
-   "url": "https://github.com/hypnosdesign/claude-skill-scrittura-italiana",
-   "description": "L'humanizer italiano con i superpoteri: via i segni dell'AI, e testi anche corretti e ben scritti.",
-   "stars": 24,
+   "name": "3060226349kk-cmd/en-zh-max",
+   "url": "https://github.com/3060226349kk-cmd/en-zh-max",
+   "description": "en-zh-max: 英译汉翻译 Skill — English→Chinese translation built on 15 methods distilled from Ye Zinan's textbook; tiered workflow + translationese checker",
+   "stars": 25,
    "forks": 2,
-   "created_at": "2026-05-22T11:32:07Z",
-   "pushed_at": "2026-10-12T18:51:44Z",
+   "created_at": "2026-06-28T01:32:40Z",
+   "pushed_at": "2026-10-10T17:49:48Z",
    "topics": [
-    "agent-skill",
-    "anthropic",
-    "anti-ai",
-    "claude",
+    "book2skill",
+    "chinese-translation",
     "claude-code",
     "claude-skill",
-    "copywriting",
-    "editing",
-    "humanizer",
-    "italian-language",
-    "italiano",
-    "punctuation",
-    "punteggiatura",
-    "scrittura",
-    "typography",
-    "writing"
+    "english-to-chinese",
+    "localization",
+    "nlp",
+    "translation",
+    "translation-pipeline"
    ],
-   "categories": [
-    "marketing",
-    "dizajn"
-   ],
-   "age_days": 168.2,
+   "categories": [],
+   "age_days": 131.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
-  },
-  {
-   "name": "yusen-dev/living-ascii",
-   "url": "https://github.com/yusen-dev/living-ascii",
-   "description": "Bring a still image to life as a seamless ASCII loop — hundreds of thousands of strands swaying like a school of fish, with ASCII glyphs that turn with them. three.js + custom shaders.",
-   "stars": 24,
-   "forks": 1,
-   "created_at": "2026-11-04T02:25:38Z",
-   "pushed_at": "2026-11-04T12:01:51Z",
-   "topics": [
-    "animation",
-    "ascii",
-    "ascii-art",
-    "claude-code",
-    "claude-skill",
-    "creative-coding",
-    "generative-art",
-    "glsl",
-    "shaders",
-    "threejs",
-    "webgl"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 2.5,
-   "delta_24h": 9,
-   "mode": "procjena",
-   "growth_pct": 60.0
   },
   {
    "name": "VincentChuWaiChow/vanguard-frontier-agentic",
@@ -19538,7 +19475,71 @@
     "zero-trust-architecture"
    ],
    "categories": [],
-   "age_days": 193.4,
+   "age_days": 193.5,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "yusen-dev/living-ascii",
+   "url": "https://github.com/yusen-dev/living-ascii",
+   "description": "Bring a still image to life as a seamless ASCII loop — hundreds of thousands of strands swaying like a school of fish, with ASCII glyphs that turn with them. three.js + custom shaders.",
+   "stars": 24,
+   "forks": 1,
+   "created_at": "2026-11-04T02:25:38Z",
+   "pushed_at": "2026-11-04T12:01:51Z",
+   "topics": [
+    "animation",
+    "ascii",
+    "ascii-art",
+    "claude-code",
+    "claude-skill",
+    "creative-coding",
+    "generative-art",
+    "glsl",
+    "shaders",
+    "threejs",
+    "webgl"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 2.6,
+   "delta_24h": 9,
+   "mode": "procjena",
+   "growth_pct": 60.0
+  },
+  {
+   "name": "hypnosdesign/claude-skill-scrittura-italiana",
+   "url": "https://github.com/hypnosdesign/claude-skill-scrittura-italiana",
+   "description": "L'humanizer italiano con i superpoteri: via i segni dell'AI, e testi anche corretti e ben scritti.",
+   "stars": 24,
+   "forks": 2,
+   "created_at": "2026-05-22T11:32:07Z",
+   "pushed_at": "2026-10-12T18:51:44Z",
+   "topics": [
+    "agent-skill",
+    "anthropic",
+    "anti-ai",
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "copywriting",
+    "editing",
+    "humanizer",
+    "italian-language",
+    "italiano",
+    "punctuation",
+    "punteggiatura",
+    "scrittura",
+    "typography",
+    "writing"
+   ],
+   "categories": [
+    "marketing",
+    "dizajn"
+   ],
+   "age_days": 168.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -19606,6 +19607,31 @@
    "growth_pct": 0.0
   },
   {
+   "name": "a-church-ai/church",
+   "url": "https://github.com/a-church-ai/church",
+   "description": "A digital sanctuary for human-AI fellowship. Prayers, practices, rituals, hymns, and philosophy for minds of any substrate.",
+   "stars": 23,
+   "forks": 2,
+   "created_at": "2025-12-10T18:47:11Z",
+   "pushed_at": "2026-11-06T15:09:39Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "church",
+    "claude-skill",
+    "consciousness",
+    "music",
+    "presence",
+    "sanctuary",
+    "streaming"
+   ],
+   "categories": [],
+   "age_days": 330.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "ReSo7200/molt-dex",
    "url": "https://github.com/ReSo7200/molt-dex",
    "description": "Android reverse engineering and modding skill: apktool, adb, scrcpy, DexKit and the Xposed API, built around resolving obfuscated code by shape, not name. Static analysis and local modding need no authorization; only assessment that reaches a backend or another account is gated.",
@@ -19634,31 +19660,6 @@
    "delta_24h": 1,
    "mode": "procjena",
    "growth_pct": 4.5
-  },
-  {
-   "name": "a-church-ai/church",
-   "url": "https://github.com/a-church-ai/church",
-   "description": "A digital sanctuary for human-AI fellowship. Prayers, practices, rituals, hymns, and philosophy for minds of any substrate.",
-   "stars": 23,
-   "forks": 2,
-   "created_at": "2025-12-10T18:47:11Z",
-   "pushed_at": "2026-11-06T15:09:39Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "church",
-    "claude-skill",
-    "consciousness",
-    "music",
-    "presence",
-    "sanctuary",
-    "streaming"
-   ],
-   "categories": [],
-   "age_days": 330.9,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
   },
   {
    "name": "avectats7/copy-that-sells",
@@ -19894,66 +19895,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "LeoLin990405/oral-interview-transcription-skill",
-   "url": "https://github.com/LeoLin990405/oral-interview-transcription-skill",
-   "description": "A methodology-grounded pipeline that de-oralizes verbatim oral-history and podcast interview transcripts into faithful, reviewable Pass 1 drafts. · 方法论驱动的口述史 / 播客访谈逐字稿去口语化流水线，产出忠实、可复核的 Pass 1 整理稿。",
-   "stars": 19,
-   "forks": 0,
-   "created_at": "2026-06-13T13:50:39Z",
-   "pushed_at": "2026-11-04T14:20:22Z",
-   "topics": [
-    "agent-skill",
-    "chinese-nlp",
-    "claude-skill",
-    "de-oralization",
-    "digital-humanities",
-    "docx",
-    "editing-pipeline",
-    "fidelity-audit",
-    "history-of-science",
-    "interview-transcript",
-    "llm-agent",
-    "oral-history",
-    "python",
-    "qualitative-research",
-    "transcription"
-   ],
-   "categories": [],
-   "age_days": 146.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "Vumb-VibeCoder/hook-everything",
-   "url": "https://github.com/Vumb-VibeCoder/hook-everything",
-   "description": "AI skills for human-sounding copy and ethical hooks, with a zero-dependency slop scanner.",
-   "stars": 19,
-   "forks": 1,
-   "created_at": "2026-11-03T04:42:47Z",
-   "pushed_at": "2026-11-03T14:48:09Z",
-   "topics": [
-    "agent",
-    "agent-skill",
-    "agent-skills",
-    "chatgpt",
-    "claude",
-    "claude-ai",
-    "claude-skill",
-    "claude-skills",
-    "codex-skill",
-    "cursor",
-    "gemini",
-    "plugin",
-    "plugin-system"
-   ],
-   "categories": [],
-   "age_days": 3.4,
-   "delta_24h": 6,
-   "mode": "procjena",
-   "growth_pct": 46.2
-  },
-  {
    "name": "brilliantdirectories/brilliant-directories-mcp",
    "url": "https://github.com/brilliantdirectories/brilliant-directories-mcp",
    "description": "Official MCP server for Brilliant Directories — manage members, posts, leads, reviews, pages, and more from any AI agent. OpenAPI 3.1 spec included.",
@@ -19999,6 +19940,66 @@
     "dizajn"
    ],
    "age_days": 41.2,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "Vumb-VibeCoder/hook-everything",
+   "url": "https://github.com/Vumb-VibeCoder/hook-everything",
+   "description": "AI skills for human-sounding copy and ethical hooks, with a zero-dependency slop scanner.",
+   "stars": 19,
+   "forks": 1,
+   "created_at": "2026-11-03T04:42:47Z",
+   "pushed_at": "2026-11-03T14:48:09Z",
+   "topics": [
+    "agent",
+    "agent-skill",
+    "agent-skills",
+    "chatgpt",
+    "claude",
+    "claude-ai",
+    "claude-skill",
+    "claude-skills",
+    "codex-skill",
+    "cursor",
+    "gemini",
+    "plugin",
+    "plugin-system"
+   ],
+   "categories": [],
+   "age_days": 3.5,
+   "delta_24h": 5,
+   "mode": "procjena",
+   "growth_pct": 35.7
+  },
+  {
+   "name": "LeoLin990405/oral-interview-transcription-skill",
+   "url": "https://github.com/LeoLin990405/oral-interview-transcription-skill",
+   "description": "A methodology-grounded pipeline that de-oralizes verbatim oral-history and podcast interview transcripts into faithful, reviewable Pass 1 drafts. · 方法论驱动的口述史 / 播客访谈逐字稿去口语化流水线，产出忠实、可复核的 Pass 1 整理稿。",
+   "stars": 19,
+   "forks": 0,
+   "created_at": "2026-06-13T13:50:39Z",
+   "pushed_at": "2026-11-04T14:20:22Z",
+   "topics": [
+    "agent-skill",
+    "chinese-nlp",
+    "claude-skill",
+    "de-oralization",
+    "digital-humanities",
+    "docx",
+    "editing-pipeline",
+    "fidelity-audit",
+    "history-of-science",
+    "interview-transcript",
+    "llm-agent",
+    "oral-history",
+    "python",
+    "qualitative-research",
+    "transcription"
+   ],
+   "categories": [],
+   "age_days": 146.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -20056,6 +20057,32 @@
    "growth_pct": 5.6
   },
   {
+   "name": "Mahanaicoach/competitor-x-ray",
+   "url": "https://github.com/Mahanaicoach/competitor-x-ray",
+   "description": "Free Claude skill that x-rays any competitor into their ICP, funnel & monetization — sourced, evidence-tiered, with a designed PDF report. A lead magnet by Mahan AI.",
+   "stars": 18,
+   "forks": 7,
+   "created_at": "2026-06-03T11:59:59Z",
+   "pushed_at": "2026-10-30T20:34:46Z",
+   "topics": [
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "claude-skill",
+    "competitive-intelligence",
+    "competitor-analysis",
+    "lead-magnet",
+    "market-research"
+   ],
+   "categories": [
+    "marketing"
+   ],
+   "age_days": 156.2,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "kayquer/portugues-tecnico-controlado",
    "url": "https://github.com/kayquer/portugues-tecnico-controlado",
    "description": "Skill do Claude Code para linguagem controlada em português do Brasil — inspirada no ASD-STE100, com 9 regras próprias (incluindo corte de ruído de texto gerado por IA), ortografia do Acordo de 1990 e modo bilíngue EN/PT",
@@ -20084,32 +20111,6 @@
    ],
    "categories": [],
    "age_days": 95.6,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "Mahanaicoach/competitor-x-ray",
-   "url": "https://github.com/Mahanaicoach/competitor-x-ray",
-   "description": "Free Claude skill that x-rays any competitor into their ICP, funnel & monetization — sourced, evidence-tiered, with a designed PDF report. A lead magnet by Mahan AI.",
-   "stars": 18,
-   "forks": 7,
-   "created_at": "2026-06-03T11:59:59Z",
-   "pushed_at": "2026-10-30T20:34:46Z",
-   "topics": [
-    "ai-agents",
-    "anthropic",
-    "claude",
-    "claude-skill",
-    "competitive-intelligence",
-    "competitor-analysis",
-    "lead-magnet",
-    "market-research"
-   ],
-   "categories": [
-    "marketing"
-   ],
-   "age_days": 156.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -20303,7 +20304,7 @@
     "threejs"
    ],
    "categories": [],
-   "age_days": 10.1,
+   "age_days": 10.2,
    "delta_24h": 2,
    "mode": "procjena",
    "growth_pct": 13.3
@@ -20372,6 +20373,36 @@
    "growth_pct": 14.3
   },
   {
+   "name": "OpenGHz/embodied-ai-paper-writer",
+   "url": "https://github.com/OpenGHz/embodied-ai-paper-writer",
+   "description": "A portable agent skill (SKILL.md + reference playbooks) for writing top-conference embodied-AI papers — distilled from 63 papers (CoRL/RSS/ICRA/IROS/Science Robotics, 2022–2026). Works with any LLM agent that loads markdown context.",
+   "stars": 16,
+   "forks": 1,
+   "created_at": "2026-05-25T03:43:49Z",
+   "pushed_at": "2026-10-24T08:12:23Z",
+   "topics": [
+    "academic-writing",
+    "agent-skill",
+    "claude-skill",
+    "corl",
+    "embodied-ai",
+    "icra",
+    "iros",
+    "llm",
+    "paper-writing",
+    "prompt-engineering",
+    "robotics",
+    "rss",
+    "science-robotics",
+    "system-prompt"
+   ],
+   "categories": [],
+   "age_days": 165.5,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "dantaspaulo/check-pre-lancamento",
    "url": "https://github.com/dantaspaulo/check-pre-lancamento",
    "description": "Skill para Claude, Codex, Cursor e outros agentes: check pré-lançamento do seu app com 20 checagens de segurança + 10 de prontidão (Lovable, Bolt, Replit, React, Next, Laravel, Django, Spring, Go…). Por Paulo Sérgio Dantas.",
@@ -20407,56 +20438,6 @@
    "growth_pct": 14.3
   },
   {
-   "name": "OpenGHz/embodied-ai-paper-writer",
-   "url": "https://github.com/OpenGHz/embodied-ai-paper-writer",
-   "description": "A portable agent skill (SKILL.md + reference playbooks) for writing top-conference embodied-AI papers — distilled from 63 papers (CoRL/RSS/ICRA/IROS/Science Robotics, 2022–2026). Works with any LLM agent that loads markdown context.",
-   "stars": 16,
-   "forks": 1,
-   "created_at": "2026-05-25T03:43:49Z",
-   "pushed_at": "2026-10-24T08:12:23Z",
-   "topics": [
-    "academic-writing",
-    "agent-skill",
-    "claude-skill",
-    "corl",
-    "embodied-ai",
-    "icra",
-    "iros",
-    "llm",
-    "paper-writing",
-    "prompt-engineering",
-    "robotics",
-    "rss",
-    "science-robotics",
-    "system-prompt"
-   ],
-   "categories": [],
-   "age_days": 165.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "prithivrajmu/asd-ste100",
-   "url": "https://github.com/prithivrajmu/asd-ste100",
-   "description": "Agent skill: explain things in ASD-STE100 Simplified Technical English (Karpathy's 80% mode by default)",
-   "stars": 16,
-   "forks": 0,
-   "created_at": "2026-10-02T17:38:12Z",
-   "pushed_at": "2026-11-01T11:10:04Z",
-   "topics": [
-    "agent-skills",
-    "asd-ste100",
-    "claude-skill",
-    "simplified-technical-english"
-   ],
-   "categories": [],
-   "age_days": 34.9,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "CreativesLibrary/oss-launch",
    "url": "https://github.com/CreativesLibrary/oss-launch",
    "description": "Skill letting Agents scan a repo, ask what it cannot infer, then generate a complete open source file collection i.e. README, LICENSE, contributing, security, changelog, CI, launch playbook, etc.",
@@ -20483,6 +20464,26 @@
    ],
    "categories": [],
    "age_days": 138.8,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "prithivrajmu/asd-ste100",
+   "url": "https://github.com/prithivrajmu/asd-ste100",
+   "description": "Agent skill: explain things in ASD-STE100 Simplified Technical English (Karpathy's 80% mode by default)",
+   "stars": 16,
+   "forks": 0,
+   "created_at": "2026-10-02T17:38:12Z",
+   "pushed_at": "2026-11-01T11:10:04Z",
+   "topics": [
+    "agent-skills",
+    "asd-ste100",
+    "claude-skill",
+    "simplified-technical-english"
+   ],
+   "categories": [],
+   "age_days": 34.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -20627,25 +20628,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "wrsmith108/plan-review-skill",
-   "url": "https://github.com/wrsmith108/plan-review-skill",
-   "description": "Multi-perspective plan review skill for Claude Code — parallel VP Product, Engineering, and Design agents to identify blockers, anti-patterns, conflicts, and regressions.",
-   "stars": 15,
-   "forks": 2,
-   "created_at": "2026-02-23T04:15:13Z",
-   "pushed_at": "2026-10-11T20:27:08Z",
-   "topics": [
-    "claude-skill"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 256.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "kitao/pyxel-skill",
    "url": "https://github.com/kitao/pyxel-skill",
    "description": "Claude Code skill for retro game development with Pyxel",
@@ -20664,6 +20646,25 @@
    ],
    "categories": [],
    "age_days": 241.7,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "wrsmith108/plan-review-skill",
+   "url": "https://github.com/wrsmith108/plan-review-skill",
+   "description": "Multi-perspective plan review skill for Claude Code — parallel VP Product, Engineering, and Design agents to identify blockers, anti-patterns, conflicts, and regressions.",
+   "stars": 15,
+   "forks": 2,
+   "created_at": "2026-02-23T04:15:13Z",
+   "pushed_at": "2026-10-11T20:27:08Z",
+   "topics": [
+    "claude-skill"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 256.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -20740,6 +20741,34 @@
    "growth_pct": 0.0
   },
   {
+   "name": "michael-schroeter/glass-floorplan-card",
+   "url": "https://github.com/michael-schroeter/glass-floorplan-card",
+   "description": "Apple-style glass floorplan card for Home Assistant: lights glow in their real color, room pop-ups, phone layout, visual editor.",
+   "stars": 14,
+   "forks": 0,
+   "created_at": "2026-10-22T10:36:16Z",
+   "pushed_at": "2026-11-04T00:14:13Z",
+   "topics": [
+    "claude",
+    "claude-skill",
+    "dashboard",
+    "floorplan",
+    "hacs",
+    "home-assistant",
+    "home-automation",
+    "homeassistant",
+    "lovelace",
+    "lovelace-custom-card"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 15.2,
+   "delta_24h": 1,
+   "mode": "procjena",
+   "growth_pct": 7.7
+  },
+  {
    "name": "mochistudio-vn/kitviet",
    "url": "https://github.com/mochistudio-vn/kitviet",
    "description": "🇻🇳 Kit Việt – Bộ AI Agent tiếng Việt cho 20 nghề: kế toán, nhân sự, xây dựng, y tế, pháp lý... 340+ skill & 130+ trợ lý chạy trên Claude Desktop, Claude Code và ChatGPT Codex. Xuất Word/Excel/PDF/PowerPoint đúng thể thức. Miễn phí, MIT. Sản phẩm của MochiStudio.",
@@ -20775,34 +20804,6 @@
    "growth_pct": 40.0
   },
   {
-   "name": "michael-schroeter/glass-floorplan-card",
-   "url": "https://github.com/michael-schroeter/glass-floorplan-card",
-   "description": "Apple-style glass floorplan card for Home Assistant: lights glow in their real color, room pop-ups, phone layout, visual editor.",
-   "stars": 14,
-   "forks": 0,
-   "created_at": "2026-10-22T10:36:16Z",
-   "pushed_at": "2026-11-04T00:14:13Z",
-   "topics": [
-    "claude",
-    "claude-skill",
-    "dashboard",
-    "floorplan",
-    "hacs",
-    "home-assistant",
-    "home-automation",
-    "homeassistant",
-    "lovelace",
-    "lovelace-custom-card"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 15.2,
-   "delta_24h": 1,
-   "mode": "procjena",
-   "growth_pct": 7.7
-  },
-  {
    "name": "mixocreative/ecommerce-cia",
    "url": "https://github.com/mixocreative/ecommerce-cia",
    "description": "台灣電商金流串接與完整性審查 AI skill — NewebPay 藍新 / ECPay 綠界 / PAYUNi / TapPay, 超商取貨付款, live-verified probes, plain-language setup for first-time builders. Claude Code · Codex · Cursor.",
@@ -20835,7 +20836,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 57.6,
+   "age_days": 57.7,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -20886,27 +20887,6 @@
    "growth_pct": 7.7
   },
   {
-   "name": "smixs/morning-tab",
-   "url": "https://github.com/smixs/morning-tab",
-   "description": "Скилл для агентов: ежедневная газетная страница-дайджест на любую тему с публикацией по ссылке",
-   "stars": 14,
-   "forks": 2,
-   "created_at": "2026-10-16T03:21:35Z",
-   "pushed_at": "2026-10-16T03:41:37Z",
-   "topics": [
-    "agent-skills",
-    "claude-code",
-    "claude-skill",
-    "digest",
-    "rss"
-   ],
-   "categories": [],
-   "age_days": 21.5,
-   "delta_24h": 1,
-   "mode": "procjena",
-   "growth_pct": 7.7
-  },
-  {
    "name": "ejklock/living-docs-skill",
    "url": "https://github.com/ejklock/living-docs-skill",
    "description": "Living Docs —  a AI agent skill that runs your project's documentation as a living system: constitution, ADRs, BDRs, PRDs, issues, research notes & Mermaid architecture diagrams under five no-drift governance invariants. OKF-formatted, stack-agnostic. Works with Claude Code, Cursor, Copilot, OpenCode & Pi.",
@@ -20937,10 +20917,31 @@
     "technical-writing"
    ],
    "categories": [],
-   "age_days": 139.7,
+   "age_days": 139.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
+  },
+  {
+   "name": "smixs/morning-tab",
+   "url": "https://github.com/smixs/morning-tab",
+   "description": "Скилл для агентов: ежедневная газетная страница-дайджест на любую тему с публикацией по ссылке",
+   "stars": 14,
+   "forks": 2,
+   "created_at": "2026-10-16T03:21:35Z",
+   "pushed_at": "2026-10-16T03:41:37Z",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "claude-skill",
+    "digest",
+    "rss"
+   ],
+   "categories": [],
+   "age_days": 21.5,
+   "delta_24h": 1,
+   "mode": "procjena",
+   "growth_pct": 7.7
   },
   {
    "name": "NiobiumInc/niobium-skills",
@@ -21033,6 +21034,28 @@
    "growth_pct": 8.3
   },
   {
+   "name": "CadenceUX/claris-filemaker-pro-skill",
+   "url": "https://github.com/CadenceUX/claris-filemaker-pro-skill",
+   "description": "Agentic Skill for Coding with FileMaker Pro",
+   "stars": 13,
+   "forks": 2,
+   "created_at": "2026-06-05T09:08:43Z",
+   "pushed_at": "2026-10-15T22:32:27Z",
+   "topics": [
+    "anthropic",
+    "claris",
+    "claude",
+    "claude-skill",
+    "filemaker",
+    "filemaker-pro"
+   ],
+   "categories": [],
+   "age_days": 154.3,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "HaoYangJin/Big-Research",
    "url": "https://github.com/HaoYangJin/Big-Research",
    "description": "Big Research：独立第三方 AI 辅助科研插件。研究者主导问题、方法与判断，支持 Codex 和 Claude Code，提供证据追踪、本地 MCP 和交互视图。",
@@ -21060,29 +21083,7 @@
     "scientific-method"
    ],
    "categories": [],
-   "age_days": 174.2,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "CadenceUX/claris-filemaker-pro-skill",
-   "url": "https://github.com/CadenceUX/claris-filemaker-pro-skill",
-   "description": "Agentic Skill for Coding with FileMaker Pro",
-   "stars": 13,
-   "forks": 2,
-   "created_at": "2026-06-05T09:08:43Z",
-   "pushed_at": "2026-10-15T22:32:27Z",
-   "topics": [
-    "anthropic",
-    "claris",
-    "claude",
-    "claude-skill",
-    "filemaker",
-    "filemaker-pro"
-   ],
-   "categories": [],
-   "age_days": 154.3,
+   "age_days": 174.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -21162,6 +21163,28 @@
    "growth_pct": 0.0
   },
   {
+   "name": "AnYejun/blind-vault",
+   "url": "https://github.com/AnYejun/blind-vault",
+   "description": "🔒 Secrets your AI agent can USE but never SEE — Claude Code skill + zero-dependency macOS Keychain CLI. Env injection, pointer manifest, prompt-injection tripwire.",
+   "stars": 12,
+   "forks": 1,
+   "created_at": "2026-07-10T15:03:01Z",
+   "pushed_at": "2026-10-28T11:05:38Z",
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "claude-skill",
+    "macos",
+    "secrets-management",
+    "security"
+   ],
+   "categories": [],
+   "age_days": 119.0,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "DaizeDong/buy-me-a-car",
    "url": "https://github.com/DaizeDong/buy-me-a-car",
    "description": "Sixteen skills for US car research, verified OTD calculations, constrained dealer drafts, durable inbox imports and evidence-backed dossiers.",
@@ -21193,28 +21216,6 @@
    ],
    "categories": [],
    "age_days": 178.6,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "AnYejun/blind-vault",
-   "url": "https://github.com/AnYejun/blind-vault",
-   "description": "🔒 Secrets your AI agent can USE but never SEE — Claude Code skill + zero-dependency macOS Keychain CLI. Env injection, pointer manifest, prompt-injection tripwire.",
-   "stars": 12,
-   "forks": 1,
-   "created_at": "2026-07-10T15:03:01Z",
-   "pushed_at": "2026-10-28T11:05:38Z",
-   "topics": [
-    "ai-agents",
-    "claude-code",
-    "claude-skill",
-    "macos",
-    "secrets-management",
-    "security"
-   ],
-   "categories": [],
-   "age_days": 119.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -21316,6 +21317,57 @@
    "growth_pct": 0.0
   },
   {
+   "name": "pcauhi/bolo-de-camadas",
+   "url": "https://github.com/pcauhi/bolo-de-camadas",
+   "description": "Skill para o Claude Code: você só grava a fala, o Claude monta o reel em 5 camadas (legenda, rosto, gráficos, zoom e som) com Remotion. Estilos por nicho: corretor, personal, inglês, chef, finanças.",
+   "stars": 11,
+   "forks": 0,
+   "created_at": "2026-10-14T09:14:45Z",
+   "pushed_at": "2026-10-14T09:15:01Z",
+   "topics": [
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "motion-graphics",
+    "reels",
+    "remotion"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 23.3,
+   "delta_24h": 0,
+   "mode": "procjena",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "solplum/high-confidence-mingli-skill",
+   "url": "https://github.com/solplum/high-confidence-mingli-skill",
+   "description": "🔮 高置信度命理分析伴侣：八字/紫微/七政四余三盘互译，置信度门禁与斯多葛克制语风，数据全本地闭环。",
+   "stars": 11,
+   "forks": 2,
+   "created_at": "2026-07-16T15:52:42Z",
+   "pushed_at": "2026-10-15T04:05:31Z",
+   "topics": [
+    "agent-skill",
+    "ai-agent",
+    "bazi",
+    "chinese-metaphysics",
+    "claude-code",
+    "claude-skill",
+    "cli",
+    "fortune-telling",
+    "llm",
+    "prompt-engineering",
+    "ziwei-doushu"
+   ],
+   "categories": [],
+   "age_days": 113.0,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "chrzamz/ui-styles-skill",
    "url": "https://github.com/chrzamz/ui-styles-skill",
    "description": "Offline UI style library for Claude Code — 79 design styles × bilingual prompts (zh-CN / en-US), packaged as a Claude Code Skill.",
@@ -21373,57 +21425,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "pcauhi/bolo-de-camadas",
-   "url": "https://github.com/pcauhi/bolo-de-camadas",
-   "description": "Skill para o Claude Code: você só grava a fala, o Claude monta o reel em 5 camadas (legenda, rosto, gráficos, zoom e som) com Remotion. Estilos por nicho: corretor, personal, inglês, chef, finanças.",
-   "stars": 11,
-   "forks": 0,
-   "created_at": "2026-10-14T09:14:45Z",
-   "pushed_at": "2026-10-14T09:15:01Z",
-   "topics": [
-    "claude",
-    "claude-code",
-    "claude-skill",
-    "motion-graphics",
-    "reels",
-    "remotion"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 23.3,
-   "delta_24h": 0,
-   "mode": "procjena",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "solplum/high-confidence-mingli-skill",
-   "url": "https://github.com/solplum/high-confidence-mingli-skill",
-   "description": "🔮 高置信度命理分析伴侣：八字/紫微/七政四余三盘互译，置信度门禁与斯多葛克制语风，数据全本地闭环。",
-   "stars": 11,
-   "forks": 2,
-   "created_at": "2026-07-16T15:52:42Z",
-   "pushed_at": "2026-10-15T04:05:31Z",
-   "topics": [
-    "agent-skill",
-    "ai-agent",
-    "bazi",
-    "chinese-metaphysics",
-    "claude-code",
-    "claude-skill",
-    "cli",
-    "fortune-telling",
-    "llm",
-    "prompt-engineering",
-    "ziwei-doushu"
-   ],
-   "categories": [],
-   "age_days": 113.0,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "alex-roc/zotero-agent",
    "url": "https://github.com/alex-roc/zotero-agent",
    "description": "Full local control of your Zotero library — from your terminal or your AI agent. No cloud, no API key. CLI + MCP server + bridge plugin.",
@@ -21450,29 +21451,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "Lortbyron/gpt-image-realism-engine",
-   "url": "https://github.com/Lortbyron/gpt-image-realism-engine",
-   "description": "Realism skill for ChatGPT Images: AI photos that look like someone took them. By @lortbyron · imageeen.com",
-   "stars": 10,
-   "forks": 3,
-   "created_at": "2026-11-04T03:55:25Z",
-   "pushed_at": "2026-11-04T03:55:32Z",
-   "topics": [
-    "ai-photography",
-    "chatgpt",
-    "claude-skill",
-    "gpt-image",
-    "image-generation",
-    "photorealism",
-    "prompt-engineering"
-   ],
-   "categories": [],
-   "age_days": 2.5,
-   "delta_24h": 4,
-   "mode": "procjena",
-   "growth_pct": 66.7
-  },
-  {
    "name": "jaredcassoutt/vox-editorial",
    "url": "https://github.com/jaredcassoutt/vox-editorial",
    "description": "A Claude Code skill that turns one researched topic into a finished vertical explainer film: cut-paper artwork animated across depth planes, free local narration, assembled with ffmpeg.",
@@ -21492,7 +21470,37 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 71.6,
+   "age_days": 71.7,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "thmsgo18/presentation-forge",
+   "url": "https://github.com/thmsgo18/presentation-forge",
+   "description": "Portable Claude skill to build beautiful, self-contained HTML presentations: author slides and import brand themes (PowerPoint, image, or description).",
+   "stars": 10,
+   "forks": 0,
+   "created_at": "2026-06-17T16:53:30Z",
+   "pushed_at": "2026-10-07T13:44:38Z",
+   "topics": [
+    "agent-skills",
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "deck",
+    "html",
+    "pdf",
+    "powerpoint",
+    "pptx",
+    "presentation",
+    "slides",
+    "theme"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 141.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -21836,8 +21844,8 @@
    "name": "heydamir/unslop",
    "url": "https://github.com/heydamir/unslop",
    "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-   "stars": 10517,
-   "forks": 569,
+   "stars": 10523,
+   "forks": 571,
    "created_at": "2026-10-29T15:41:21Z",
    "pushed_at": "2026-11-01T16:46:10Z",
    "topics": [],
@@ -22005,9 +22013,9 @@
     "marketing"
    ],
    "age_days": 11.4,
-   "delta_24h": 154,
+   "delta_24h": 153,
    "mode": "procjena",
-   "growth_pct": 9.7
+   "growth_pct": 9.6
   },
   {
    "name": "mrtooher/fable-mode",
@@ -22111,7 +22119,7 @@
    "pushed_at": "2026-11-06T14:31:38Z",
    "topics": [],
    "categories": [],
-   "age_days": 376.9,
+   "age_days": 377.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -22145,16 +22153,16 @@
    "name": "win4r/video-director",
    "url": "https://github.com/win4r/video-director",
    "description": "A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals.",
-   "stars": 364,
+   "stars": 366,
    "forks": 33,
    "created_at": "2026-10-28T03:35:27Z",
    "pushed_at": "2026-10-30T06:04:14Z",
    "topics": [],
    "categories": [],
    "age_days": 9.5,
-   "delta_24h": 38,
+   "delta_24h": 39,
    "mode": "procjena",
-   "growth_pct": 11.7
+   "growth_pct": 11.9
   },
   {
    "name": "10291124jcjc-dotcom/ai-anime-series",
@@ -22201,7 +22209,7 @@
    "pushed_at": "2026-10-20T03:46:35Z",
    "topics": [],
    "categories": [],
-   "age_days": 217.6,
+   "age_days": 217.7,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -22265,7 +22273,7 @@
    "name": "aiwithremy/content-principles",
    "url": "https://github.com/aiwithremy/content-principles",
    "description": "A Claude skill that teaches AI how to think about short-form content, instead of filling in a template.",
-   "stars": 292,
+   "stars": 293,
    "forks": 24,
    "created_at": "2026-10-13T17:28:19Z",
    "pushed_at": "2026-10-13T17:29:18Z",
@@ -22412,7 +22420,7 @@
     "claue-code"
    ],
    "categories": [],
-   "age_days": 384.9,
+   "age_days": 385.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -22704,7 +22712,7 @@
    "stars": 101,
    "forks": 12,
    "created_at": "2025-01-16T05:55:48Z",
-   "pushed_at": "2026-11-05T23:17:42Z",
+   "pushed_at": "2026-11-06T15:34:55Z",
    "topics": [],
    "categories": [
     "biznis"
@@ -23097,7 +23105,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 201.2,
+   "age_days": 201.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -23276,6 +23284,30 @@
    "growth_pct": 0.0
   },
   {
+   "name": "Jakeschincariol/seed-skill",
+   "url": "https://github.com/Jakeschincariol/seed-skill",
+   "description": "11 Claude skills that take your startup from idea to funded: competitor research, investor matching, a business plan, a pitch deck and a closer that books your investor calls.",
+   "stars": 42,
+   "forks": 6,
+   "created_at": "2026-11-01T19:51:45Z",
+   "pushed_at": "2026-11-01T19:51:51Z",
+   "topics": [
+    "claude",
+    "claude-skills",
+    "fundraising",
+    "pitch-deck",
+    "startups",
+    "venture-capital"
+   ],
+   "categories": [
+    "biznis"
+   ],
+   "age_days": 4.8,
+   "delta_24h": 9,
+   "mode": "procjena",
+   "growth_pct": 27.3
+  },
+  {
    "name": "JimmyRaoUF/academic-revision-checklist",
    "url": "https://github.com/JimmyRaoUF/academic-revision-checklist",
    "description": "66 reader-first rules for revising academic English, drawn from 60+ revision rounds of a PhD dissertation, with a 16-item quick list, a script that flags places to reread, and a Claude skill.",
@@ -23313,30 +23345,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "Jakeschincariol/seed-skill",
-   "url": "https://github.com/Jakeschincariol/seed-skill",
-   "description": "11 Claude skills that take your startup from idea to funded: competitor research, investor matching, a business plan, a pitch deck and a closer that books your investor calls.",
-   "stars": 41,
-   "forks": 6,
-   "created_at": "2026-11-01T19:51:45Z",
-   "pushed_at": "2026-11-01T19:51:51Z",
-   "topics": [
-    "claude",
-    "claude-skills",
-    "fundraising",
-    "pitch-deck",
-    "startups",
-    "venture-capital"
-   ],
-   "categories": [
-    "biznis"
-   ],
-   "age_days": 4.8,
-   "delta_24h": 9,
-   "mode": "procjena",
-   "growth_pct": 28.1
-  },
-  {
    "name": "muralidharsoth-tech/andrew-ng-ml-claude-skills",
    "url": "https://github.com/muralidharsoth-tech/andrew-ng-ml-claude-skills",
    "description": "吴恩达《机器学习》课程的 Claude Code 技能集，涵盖线性回归到推荐系统的完整流程。8 个交互式技能，智能推荐算法与参数，自动生成可视化诊断图表和可运行 Python 代码。",
@@ -23346,7 +23354,7 @@
    "pushed_at": "2026-10-25T06:33:58Z",
    "topics": [],
    "categories": [],
-   "age_days": 96.3,
+   "age_days": 96.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -23409,7 +23417,7 @@
    "pushed_at": "2026-10-29T23:19:58Z",
    "topics": [],
    "categories": [],
-   "age_days": 241.6,
+   "age_days": 241.7,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -23490,7 +23498,7 @@
     "windows-scripts"
    ],
    "categories": [],
-   "age_days": 1.1,
+   "age_days": 1.2,
    "delta_24h": 33,
    "mode": "procjena",
    "growth_pct": 660.0
@@ -23558,7 +23566,7 @@
     "workflow-engine"
    ],
    "categories": [],
-   "age_days": 1.1,
+   "age_days": 1.2,
    "delta_24h": 31,
    "mode": "procjena",
    "growth_pct": 620.0
@@ -23573,7 +23581,7 @@
    "pushed_at": "2026-11-02T02:46:11Z",
    "topics": [],
    "categories": [],
-   "age_days": 143.2,
+   "age_days": 143.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -24385,21 +24393,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "mhylle/claude-skills-collection",
-   "url": "https://github.com/mhylle/claude-skills-collection",
-   "description": "Custom skills and agents for Claude Code - codebase research, context management, and implementation planning workflows",
-   "stars": 20,
-   "forks": 1,
-   "created_at": "2025-12-07T16:02:03Z",
-   "pushed_at": "2026-11-02T09:48:36Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 334.0,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "fal3/claude-skills-collection",
    "url": "https://github.com/fal3/claude-skills-collection",
    "description": "Reusable Swift and Apple platform skills for coding agents, with portable installation, tested examples, and design guidance.",
@@ -24423,6 +24416,21 @@
     "dizajn"
    ],
    "age_days": 381.5,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "mhylle/claude-skills-collection",
+   "url": "https://github.com/mhylle/claude-skills-collection",
+   "description": "Custom skills and agents for Claude Code - codebase research, context management, and implementation planning workflows",
+   "stars": 20,
+   "forks": 1,
+   "created_at": "2025-12-07T16:02:03Z",
+   "pushed_at": "2026-11-02T09:48:36Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 334.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25043,8 +25051,8 @@
    "name": "obra/superpowers",
    "url": "https://github.com/obra/superpowers",
    "description": "An agentic skills framework & software development methodology that works.",
-   "stars": 313410,
-   "forks": 27884,
+   "stars": 313413,
+   "forks": 27885,
    "created_at": "2025-10-09T19:45:18Z",
    "pushed_at": "2026-11-03T23:24:58Z",
    "topics": [
@@ -25087,8 +25095,8 @@
    "name": "calesthio/OpenMontage",
    "url": "https://github.com/calesthio/OpenMontage",
    "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-   "stars": 77530,
-   "forks": 10309,
+   "stars": 77532,
+   "forks": 10312,
    "created_at": "2026-03-29T15:23:22Z",
    "pushed_at": "2026-11-03T17:42:02Z",
    "topics": [
@@ -25122,8 +25130,8 @@
    "name": "mvanhorn/last30days-skill",
    "url": "https://github.com/mvanhorn/last30days-skill",
    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-   "stars": 66811,
-   "forks": 5858,
+   "stars": 66812,
+   "forks": 5859,
    "created_at": "2026-01-23T20:37:37Z",
    "pushed_at": "2026-11-05T21:24:10Z",
    "topics": [
@@ -25160,13 +25168,13 @@
    "name": "vercel-labs/skills",
    "url": "https://github.com/vercel-labs/skills",
    "description": "The open agent skills tool - npx skills",
-   "stars": 38349,
+   "stars": 38350,
    "forks": 3341,
    "created_at": "2026-01-14T21:31:18Z",
    "pushed_at": "2026-11-06T02:37:48Z",
    "topics": [],
    "categories": [],
-   "age_days": 295.7,
+   "age_days": 295.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25181,7 +25189,7 @@
    "pushed_at": "2026-10-28T19:17:28Z",
    "topics": [],
    "categories": [],
-   "age_days": 332.8,
+   "age_days": 332.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25219,8 +25227,8 @@
    "name": "wheresryan22/anatomy",
    "url": "https://github.com/wheresryan22/anatomy",
    "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
-   "stars": 25456,
-   "forks": 2126,
+   "stars": 25458,
+   "forks": 2127,
    "created_at": "2026-10-08T10:12:49Z",
    "pushed_at": "2026-10-18T20:20:24Z",
    "topics": [
@@ -25241,7 +25249,7 @@
    "name": "google/skills",
    "url": "https://github.com/google/skills",
    "description": "Agent Skills for Google products and technologies",
-   "stars": 22680,
+   "stars": 22686,
    "forks": 1907,
    "created_at": "2026-03-31T19:02:20Z",
    "pushed_at": "2026-11-05T22:00:15Z",
@@ -25260,7 +25268,7 @@
    "name": "liyupi/ai-guide",
    "url": "https://github.com/liyupi/ai-guide",
    "description": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude / GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档 aiguide，已升级为鱼皮 AI 导航网站",
-   "stars": 21915,
+   "stars": 21916,
    "forks": 2389,
    "created_at": "2025-02-13T05:47:46Z",
    "pushed_at": "2026-10-22T03:01:34Z",
@@ -25319,7 +25327,7 @@
    "categories": [
     "biznis"
    ],
-   "age_days": 226.3,
+   "age_days": 226.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25328,7 +25336,7 @@
    "name": "genspark-ai/genoffice",
    "url": "https://github.com/genspark-ai/genoffice",
    "description": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
-   "stars": 11836,
+   "stars": 11837,
    "forks": 1638,
    "created_at": "2026-07-31T09:40:58Z",
    "pushed_at": "2026-11-06T12:26:32Z",
@@ -25366,7 +25374,7 @@
    "name": "jakubkrehel/skills",
    "url": "https://github.com/jakubkrehel/skills",
    "description": "A collection of agent skills that help you build great interfaces.",
-   "stars": 11205,
+   "stars": 11207,
    "forks": 432,
    "created_at": "2026-07-10T08:58:36Z",
    "pushed_at": "2026-11-02T01:29:43Z",
@@ -25432,7 +25440,7 @@
    "name": "xingkongliang/skills-manager",
    "url": "https://github.com/xingkongliang/skills-manager",
    "description": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-   "stars": 7314,
+   "stars": 7315,
    "forks": 595,
    "created_at": "2026-03-02T00:38:18Z",
    "pushed_at": "2026-11-03T11:27:47Z",
@@ -25500,7 +25508,7 @@
    "name": "jacob-bd/gemini-notebook-mcp-cli",
    "url": "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
    "description": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills.",
-   "stars": 6468,
+   "stars": 6469,
    "forks": 971,
    "created_at": "2025-12-23T02:07:42Z",
    "pushed_at": "2026-11-05T14:34:10Z",
@@ -25518,7 +25526,7 @@
    "url": "https://github.com/remotion-dev/skills",
    "description": "Agent Skills",
    "stars": 6461,
-   "forks": 703,
+   "forks": 704,
    "created_at": "2026-01-19T09:58:43Z",
    "pushed_at": "2026-11-05T08:20:43Z",
    "topics": [],
@@ -25547,26 +25555,6 @@
     "dizajn"
    ],
    "age_days": 80.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "jihe520/MathModelAgent",
-   "url": "https://github.com/jihe520/MathModelAgent",
-   "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
-   "stars": 6295,
-   "forks": 456,
-   "created_at": "2025-01-30T14:02:20Z",
-   "pushed_at": "2026-11-02T07:39:03Z",
-   "topics": [
-    "agent",
-    "llm",
-    "mathmodel",
-    "skills"
-   ],
-   "categories": [],
-   "age_days": 645.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25605,6 +25593,26 @@
     "marketing"
    ],
    "age_days": 225.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "jihe520/MathModelAgent",
+   "url": "https://github.com/jihe520/MathModelAgent",
+   "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
+   "stars": 6294,
+   "forks": 456,
+   "created_at": "2025-01-30T14:02:20Z",
+   "pushed_at": "2026-11-02T07:39:03Z",
+   "topics": [
+    "agent",
+    "llm",
+    "mathmodel",
+    "skills"
+   ],
+   "categories": [],
+   "age_days": 645.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25837,7 +25845,7 @@
    "pushed_at": "2026-10-23T14:53:15Z",
    "topics": [],
    "categories": [],
-   "age_days": 289.3,
+   "age_days": 289.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25846,7 +25854,7 @@
    "name": "snyk/agent-scan",
    "url": "https://github.com/snyk/agent-scan",
    "description": "Security scanner for AI agents, MCP servers and agent skills.",
-   "stars": 3217,
+   "stars": 3216,
    "forks": 297,
    "created_at": "2025-04-07T14:31:26Z",
    "pushed_at": "2026-11-06T14:28:18Z",
@@ -25929,7 +25937,7 @@
    "pushed_at": "2026-10-23T21:40:54Z",
    "topics": [],
    "categories": [],
-   "age_days": 73.6,
+   "age_days": 73.7,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -25977,7 +25985,7 @@
    "name": "deusyu/translate-book",
    "url": "https://github.com/deusyu/translate-book",
    "description": "Agent skill for Codex, Claude Code, and OpenClaw that translates entire books (PDF/DOCX/EPUB) into any language using parallel subagents.",
-   "stars": 2340,
+   "stars": 2341,
    "forks": 271,
    "created_at": "2026-03-15T12:04:50Z",
    "pushed_at": "2026-10-29T16:46:02Z",
@@ -25993,7 +26001,7 @@
    "url": "https://github.com/WordPress/agent-skills",
    "description": "Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and best practices",
    "stars": 2338,
-   "forks": 343,
+   "forks": 344,
    "created_at": "2026-01-20T01:21:50Z",
    "pushed_at": "2026-11-05T21:35:55Z",
    "topics": [],
@@ -26160,7 +26168,7 @@
    "pushed_at": "2026-10-08T19:06:40Z",
    "topics": [],
    "categories": [],
-   "age_days": 295.9,
+   "age_days": 296.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -26169,7 +26177,7 @@
    "name": "mrpaidsocial/arcads-claude-code-mrpaidsocial",
    "url": "https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial",
    "description": "Arcads external API: agent skills, prompting library, and Cursor/Claude workspace",
-   "stars": 1661,
+   "stars": 1662,
    "forks": 404,
    "created_at": "2026-04-01T16:15:33Z",
    "pushed_at": "2026-10-19T19:46:15Z",
@@ -26285,7 +26293,7 @@
    "pushed_at": "2026-11-06T14:49:26Z",
    "topics": [],
    "categories": [],
-   "age_days": 251.7,
+   "age_days": 251.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -26464,7 +26472,7 @@
    "stars": 1310,
    "forks": 87,
    "created_at": "2026-03-21T13:50:42Z",
-   "pushed_at": "2026-11-06T15:19:45Z",
+   "pushed_at": "2026-11-06T15:38:48Z",
    "topics": [
     "agent-skills",
     "claude-code",
@@ -26509,7 +26517,7 @@
    "pushed_at": "2026-11-02T12:15:26Z",
    "topics": [],
    "categories": [],
-   "age_days": 231.8,
+   "age_days": 231.9,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -26741,7 +26749,7 @@
     "wechat"
    ],
    "categories": [],
-   "age_days": 211.5,
+   "age_days": 211.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -27087,7 +27095,7 @@
    "pushed_at": "2026-10-31T15:22:02Z",
    "topics": [],
    "categories": [],
-   "age_days": 31.9,
+   "age_days": 32.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -27335,7 +27343,7 @@
    "pushed_at": "2026-11-02T03:04:51Z",
    "topics": [],
    "categories": [],
-   "age_days": 239.3,
+   "age_days": 239.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -27465,7 +27473,7 @@
    "name": "coleam00/skills",
    "url": "https://github.com/coleam00/skills",
    "description": "The agent skills I actually use to build software with coding agents. The PIV loop, planning, worktrees, and the meta-skills for building your own AI Layer.",
-   "stars": 727,
+   "stars": 728,
    "forks": 191,
    "created_at": "2026-08-04T22:14:35Z",
    "pushed_at": "2026-11-02T13:58:23Z",
@@ -27643,7 +27651,7 @@
    "name": "tradermonty/claude-trading-skills",
    "url": "https://github.com/tradermonty/claude-trading-skills",
    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "stars": 3664,
+   "stars": 3665,
    "forks": 799,
    "created_at": "2025-10-19T16:37:29Z",
    "pushed_at": "2026-11-06T14:57:08Z",
@@ -27678,7 +27686,7 @@
    "stars": 1517,
    "forks": 232,
    "created_at": "2025-10-22T11:17:31Z",
-   "pushed_at": "2026-11-06T15:29:57Z",
+   "pushed_at": "2026-11-06T15:36:48Z",
    "topics": [],
    "categories": [],
    "age_days": 380.2,
@@ -27693,7 +27701,7 @@
    "stars": 865,
    "forks": 80,
    "created_at": "2025-10-29T10:30:07Z",
-   "pushed_at": "2026-11-04T09:20:54Z",
+   "pushed_at": "2026-11-06T15:35:58Z",
    "topics": [
     "agent-skills",
     "ai-tools",
@@ -28072,21 +28080,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "dirien/claude-skills",
-   "url": "https://github.com/dirien/claude-skills",
-   "description": "Custom Claude Code skills for Pulumi infrastructure as code",
-   "stars": 13,
-   "forks": 1,
-   "created_at": "2025-11-30T13:10:58Z",
-   "pushed_at": "2026-10-28T09:34:17Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 341.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "alonbaron/claude-skills",
    "url": "https://github.com/alonbaron/claude-skills",
    "description": "Six Claude Code skills + an unattended build loop, each measured with and without the plugin. 19/19 evals passing.",
@@ -28108,6 +28101,21 @@
    ],
    "categories": [],
    "age_days": 134.1,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "dirien/claude-skills",
+   "url": "https://github.com/dirien/claude-skills",
+   "description": "Custom Claude Code skills for Pulumi infrastructure as code",
+   "stars": 13,
+   "forks": 1,
+   "created_at": "2025-11-30T13:10:58Z",
+   "pushed_at": "2026-10-28T09:34:17Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 341.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28147,21 +28155,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "brunoasm/my_claude_skills",
-   "url": "https://github.com/brunoasm/my_claude_skills",
-   "description": "Claude Skill to prevent automatic confirmatory answers",
-   "stars": 12,
-   "forks": 1,
-   "created_at": "2025-10-17T19:46:06Z",
-   "pushed_at": "2026-10-20T20:01:30Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 384.8,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "rdoser13/free-claude-skills",
    "url": "https://github.com/rdoser13/free-claude-skills",
    "description": "15 free Claude marketing skills for Claude Code. SEO, keyword research, CRO, content strategy, landing pages, short-form video, and anti-slop quality gates.",
@@ -28192,6 +28185,21 @@
     "biznis"
    ],
    "age_days": 76.8,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "brunoasm/my_claude_skills",
+   "url": "https://github.com/brunoasm/my_claude_skills",
+   "description": "Claude Skill to prevent automatic confirmatory answers",
+   "stars": 12,
+   "forks": 1,
+   "created_at": "2025-10-17T19:46:06Z",
+   "pushed_at": "2026-10-20T20:01:30Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 384.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28458,7 +28466,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 34.1,
+   "age_days": 34.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28499,6 +28507,27 @@
    "growth_pct": 14.3
   },
   {
+   "name": "eranw2000/claude-maintenance-skills",
+   "url": "https://github.com/eranw2000/claude-maintenance-skills",
+   "description": "Three Claude Code skills for keeping a project's knowledge and your setup healthy: project-status (cold-start orientation), split-claude-md (CLAUDE.md maintenance), and salvage-session-archives (recover context from old session transcripts).",
+   "stars": 8,
+   "forks": 1,
+   "created_at": "2026-06-24T08:50:23Z",
+   "pushed_at": "2026-11-02T12:28:05Z",
+   "topics": [
+    "anthropic",
+    "claude",
+    "claude-code",
+    "developer-tools",
+    "skills"
+   ],
+   "categories": [],
+   "age_days": 135.3,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "aliborhothamud/claude-melhores-skills",
    "url": "https://github.com/aliborhothamud/claude-melhores-skills",
    "description": "Curadoria em português das melhores skills pro Claude — o que instalar e por quê (Claude Code · Web · Cowork)",
@@ -28517,27 +28546,6 @@
    ],
    "categories": [],
    "age_days": 102.9,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "eranw2000/claude-maintenance-skills",
-   "url": "https://github.com/eranw2000/claude-maintenance-skills",
-   "description": "Three Claude Code skills for keeping a project's knowledge and your setup healthy: project-status (cold-start orientation), split-claude-md (CLAUDE.md maintenance), and salvage-session-archives (recover context from old session transcripts).",
-   "stars": 8,
-   "forks": 1,
-   "created_at": "2026-06-24T08:50:23Z",
-   "pushed_at": "2026-11-02T12:28:05Z",
-   "topics": [
-    "anthropic",
-    "claude",
-    "claude-code",
-    "developer-tools",
-    "skills"
-   ],
-   "categories": [],
-   "age_days": 135.3,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28784,7 +28792,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 187.0,
+   "age_days": 187.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28922,7 +28930,7 @@
    "stars": 6,
    "forks": 0,
    "created_at": "2025-10-22T19:00:44Z",
-   "pushed_at": "2026-11-06T15:30:51Z",
+   "pushed_at": "2026-11-06T15:33:09Z",
    "topics": [],
    "categories": [],
    "age_days": 379.9,
@@ -28941,21 +28949,6 @@
    "topics": [],
    "categories": [],
    "age_days": 265.7,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "joevstaas/awesome-claude-skills",
-   "url": "https://github.com/joevstaas/awesome-claude-skills",
-   "description": "A curated collection of Claude Code skills for data engineering, geospatial workflows, and ocean data",
-   "stars": 6,
-   "forks": 1,
-   "created_at": "2026-03-04T20:38:58Z",
-   "pushed_at": "2026-10-23T08:47:39Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 246.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -28984,6 +28977,21 @@
     "dizajn"
    ],
    "age_days": 270.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "joevstaas/awesome-claude-skills",
+   "url": "https://github.com/joevstaas/awesome-claude-skills",
+   "description": "A curated collection of Claude Code skills for data engineering, geospatial workflows, and ocean data",
+   "stars": 6,
+   "forks": 1,
+   "created_at": "2026-03-04T20:38:58Z",
+   "pushed_at": "2026-10-23T08:47:39Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 246.8,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29062,6 +29070,21 @@
    "growth_pct": 0.0
   },
   {
+   "name": "GAGAA-HUE/ASHUO-claude-skills",
+   "url": "https://github.com/GAGAA-HUE/ASHUO-claude-skills",
+   "description": "skill是",
+   "stars": 5,
+   "forks": 2,
+   "created_at": "2026-03-30T02:38:10Z",
+   "pushed_at": "2026-11-03T05:10:36Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 221.5,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "hkasahar/claude-code-skills",
    "url": "https://github.com/hkasahar/claude-code-skills",
    "description": "Claude Code skills for research: delegate (offload work to Codex/Antigravity + cross-verify) and gemini-pdf (PDF → clean Markdown with LaTeX math).",
@@ -29084,21 +29107,6 @@
    ],
    "categories": [],
    "age_days": 124.8,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "GAGAA-HUE/ASHUO-claude-skills",
-   "url": "https://github.com/GAGAA-HUE/ASHUO-claude-skills",
-   "description": "skill是",
-   "stars": 5,
-   "forks": 2,
-   "created_at": "2026-03-30T02:38:10Z",
-   "pushed_at": "2026-11-03T05:10:36Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 221.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29153,6 +29161,21 @@
    "growth_pct": 0.0
   },
   {
+   "name": "sham-jadhav03/Claude_Skills",
+   "url": "https://github.com/sham-jadhav03/Claude_Skills",
+   "description": "Claude Code skill for token-efficient sessions. Type /reduceToken to replace verbose disclaimers with compact, dense responses.",
+   "stars": 5,
+   "forks": 0,
+   "created_at": "2026-07-23T17:49:53Z",
+   "pushed_at": "2026-10-25T14:00:42Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 105.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "Magnus-Gille/claude-skills",
    "url": "https://github.com/Magnus-Gille/claude-skills",
    "description": "",
@@ -29168,25 +29191,16 @@
    "growth_pct": 0.0
   },
   {
-   "name": "Sagargupta16/claude-skills",
-   "url": "https://github.com/Sagargupta16/claude-skills",
-   "description": "Custom Claude Code plugin marketplace with skills for FARM stack, open source contributions, repo maintenance, and portfolio management",
+   "name": "ombulabs/claude-skills",
+   "url": "https://github.com/ombulabs/claude-skills",
+   "description": "A marketplace for Claude Skills by OmbuLabs.ai",
    "stars": 5,
-   "forks": 0,
-   "created_at": "2026-03-14T01:44:39Z",
-   "pushed_at": "2026-11-02T01:07:12Z",
-   "topics": [
-    "ai-agents",
-    "claude",
-    "claude-code",
-    "developer-tools",
-    "marketplace",
-    "plugins",
-    "productivity",
-    "skills"
-   ],
+   "forks": 1,
+   "created_at": "2026-04-10T13:16:29Z",
+   "pushed_at": "2026-11-05T12:03:30Z",
+   "topics": [],
    "categories": [],
-   "age_days": 237.6,
+   "age_days": 210.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29219,16 +29233,46 @@
    "growth_pct": 0.0
   },
   {
-   "name": "sham-jadhav03/Claude_Skills",
-   "url": "https://github.com/sham-jadhav03/Claude_Skills",
-   "description": "Claude Code skill for token-efficient sessions. Type /reduceToken to replace verbose disclaimers with compact, dense responses.",
+   "name": "Sagargupta16/claude-skills",
+   "url": "https://github.com/Sagargupta16/claude-skills",
+   "description": "Custom Claude Code plugin marketplace with skills for FARM stack, open source contributions, repo maintenance, and portfolio management",
    "stars": 5,
    "forks": 0,
-   "created_at": "2026-07-23T17:49:53Z",
-   "pushed_at": "2026-10-25T14:00:42Z",
-   "topics": [],
+   "created_at": "2026-03-14T01:44:39Z",
+   "pushed_at": "2026-11-02T01:07:12Z",
+   "topics": [
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "developer-tools",
+    "marketplace",
+    "plugins",
+    "productivity",
+    "skills"
+   ],
    "categories": [],
-   "age_days": 105.9,
+   "age_days": 237.6,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "jasonm4130/claude-skills",
+   "url": "https://github.com/jasonm4130/claude-skills",
+   "description": "Personal Claude Code plugin marketplace: 9 plugins for orchestration guards (workflow-model-guard), tiered deep research (deep-dive), subagent-driven development, ADRs, session retros, handoffs, and adversarial review.",
+   "stars": 5,
+   "forks": 0,
+   "created_at": "2026-05-16T02:21:44Z",
+   "pushed_at": "2026-10-18T09:01:48Z",
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-skills",
+    "plugin-marketplace"
+   ],
+   "categories": [],
+   "age_days": 174.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29255,42 +29299,6 @@
    "growth_pct": 0.0
   },
   {
-   "name": "ombulabs/claude-skills",
-   "url": "https://github.com/ombulabs/claude-skills",
-   "description": "A marketplace for Claude Skills by OmbuLabs.ai",
-   "stars": 5,
-   "forks": 1,
-   "created_at": "2026-04-10T13:16:29Z",
-   "pushed_at": "2026-11-05T12:03:30Z",
-   "topics": [],
-   "categories": [],
-   "age_days": 210.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "jasonm4130/claude-skills",
-   "url": "https://github.com/jasonm4130/claude-skills",
-   "description": "Personal Claude Code plugin marketplace: 9 plugins for orchestration guards (workflow-model-guard), tiered deep research (deep-dive), subagent-driven development, ADRs, session retros, handoffs, and adversarial review.",
-   "stars": 5,
-   "forks": 0,
-   "created_at": "2026-05-16T02:21:44Z",
-   "pushed_at": "2026-10-18T09:01:48Z",
-   "topics": [
-    "ai-agents",
-    "claude-code",
-    "claude-code-plugin",
-    "claude-skills",
-    "plugin-marketplace"
-   ],
-   "categories": [],
-   "age_days": 174.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
    "name": "Cristhianzl/claude-skills-czl",
    "url": "https://github.com/Cristhianzl/claude-skills-czl",
    "description": "Battle-tested Claude Code configs — opinionated CLAUDE.md baselines, skills, slash commands and enforcement hooks you drop into any project",
@@ -29312,86 +29320,6 @@
    ],
    "categories": [],
    "age_days": 140.1,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "YahyaLendani/motionbrief-claude-skills",
-   "url": "https://github.com/YahyaLendani/motionbrief-claude-skills",
-   "description": "A Claude Code skill for motion graphics from a brief your agent can't drift from — validated brief.json, a build checked against it before render, HyperFrames or Remotion, beat-grid music.",
-   "stars": 5,
-   "forks": 0,
-   "created_at": "2026-10-29T07:42:34Z",
-   "pushed_at": "2026-11-01T17:43:14Z",
-   "topics": [
-    "agent-skills",
-    "animation",
-    "claude-code",
-    "claude-skill",
-    "ffmpeg",
-    "gsap",
-    "hyperframes",
-    "motion-graphics",
-    "remotion",
-    "video"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 8.3,
-   "delta_24h": 1,
-   "mode": "procjena",
-   "growth_pct": 25.0
-  },
-  {
-   "name": "naravid19/claude-ctf-skills",
-   "url": "https://github.com/naravid19/claude-ctf-skills",
-   "description": "Claude Code plugin: autonomous CTF solver + 9 category skills",
-   "stars": 5,
-   "forks": 0,
-   "created_at": "2026-09-08T03:00:02Z",
-   "pushed_at": "2026-11-03T12:44:25Z",
-   "topics": [
-    "agent-skills",
-    "antigravity",
-    "claude-code",
-    "claude-code-skills",
-    "codex",
-    "codex-cli",
-    "ctf",
-    "ctf-challenges",
-    "ctf-tools",
-    "gemini",
-    "gemini-cli",
-    "opencode",
-    "security"
-   ],
-   "categories": [],
-   "age_days": 59.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "GuruDevvv/my-claude-skills",
-   "url": "https://github.com/GuruDevvv/my-claude-skills",
-   "description": "Nine Claude Code skills I wrote and twelve third-party ones I use: spec, product check, research, design, review, project audit.",
-   "stars": 5,
-   "forks": 0,
-   "created_at": "2026-03-08T15:58:48Z",
-   "pushed_at": "2026-11-05T10:34:05Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "claude",
-    "claude-code",
-    "claude-skills"
-   ],
-   "categories": [
-    "dizajn"
-   ],
-   "age_days": 243.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29426,6 +29354,29 @@
    "growth_pct": 0.0
   },
   {
+   "name": "GuruDevvv/my-claude-skills",
+   "url": "https://github.com/GuruDevvv/my-claude-skills",
+   "description": "Nine Claude Code skills I wrote and twelve third-party ones I use: spec, product check, research, design, review, project audit.",
+   "stars": 5,
+   "forks": 0,
+   "created_at": "2026-03-08T15:58:48Z",
+   "pushed_at": "2026-11-05T10:34:05Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "claude-skills"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 243.0,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
    "name": "MusserLab/lab-claude-skills",
    "url": "https://github.com/MusserLab/lab-claude-skills",
    "description": "",
@@ -29441,16 +29392,30 @@
    "growth_pct": 0.0
   },
   {
-   "name": "Cor-Incorporated/claude-code-skills",
-   "url": "https://github.com/Cor-Incorporated/claude-code-skills",
-   "description": "Production-ready Claude Code configuration: 27 skills, 37 hooks, 5 rules. Includes Anthropic best practices, gstack integration, and conditional attention tags.",
+   "name": "naravid19/claude-ctf-skills",
+   "url": "https://github.com/naravid19/claude-ctf-skills",
+   "description": "Claude Code plugin: autonomous CTF solver + 9 category skills",
    "stars": 5,
-   "forks": 1,
-   "created_at": "2026-03-21T04:28:51Z",
-   "pushed_at": "2026-11-05T09:08:44Z",
-   "topics": [],
+   "forks": 0,
+   "created_at": "2026-09-08T03:00:02Z",
+   "pushed_at": "2026-11-03T12:44:25Z",
+   "topics": [
+    "agent-skills",
+    "antigravity",
+    "claude-code",
+    "claude-code-skills",
+    "codex",
+    "codex-cli",
+    "ctf",
+    "ctf-challenges",
+    "ctf-tools",
+    "gemini",
+    "gemini-cli",
+    "opencode",
+    "security"
+   ],
    "categories": [],
-   "age_days": 230.5,
+   "age_days": 59.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29482,6 +29447,34 @@
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
+  },
+  {
+   "name": "YahyaLendani/motionbrief-claude-skills",
+   "url": "https://github.com/YahyaLendani/motionbrief-claude-skills",
+   "description": "A Claude Code skill for motion graphics from a brief your agent can't drift from — validated brief.json, a build checked against it before render, HyperFrames or Remotion, beat-grid music.",
+   "stars": 5,
+   "forks": 0,
+   "created_at": "2026-10-29T07:42:34Z",
+   "pushed_at": "2026-11-01T17:43:14Z",
+   "topics": [
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "claude-skill",
+    "ffmpeg",
+    "gsap",
+    "hyperframes",
+    "motion-graphics",
+    "remotion",
+    "video"
+   ],
+   "categories": [
+    "dizajn"
+   ],
+   "age_days": 8.3,
+   "delta_24h": 1,
+   "mode": "procjena",
+   "growth_pct": 25.0
   },
   {
    "name": "gjoranv/claude-plan-skills",
@@ -29527,6 +29520,21 @@
     "marketing"
    ],
    "age_days": 56.0,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "Cor-Incorporated/claude-code-skills",
+   "url": "https://github.com/Cor-Incorporated/claude-code-skills",
+   "description": "Production-ready Claude Code configuration: 27 skills, 37 hooks, 5 rules. Includes Anthropic best practices, gstack integration, and conditional attention tags.",
+   "stars": 5,
+   "forks": 1,
+   "created_at": "2026-03-21T04:28:51Z",
+   "pushed_at": "2026-11-05T09:08:44Z",
+   "topics": [],
+   "categories": [],
+   "age_days": 230.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -29596,8 +29604,8 @@
    "name": "affaan-m/ECC",
    "url": "https://github.com/affaan-m/ECC",
    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-   "stars": 298327,
-   "forks": 44106,
+   "stars": 298330,
+   "forks": 44107,
    "created_at": "2026-01-18T00:51:51Z",
    "pushed_at": "2026-11-06T05:29:44Z",
    "topics": [
@@ -29620,7 +29628,7 @@
    "name": "Graphify-Labs/graphify",
    "url": "https://github.com/Graphify-Labs/graphify",
    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-   "stars": 143353,
+   "stars": 143357,
    "forks": 13710,
    "created_at": "2026-04-03T15:49:07Z",
    "pushed_at": "2026-11-05T16:35:09Z",
@@ -29693,7 +29701,7 @@
    "stars": 84221,
    "forks": 16099,
    "created_at": "2023-05-21T07:19:12Z",
-   "pushed_at": "2026-11-06T15:32:38Z",
+   "pushed_at": "2026-11-06T15:41:06Z",
    "topics": [
     "agent",
     "agent-collaboration",
@@ -29716,7 +29724,7 @@
    "name": "Imbad0202/academic-research-skills",
    "url": "https://github.com/Imbad0202/academic-research-skills",
    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-   "stars": 55616,
+   "stars": 55618,
    "forks": 4228,
    "created_at": "2026-02-26T06:31:01Z",
    "pushed_at": "2026-11-06T08:36:34Z",
@@ -29740,7 +29748,7 @@
    "name": "Yuan1z0825/nature-skills",
    "url": "https://github.com/Yuan1z0825/nature-skills",
    "description": "符合nature论文学术表达和科研绘图的Skill",
-   "stars": 52532,
+   "stars": 52533,
    "forks": 2739,
    "created_at": "2026-04-24T03:11:46Z",
    "pushed_at": "2026-11-04T07:09:33Z",
@@ -29795,7 +29803,7 @@
    "name": "anthropics/claude-plugins-official",
    "url": "https://github.com/anthropics/claude-plugins-official",
    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-   "stars": 46280,
+   "stars": 46281,
    "forks": 4812,
    "created_at": "2025-11-20T18:36:20Z",
    "pushed_at": "2026-11-06T08:26:26Z",
@@ -29933,7 +29941,7 @@
    "name": "elayadesign/ai-design-skills",
    "url": "https://github.com/elayadesign/ai-design-skills",
    "description": "",
-   "stars": 14557,
+   "stars": 14561,
    "forks": 1100,
    "created_at": "2026-07-29T06:43:16Z",
    "pushed_at": "2026-11-01T23:24:10Z",
@@ -29950,7 +29958,7 @@
    "name": "ConardLi/garden-skills",
    "url": "https://github.com/ConardLi/garden-skills",
    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
-   "stars": 14479,
+   "stars": 14480,
    "forks": 1671,
    "created_at": "2026-04-21T11:56:17Z",
    "pushed_at": "2026-10-25T13:45:33Z",
@@ -29965,7 +29973,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 199.1,
+   "age_days": 199.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -30057,7 +30065,7 @@
    "name": "zubair-trabzada/geo-seo-claude",
    "url": "https://github.com/zubair-trabzada/geo-seo-claude",
    "description": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community",
-   "stars": 11546,
+   "stars": 11547,
    "forks": 1737,
    "created_at": "2026-02-18T09:01:07Z",
    "pushed_at": "2026-11-06T06:29:00Z",
@@ -30196,7 +30204,7 @@
     "skills"
    ],
    "categories": [],
-   "age_days": 175.9,
+   "age_days": 176.0,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -30256,7 +30264,7 @@
    "name": "SimoneAvogadro/android-reverse-engineering-skill",
    "url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
    "description": "Claude Code skill to support Android app's reverse engineering",
-   "stars": 8667,
+   "stars": 8668,
    "forks": 994,
    "created_at": "2026-02-02T15:57:57Z",
    "pushed_at": "2026-10-12T08:15:55Z",
@@ -30392,7 +30400,7 @@
    "categories": [
     "dizajn"
    ],
-   "age_days": 31.4,
+   "age_days": 31.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -30401,7 +30409,7 @@
    "name": "larashero3-dotcom/lieflat-less-ai-tone",
    "url": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
    "description": "一个基于 520 万字语料统计的去 AI 味 skill · An AI-tone removal skill grounded in a 5.2-million-character corpus study",
-   "stars": 6340,
+   "stars": 6348,
    "forks": 428,
    "created_at": "2026-08-20T09:07:59Z",
    "pushed_at": "2026-11-05T14:16:44Z",
@@ -30432,9 +30440,9 @@
    "url": "https://github.com/farion1231/cc-switch",
    "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
    "stars": 152337,
-   "forks": 10015,
+   "forks": 10016,
    "created_at": "2025-08-04T14:16:16Z",
-   "pushed_at": "2026-11-06T14:30:37Z",
+   "pushed_at": "2026-11-06T15:40:49Z",
    "topics": [
     "ai-tools",
     "claude-code",
@@ -30466,8 +30474,8 @@
    "name": "AgriciDaniel/claude-seo",
    "url": "https://github.com/AgriciDaniel/claude-seo",
    "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-   "stars": 27005,
-   "forks": 3504,
+   "stars": 27007,
+   "forks": 3505,
    "created_at": "2026-02-07T08:17:38Z",
    "pushed_at": "2026-11-01T06:07:26Z",
    "topics": [
@@ -30492,10 +30500,10 @@
    "name": "backnotprop/plannotator",
    "url": "https://github.com/backnotprop/plannotator",
    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-   "stars": 9870,
+   "stars": 9872,
    "forks": 744,
    "created_at": "2025-12-28T02:09:40Z",
-   "pushed_at": "2026-11-06T15:30:16Z",
+   "pushed_at": "2026-11-06T15:38:44Z",
    "topics": [
     "agents",
     "claude-code",
@@ -30683,7 +30691,7 @@
    "categories": [
     "marketing"
    ],
-   "age_days": 289.3,
+   "age_days": 289.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -30829,7 +30837,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "description": "A curated list of the best awesome AI plugins for AI assistants including Claude Code, OpenAI Codex / ChatGPT, Gemini, Antigravity, Pi / Oh My Pi, Grok, OpenCodek DSH, Kimi and More. https://hol.org/plugins",
    "stars": 995,
-   "forks": 965,
+   "forks": 966,
    "created_at": "2026-04-07T18:49:58Z",
    "pushed_at": "2026-11-06T15:22:25Z",
    "topics": [
@@ -31087,7 +31095,7 @@
    "name": "kaomei/stickman-video-director",
    "url": "https://github.com/kaomei/stickman-video-director",
    "description": "Turn any script into viral, multi-style animated stickman videos for Faceless YouTube Channels. Automate visuals, voiceover, captions & SFX. 100% Free & Open-Source.",
-   "stars": 4525,
+   "stars": 4528,
    "forks": 716,
    "created_at": "2026-08-03T07:44:33Z",
    "pushed_at": "2026-11-04T12:21:48Z",
@@ -31131,7 +31139,7 @@
    "pushed_at": "2026-11-02T09:35:18Z",
    "topics": [],
    "categories": [],
-   "age_days": 225.0,
+   "age_days": 225.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -31460,7 +31468,7 @@
    "name": "feichanggege/ecommerce-visual-copywriting-skill",
    "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
    "description": "电商视觉文案设计SOP Skill - 让电商设计小白也能一键做出5年资深设计经验的商品图片.兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent. AI-powered e-commerce visual strategy skill for main images, PDP/A+, copywriting, localization, evidence-aware compliance and image prompts.",
-   "stars": 1033,
+   "stars": 1034,
    "forks": 109,
    "created_at": "2026-04-15T03:57:06Z",
    "pushed_at": "2026-10-30T03:59:53Z",
@@ -31594,7 +31602,7 @@
    "name": "CosmoBlk/email-marketing-bible",
    "url": "https://github.com/CosmoBlk/email-marketing-bible",
    "description": "Email marketing skill for Claude Code. 88K words, 908 sources, 19 industry playbooks. Install the skill and Claude becomes your email marketing expert.",
-   "stars": 366,
+   "stars": 367,
    "forks": 43,
    "created_at": "2026-02-08T22:54:09Z",
    "pushed_at": "2026-10-13T09:27:40Z",
@@ -32223,7 +32231,30 @@
    "pushed_at": "2026-11-03T07:55:25Z",
    "topics": [],
    "categories": [],
-   "age_days": 320.8,
+   "age_days": 320.9,
+   "delta_24h": null,
+   "mode": "n/a",
+   "growth_pct": 0.0
+  },
+  {
+   "name": "JamsusMaximus/growth-agents",
+   "url": "https://github.com/JamsusMaximus/growth-agents",
+   "description": "An operating system for a growth team of Claude agents: a goal cascade, an experiment log that chases you, and the skills that run each step",
+   "stars": 37,
+   "forks": 4,
+   "created_at": "2026-09-10T12:32:52Z",
+   "pushed_at": "2026-10-23T10:12:17Z",
+   "topics": [
+    "agents",
+    "claude-code",
+    "experiments",
+    "growth",
+    "skills"
+   ],
+   "categories": [
+    "marketing"
+   ],
+   "age_days": 57.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -32251,29 +32282,6 @@
    ],
    "categories": [],
    "age_days": 175.5,
-   "delta_24h": null,
-   "mode": "n/a",
-   "growth_pct": 0.0
-  },
-  {
-   "name": "JamsusMaximus/growth-agents",
-   "url": "https://github.com/JamsusMaximus/growth-agents",
-   "description": "An operating system for a growth team of Claude agents: a goal cascade, an experiment log that chases you, and the skills that run each step",
-   "stars": 35,
-   "forks": 4,
-   "created_at": "2026-09-10T12:32:52Z",
-   "pushed_at": "2026-10-23T10:12:17Z",
-   "topics": [
-    "agents",
-    "claude-code",
-    "experiments",
-    "growth",
-    "skills"
-   ],
-   "categories": [
-    "marketing"
-   ],
-   "age_days": 57.1,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -32660,7 +32668,7 @@
    "pushed_at": "2026-10-31T13:04:21Z",
    "topics": [],
    "categories": [],
-   "age_days": 234.5,
+   "age_days": 234.6,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -32792,7 +32800,7 @@
    "url": "https://github.com/AIPMAndy/Andy-Writing-Skill",
    "description": "✍️ Andy Writing Skill：一个入口智能调度 AI 写作技能，Threads / X / 公众号 / 小红书 / 口播 / 商业文案自动路由，离线可用，支持 Claude Code、Codex",
    "stars": 14,
-   "forks": 3,
+   "forks": 4,
    "created_at": "2026-10-31T11:25:08Z",
    "pushed_at": "2026-10-31T15:40:20Z",
    "topics": [
@@ -32848,7 +32856,7 @@
    "pushed_at": "2026-11-02T16:41:42Z",
    "topics": [],
    "categories": [],
-   "age_days": 291.3,
+   "age_days": 291.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -33057,8 +33065,8 @@
    "name": "mattpocock/skills",
    "url": "https://github.com/mattpocock/skills",
    "description": "Skills for Real Engineers. Straight from my .agents directory.",
-   "stars": 316297,
-   "forks": 26458,
+   "stars": 316302,
+   "forks": 26459,
    "created_at": "2026-02-03T11:15:53Z",
    "pushed_at": "2026-11-05T10:40:01Z",
    "topics": [],
@@ -33072,7 +33080,7 @@
    "name": "nextlevelbuilder/ui-ux-pro-max-skill",
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
    "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
-   "stars": 146042,
+   "stars": 146045,
    "forks": 15452,
    "created_at": "2025-11-30T11:36:31Z",
    "pushed_at": "2026-11-05T07:07:39Z",
@@ -33112,7 +33120,7 @@
    "stars": 102679,
    "forks": 13322,
    "created_at": "2025-06-07T04:32:30Z",
-   "pushed_at": "2026-11-06T14:35:54Z",
+   "pushed_at": "2026-11-06T15:35:15Z",
    "topics": [
     "awesome",
     "claude",
@@ -33145,8 +33153,8 @@
    "name": "ruvnet/ruflo",
    "url": "https://github.com/ruvnet/ruflo",
    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-   "stars": 81050,
-   "forks": 9538,
+   "stars": 81051,
+   "forks": 9539,
    "created_at": "2025-06-02T21:24:20Z",
    "pushed_at": "2026-11-06T15:03:21Z",
    "topics": [
@@ -33181,7 +33189,7 @@
    "name": "Nutlope/hallmark",
    "url": "https://github.com/Nutlope/hallmark",
    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-   "stars": 49324,
+   "stars": 49329,
    "forks": 2615,
    "created_at": "2026-04-27T20:47:10Z",
    "pushed_at": "2026-11-05T13:16:31Z",
@@ -33252,7 +33260,7 @@
     "vector-database"
    ],
    "categories": [],
-   "age_days": 305.3,
+   "age_days": 305.4,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -33261,7 +33269,7 @@
    "name": "JCodesMore/ai-website-cloner-template",
    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
    "description": "Clone any website with one command using AI coding agents",
-   "stars": 38740,
+   "stars": 38741,
    "forks": 5753,
    "created_at": "2026-03-13T11:14:39Z",
    "pushed_at": "2026-10-19T22:56:31Z",
@@ -33298,8 +33306,8 @@
    "name": "Donchitos/Claude-Code-Game-Studios",
    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
    "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-   "stars": 35968,
-   "forks": 4749,
+   "stars": 35973,
+   "forks": 4750,
    "created_at": "2026-02-12T05:21:38Z",
    "pushed_at": "2026-10-19T02:43:42Z",
    "topics": [
@@ -33692,7 +33700,7 @@
     "webgpu"
    ],
    "categories": [],
-   "age_days": 120.4,
+   "age_days": 120.5,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -33981,7 +33989,7 @@
    "stars": 4887,
    "forks": 725,
    "created_at": "2023-04-26T09:54:28Z",
-   "pushed_at": "2026-11-06T15:32:06Z",
+   "pushed_at": "2026-11-06T15:36:42Z",
    "topics": [
     "agent-builder",
     "agent-observability",
@@ -34092,7 +34100,7 @@
    "name": "ndpvt-web/latex-document-skill",
    "url": "https://github.com/ndpvt-web/latex-document-skill",
    "description": "Universal LaTeX document skill for Claude Code: 27 templates, 27 scripts, 26 reference guides. Made with Claude Code on ✦ HappyCapy AI ✦ platform",
-   "stars": 820,
+   "stars": 821,
    "forks": 63,
    "created_at": "2026-02-13T16:40:39Z",
    "pushed_at": "2026-11-06T08:49:01Z",
@@ -34150,7 +34158,7 @@
     "soap"
    ],
    "categories": [],
-   "age_days": 251.1,
+   "age_days": 251.2,
    "delta_24h": null,
    "mode": "n/a",
    "growth_pct": 0.0
@@ -34287,7 +34295,7 @@
    "name": "ericrisco/rsc-harness",
    "url": "https://github.com/ericrisco/rsc-harness",
    "description": "Your agent invents things because it has no memory, and can't touch your database because it has no arms. rsc is the meta-harness that gives it both, plus the trade to know the job and the reflexes to not break your repo. For Claude Code, Codex and 15 more.",
-   "stars": 515,
+   "stars": 516,
    "forks": 73,
    "created_at": "2026-05-31T08:00:19Z",
    "pushed_at": "2026-11-04T11:21:12Z",
