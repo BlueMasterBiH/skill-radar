@@ -1,0 +1,25 @@
+name: Skill Radar (daily)
+on:
+  schedule:
+    - cron: "17 6 * * *"   # svaki dan ~07:17 po bh. vremenu
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Run radar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python skill_radar.py
+      - name: Commit snapshot + report
+        run: |
+          git config user.name "skill-radar-bot"
+          git config user.email "actions@github.com"
+          git add data reports
+          git commit -m "Skill Radar $(date -u +%F)" || echo "nothing to commit"
+          git push
