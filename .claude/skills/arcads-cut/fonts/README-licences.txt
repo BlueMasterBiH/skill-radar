@@ -1,0 +1,1 @@
+Inter Tight (InterTight-Variable.ttf) and Geist Mono (GeistMono-Variable.ttf) are SIL Open Font License 1.1 fonts copied from the arcads-hook1 project; add their OFL.txt files before sharing this skill publicly. The other fonts carry their licence files in this folder.

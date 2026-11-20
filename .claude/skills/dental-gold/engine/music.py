@@ -5,9 +5,11 @@ usage: music.py <workdir> [--track song.mp3] [--volume 0.2] [--seed 1]
 Reads <workdir>/dental-gold.mp4 and writes <workdir>/dental-gold_music.mp4.
 Without --track it synthesises a calm, warm track (A minor, 92 bpm: pad, plucked arpeggio, soft kick and
 shaker) of the video's length. It is generated here, so there is no licence to clear, also for paid ads.
+If <workdir>/sfx.json exists (written by dynamic.py), whooshes, impacts and pops are synthesised and mixed in.
 With --track, the given song is looped or trimmed to the video and mixed the same way.
 """
 import argparse
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -115,12 +117,63 @@ def synth(dur, seed=1):
     return st / (np.abs(st).max() + 1e-9) * 0.8
 
 
+def onepole(x, a):
+    """one-pole low-pass with a per-sample coefficient array a (0..1, higher = brighter)"""
+    y = np.empty_like(x)
+    acc = 0.0
+    for i in range(len(x)):
+        acc += a[i] * (x[i] - acc)
+        y[i] = acc
+    return y
+
+
+def sfx_sound(kind, rng):
+    if kind == "whoosh":                       # filtered noise that rises and falls, brightening on the way
+        n = int(0.42 * SR)
+        u = np.linspace(0, 1, n)
+        envl = np.sin(np.pi * u ** 0.8) ** 2
+        nz = rng.standard_normal(n)
+        y = onepole(nz, 0.02 + 0.25 * envl) - onepole(nz, 0.004 + 0.02 * envl)
+        y = y * envl
+        pan = np.linspace(-0.6, 0.6, n)
+        st = np.stack([y * (1 - pan) / 2, y * (1 + pan) / 2], 1)
+    elif kind == "impact":                     # low thump plus a short noise crack
+        n = int(0.9 * SR)
+        t = np.arange(n) / SR
+        f = 48 + 60 * np.exp(-t * 18)
+        y = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 4.5)
+        cr = onepole(rng.standard_normal(n), np.full(n, 0.15)) * np.exp(-t * 30) * 0.6
+        y = y + cr
+        st = np.stack([y, y], 1)
+    else:                                      # pop: short pitched blip
+        n = int(0.09 * SR)
+        t = np.arange(n) / SR
+        f = 1100 - 500 * t / t[-1]
+        y = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 45)
+        st = np.stack([y, y], 1)
+    return st / (np.abs(st).max() + 1e-9)
+
+
+def sfx_track(cues, dur, seed=5):
+    rng = np.random.default_rng(seed)
+    out = np.zeros((int(dur * SR) + SR, 2))
+    level = {"whoosh": 0.32, "impact": 0.45, "pop": 0.16}
+    for t, kind, gain in cues:
+        if t < 0 or t > dur:
+            continue
+        snd = sfx_sound(kind, rng) * level.get(kind, 0.2) * gain
+        i = int(t * SR)
+        out[i:i + len(snd)] += snd[: len(out) - i]
+    return out[: int(dur * SR)]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("workdir")
     ap.add_argument("--track")
     ap.add_argument("--volume", type=float, default=0.2, help="music level under the voice (0.1 quiet - 0.35 loud)")
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--no-sfx", action="store_true", help="ignore sfx.json (sound effects written by dynamic.py)")
     a = ap.parse_args()
     wd = Path(a.workdir)
     vid = wd / "dental-gold.mp4"
@@ -136,12 +189,21 @@ def main():
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(SR), "-ac", "2", "-i", "-", str(wav)],
                        input=st.tobytes(), check=True)
         src = ["-i", str(wav)]
-    fc = (f"[1:a]atrim=0:{dur:.2f},afade=t=out:st={max(0, dur - 2.5):.2f}:d=2.5,volume={a.volume}[m];"
+    cues_p = wd / "sfx.json"
+    extra, fx_in = [], ""
+    if cues_p.exists() and not a.no_sfx:
+        sw = wd / "sfx.wav"
+        st = np.clip(sfx_track(json.load(open(cues_p)), dur) * 32767, -32767, 32767).astype("<i2")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(SR), "-ac", "2", "-i", "-", str(sw)],
+                       input=st.tobytes(), check=True)
+        extra = ["-i", str(sw)]
+    fc = ((f"[1:a]atrim=0:{dur:.2f},afade=t=out:st={max(0, dur - 2.5):.2f}:d=2.5,volume={a.volume}[m];"
           "[0:a]loudnorm=I=-15:TP=-1.5:LRA=11,aresample=44100,asplit=2[v][sc];"
-          "[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];"
-          "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
+          "[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];")
+          + ("[v][md][2:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[a]" if extra else
+             "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]"))
     out = wd / "dental-gold_music.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(vid), *src, "-filter_complex", fc, "-map", "0:v",
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(vid), *src, *extra, "-filter_complex", fc, "-map", "0:v",
                     "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", str(out)], check=True)
     print("OUTPUT", out)
 

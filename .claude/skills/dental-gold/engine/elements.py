@@ -574,8 +574,8 @@ class RootCanal:
     """cross-section: the inflamed nerve is removed top-down, a gold file cleans the canal, the canal is
     filled with gold from the apex up, a filling closes the crown and the tooth stays."""
 
-    def __init__(self, t0, t1, title, remove=None, clean=None, fill=None, keep=None, cy=1385):
-        self.t0, self.t1, self.title, self.cy = t0, t1, title, cy
+    def __init__(self, t0, t1, title, remove=None, clean=None, fill=None, keep=None, cy=1385, zoom=1.0, cx=540):
+        self.t0, self.t1, self.title, self.cy, self.zoom, self.cx = t0, t1, title, cy, zoom, cx
         self.tr = remove if remove is not None else t0 + 0.6
         self.tc = clean if clean is not None else self.tr + 1.6
         self.tf = fill if fill is not None else self.tc + 1.6
@@ -663,5 +663,5 @@ class RootCanal:
         if len(words_) > 1:
             d.text((SS * fx, SS * (fy + 54) + SS * 10 * (1 - a)), words_[1], font=font(44 * SS, "Bold"),
                    fill=WHITE + (int(255 * a),))
-        im = im.resize((cw, ch), Image.LANCZOS)
-        put(img, with_shadow(im), 540, self.cy + p[2], p[0], p[1])
+        im = im.resize((int(cw * self.zoom), int(ch * self.zoom)), Image.LANCZOS)
+        put(img, with_shadow(im), self.cx, self.cy + p[2], p[0], p[1])

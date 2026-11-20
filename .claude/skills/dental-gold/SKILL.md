@@ -29,6 +29,21 @@ The person is a marketer, not an engineer. Reply in their language (usually BHS)
 6. **Music** (when asked): `PY DG/engine/music.py <out>/hook<N> [--track song.mp3] [--volume 0.2]`. It writes `dental-gold_music.mp4`, with the music ducked under the voice. Without `--track` it synthesises an original calm track, so there is nothing to license, which matters for paid ads. A song the person sends must be licensed for ads; Instagram's in-app music is not.
 7. **Hand over** the file in one line. Remind them it is a draft: the doctor checks the dental animations and every claim before posting.
 
+## Dynamic cut (when they want it livelier, or "not like last time")
+The same storyboard plus camera cuts, giant words behind the speaker, drawn b-roll and sound effects. Needs the arcads-cut skill.
+1. Person matte and clean wall: `<arcads>/.venv/bin/python <arcads>/engine/prep.py <out>/hook<N>/clip.mp4 <out>/hook<N>/.arc`. Copy `words.json` into `.arc/` first so it skips its own transcription. On Linux, MediaPipe needs `libegl1 libgles2` (apt). If it crashes after the matte is written, run it again; it resumes.
+2. Add the dynamic events to `storyboard.json` (below), use fewer cards, and let b-roll carry the procedure.
+3. Preview: `PY DG/engine/dynamic.py <out>/hook<N> --preview 1.5,4,11,...` and read `preview_dyn.jpg`.
+4. Render: `PY DG/engine/dynamic.py <out>/hook<N>` writes `dental-gold.mp4` and `sfx.json`. Then `music.py` mixes music, sound effects and voice.
+
+| type | fields | use it for |
+|---|---|---|
+| `depth` | at, to, text | Giant gold word behind the speaker. She slides right over the clean wall and the word sits left, partly behind her. 1-2 words, about one every 8-12 s, on the idea of the sentence (ENDODONCIJA, PREGLED, BOL). The camera goes wide for it. |
+| `broll` | at, to, kind, marks, title | Full-screen drawn b-roll with the speaker in a window top right. Kinds: `xray` (marks zub, korijen, kost), `root` (remove, clean, fill, keep), `restore` (implant, krunica, most, osmijeh), `pain`, `versus` (left, right), `extract` (out). 2-9 s each, where she describes something you can show. |
+| `cam` | at, shot (W/M/C), mode (cut/push) | Force a camera change. Otherwise wide, medium and close cut on sentence ends about every 2-3 s. |
+
+Hooks: give each hook its own b-roll (`pain`, `versus`, `extract`...) and depth word, so the three versions open differently.
+
 ## Storyboard
 Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase starts), `"kod nas+0.6"`, `"pitaj-0.1"`, `"brušenje#2"` (the second time it is said), `"end"`. Phrases match the script words ignoring case and punctuation, so copy them from `script.txt`.
 
