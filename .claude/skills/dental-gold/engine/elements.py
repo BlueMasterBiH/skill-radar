@@ -665,3 +665,96 @@ class RootCanal:
                    fill=WHITE + (int(255 * a),))
         im = im.resize((int(cw * self.zoom), int(ch * self.zoom)), Image.LANCZOS)
         put(img, with_shadow(im), self.cx, self.cy + p[2], p[0], p[1])
+
+
+# ---------- proof and structure (from the reference reels) ----------
+def _wrap_words(words_txt, f, width):
+    lines, cur, cw = [], [], 0
+    sp = text_w(" ", f)
+    for i, w in enumerate(words_txt):
+        ww = text_w(w, f)
+        if cur and cw + sp + ww > width:
+            lines.append(cur)
+            cur, cw = [], 0
+        cur.append((i, w, ww))
+        cw += (sp if len(cur) > 1 else 0) + ww
+    if cur:
+        lines.append(cur)
+    return lines, sp
+
+
+class Review:
+    """a patient's review read aloud: a dark card with a gold quote mark and a counter (RECENZIJA 1/3);
+    the words light up as she reads them (spoken white, current gold, still to come dim)."""
+
+    def __init__(self, t0, t1, title, quote_words, cx=540, bottom=1660):
+        self.t0, self.t1, self.title, self.qw = t0, t1, title, quote_words
+        self.f = font(46, "SemiBold")
+        self.ft = font(32, "Bold")
+        self.cw = 940
+        txt = [w["w"] for w in quote_words]
+        self.lines, self.sp = _wrap_words(txt, self.f, self.cw - 150)
+        self.lh = 62
+        self.ch = 120 + self.lh * len(self.lines) + 40
+        self.cx, self.cy = cx, bottom - self.ch / 2
+        base = rrect_img(self.cw * SS, self.ch * SS, 36 * SS, CARD_BG, AQUA + (110,))
+        d = ImageDraw.Draw(base)
+        d.text((40 * SS, 22 * SS), "“", font=font(110 * SS, "Black"), fill=AQUA + (255,))
+        d.text((128 * SS, 48 * SS), title, font=font(32 * SS, "Bold"), fill=AQUA + (255,))
+        self.base = base
+
+    def active(self, t):
+        return self.t0 - 0.05 <= t <= self.t1 + 0.25
+
+    def draw(self, img, t):
+        p = pop(t, self.t0, self.t1)
+        if not p:
+            return
+        im = self.base.copy()
+        d = ImageDraw.Draw(im)
+        f = font(46 * SS, "SemiBold")
+        sp = text_w(" ", f)
+        cur = max((i for i, w in enumerate(self.qw) if w["s"] - 0.05 <= t), default=-1)
+        for li, line in enumerate(self.lines):
+            x, y = 120 * SS, (112 + li * self.lh) * SS
+            for i, w, _ in line:
+                if i < cur or (i == cur and t > self.qw[i]["e"] + 0.15):
+                    col = WHITE + (255,)
+                elif i == cur:
+                    col = GOLD_HI + (255,)
+                else:
+                    col = (120, 114, 104, 255)
+                d.text((x, y), w, font=f, fill=col)
+                x += text_w(w, f) + sp
+        im = im.resize((self.cw, self.ch), Image.LANCZOS)
+        put(img, with_shadow(im), self.cx, self.cy + p[2], p[0], p[1])
+
+
+class Headline:
+    """fixed title at the top for the whole video: the promise, first line gold, second white, soft glow"""
+
+    def __init__(self, t0, t1, lines, cy=215):
+        self.t0, self.t1, self.cy = t0, t1, cy
+        fa, fb = font(70, "Black"), font(50, "ExtraBold")
+        l1 = lines[0]
+        l2 = lines[1] if len(lines) > 1 else ""
+        while text_w(l1, fa) > 960:
+            fa = font(int(fa.size * 0.94), "Black")
+        while l2 and text_w(l2, fb) > 960:
+            fb = font(int(fb.size * 0.94), "ExtraBold")
+        w = int(max(text_w(l1, fa), text_w(l2, fb) if l2 else 0)) + 80
+        h = fa.size + (fb.size + 10 if l2 else 0) + 70
+        im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        d = ImageDraw.Draw(im)
+        d.text(((w - text_w(l1, fa)) / 2, 22), l1, font=fa, fill=GOLD_HI + (255,), stroke_width=3, stroke_fill=(0, 0, 0, 200))
+        if l2:
+            d.text(((w - text_w(l2, fb)) / 2, 22 + fa.size + 8), l2, font=fb, fill=WHITE + (255,),
+                   stroke_width=3, stroke_fill=(0, 0, 0, 200))
+        glow = im.filter(ImageFilter.GaussianBlur(14))
+        self.im = Image.alpha_composite(Image.alpha_composite(glow, glow), im)
+
+    def draw(self, img, t):
+        if not (self.t0 - 0.02 <= t <= self.t1):
+            return
+        a = clamp((t - self.t0) / 0.25)
+        put(img, self.im, 540, self.cy + (1 - ease_out(t, self.t0, 0.35)) * -20, 1.0, a)

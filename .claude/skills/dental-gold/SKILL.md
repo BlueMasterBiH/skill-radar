@@ -41,6 +41,14 @@ Feedback from the clinic: her voice must be clearly on top, music barely there, 
 - Animations: a few informative ones only (the procedure animations, compare, checklist, 2-3 lockups, comment CTA). Captions move up above a card automatically and hide during a lockup.
 - B-roll: real footage first (ask the clinic). Otherwise free stock from Mixkit (`mixkit.co/free-stock-video/<word>/` lists clips; files are `assets.mixkit.co/videos/<id>/<id>-1080.mp4` or `-720.mp4`; free for commercial use, ads included). Avoid clips where another dentist's face reads as the clinic's team. Event: `{"type": "broll", "kind": "video", "file": "../broll/mk_4883.mp4", "start": 1.0, "focus": 0.41, "at": "...", "to": "..."}`. `focus` slides the 9:16 crop from left (0) to right (1). It is a straight cut with the voice running under it, 2-3 s each, 3-4 per video.
 
+## Lessons from the reference reels (apply them)
+- **Pace**: no pause over ~0.4 s. `cut_gaps.py <dir> --min 0.6 --keep 0.22` (add `--noise=-45dB` for a soft voice), then transcribe the cut clip once to check no word ends were clipped.
+- **Fixed headline** at the top with the promise: `{"type": "headline", "at": "...", "to": "end", "lines": ["3 RECENZIJE", "NAŠIH PACIJENATA"]}`. Start it after the name badge so they do not crowd each other.
+- **Proof on screen**: when she reads reviews, comments or results, show them as cards: `{"type": "review", "at", "to", "from": "<first words>", "until": "<last word>", "title": "RECENZIJA 1/3"}`. The words light up as she reads them, and the counter tells the viewer how many are left. Only use what she actually reads; never write reviews, stars or numbers yourself.
+- **Name in the hook**: the badge with her name (`"text": "Dr. ..."`) when the script names her.
+- **Key word in gold** inside the two-line captions: wrap it as `*word*` in `captions.txt`, one or two per few captions.
+- **Comparisons** (before/after, two options) as a split, side by side.
+
 ## Dynamic cut (when they want it livelier, or "not like last time")
 The same storyboard plus camera cuts, giant words behind the speaker, drawn b-roll and sound effects. Needs the arcads-cut skill.
 1. Person matte and clean wall: `<arcads>/.venv/bin/python <arcads>/engine/prep.py <out>/hook<N>/clip.mp4 <out>/hook<N>/.arc`. Copy `words.json` into `.arc/` first so it skips its own transcription. On Linux, MediaPipe needs `libegl1 libgles2` (apt). If it crashes after the matte is written, run it again; it resumes.

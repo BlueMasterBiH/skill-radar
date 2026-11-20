@@ -33,6 +33,7 @@ def main():
     ap.add_argument("--min", type=float, default=0.9)
     ap.add_argument("--keep", type=float, default=0.2)
     ap.add_argument("--ranges")
+    ap.add_argument("--noise", default="-35dB", help="silence threshold; use -45dB for a soft-spoken voice")
     a = ap.parse_args()
     wd = Path(a.workdir)
     bak = wd / "_before_cut"
@@ -48,7 +49,7 @@ def main():
     if a.ranges:
         cuts = [tuple(map(float, r.split("-"))) for r in a.ranges.split(",")]
     else:
-        sil = [(s, e) for s, e in silences(src) if s > 0.05 and e - s >= a.min]
+        sil = [(s, e) for s, e in silences(src, a.noise) if s > 0.05 and e - s >= a.min]
         if a.first:
             sil = sil[:a.first]
         cuts = [(s + a.keep, e - a.keep) for s, e in sil]

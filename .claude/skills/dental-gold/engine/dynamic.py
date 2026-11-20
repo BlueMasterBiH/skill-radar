@@ -217,7 +217,7 @@ def captions_from_file(path, words):
         if not raw.strip():
             continue
         lines = [l.strip() for l in raw.split(" / ")]
-        toks = " ".join(lines).split()
+        toks = " ".join(lines).replace("*", "").split()
         ws = words[i:i + len(toks)]
         if len(ws) < len(toks) or [_k(w["w"]) for w in ws] != [_k(x) for x in toks]:
             raise SystemExit(f"CAPTIONS_MISMATCH at '{raw}': expected '{' '.join(w['w'] for w in words[i:i + len(toks)])}'")
@@ -283,18 +283,25 @@ _lc = {}
 
 
 def caption_im(lines):
+    """lines may mark key words as *word*: those are drawn gold"""
     key = tuple(lines)
     if key not in _lc:
         f = E.font(56, "ExtraBold")
         lh = 72
-        tw = int(max(E.text_w(l, f) for l in lines))
+        sp = E.text_w(" ", f)
+        toks = [[(w.strip("*"), w.startswith("*") and w.rstrip(",.?!:;").endswith("*")) for w in l.split()] for l in lines]
+        widths = [sum(E.text_w(w, f) for w, _ in tl) + sp * (len(tl) - 1) for tl in toks]
+        tw = int(max(widths))
         w, h = tw + 64, lh * len(lines) + 34
         im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         d = ImageDraw.Draw(im)
         d.rounded_rectangle((0, 0, w - 1, h - 1), 26, fill=(0, 0, 0, 150))
-        for i, l in enumerate(lines):
-            d.text(((w - E.text_w(l, f)) / 2, 12 + i * lh), l, font=f, fill=E.WHITE + (255,),
-                   stroke_width=4, stroke_fill=(0, 0, 0, 255))
+        for i, (tl, lw) in enumerate(zip(toks, widths)):
+            x = (w - lw) / 2
+            for word, gold in tl:
+                d.text((x, 12 + i * lh), word, font=f, fill=(E.GOLD_HI if gold else E.WHITE) + (255,),
+                       stroke_width=4, stroke_fill=(0, 0, 0, 255))
+                x += E.text_w(word, f) + sp
         _lc[key] = E.with_shadow(im, 16, 0.35, 6)
     return _lc[key]
 
@@ -341,10 +348,19 @@ def main():
         E.AQUA = E.RED = tuple(brand["gold"])
     if "gold_hi" in brand:
         E.GOLD_HI = tuple(brand["gold_hi"])
-    base = [e for e in sb["events"] if e["type"] not in ("depth", "broll", "cam")]
+    base = [e for e in sb["events"] if e["type"] not in ("depth", "broll", "cam", "headline", "review")]
     ev, lock, _ = R.build({"events": base}, words)
     T = resolver()
     depths = [Depth(T(e["at"]), T(e["to"]), e["text"]) for e in sb["events"] if e["type"] == "depth"]
+    heads = [E.Headline(T(e["at"]), T(e["to"]), e["lines"]) for e in sb["events"] if e["type"] == "headline"]
+    reviews = []
+    for e in sb["events"]:
+        if e["type"] == "review":
+            q0 = T(e["from"])
+            q1 = T(e["until"])
+            qw = [w for w in words if q0 - 0.01 <= w["s"] <= q1 + 0.01]
+            reviews.append(E.Review(T(e["at"]), T(e["to"]), e["title"], qw))
+    ev += reviews
     brolls = []
     for e in sb["events"]:
         if e["type"] == "broll":
@@ -555,7 +571,7 @@ def main():
             for l in lock:
                 l.draw(img, t)
             if two_line:
-                if not any(l.active(t) for l in lock):
+                if not any(l.active(t) for l in lock) and not any(r.active(t) for r in reviews):
                     busy = any(e.t0 - 0.1 <= t <= e.t1 + 0.25 for e in ev
                                if type(e).__name__ not in ("Badge", "Strip"))
                     draw_two_line(img, t, caps, 990 if busy else 1180)
@@ -565,6 +581,9 @@ def main():
             draw_two_line(img, t, caps, 1640 if getattr(bb, "plain", False) else 1690)
         else:
             draw_kinetic(img, t, groups, 1690)
+        if mi < 0.5:
+            for hd in heads:
+                hd.draw(img, t)
         out = np.clip(img, 0, 255).astype(np.uint8)
         if times:
             shots.append(Image.fromarray(out).resize((360, 640)))
