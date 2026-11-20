@@ -348,7 +348,7 @@ def main():
         E.AQUA = E.RED = tuple(brand["gold"])
     if "gold_hi" in brand:
         E.GOLD_HI = tuple(brand["gold_hi"])
-    base = [e for e in sb["events"] if e["type"] not in ("depth", "broll", "cam", "headline", "review")]
+    base = [e for e in sb["events"] if e["type"] not in ("depth", "broll", "cam", "headline", "review", "kinetic_quote")]
     ev, lock, _ = R.build({"events": base}, words)
     T = resolver()
     depths = [Depth(T(e["at"]), T(e["to"]), e["text"]) for e in sb["events"] if e["type"] == "depth"]
@@ -361,6 +361,12 @@ def main():
             qw = [w for w in words if q0 - 0.01 <= w["s"] <= q1 + 0.01]
             reviews.append(E.Review(T(e["at"]), T(e["to"]), e["title"], qw))
     ev += reviews
+    for e in sb["events"]:
+        if e["type"] == "kinetic_quote":
+            q0, q1 = T(e["at"]), T(e["to"])
+            qw = [w for w in words if q0 - 0.01 <= w["s"] <= q1]
+            reviews.append(E.KineticQuote(q0, q1, qw, e.get("gold", [])))
+            ev.append(reviews[-1])
     brolls = []
     for e in sb["events"]:
         if e["type"] == "broll":

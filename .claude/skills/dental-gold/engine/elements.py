@@ -758,3 +758,46 @@ class Headline:
             return
         a = clamp((t - self.t0) / 0.25)
         put(img, self.im, 540, self.cy + (1 - ease_out(t, self.t0, 0.35)) * -20, 1.0, a)
+
+
+class KineticQuote:
+    """hook as a typed quote: the video dims, a giant gold quote mark lands, and the sentence builds word by word
+    in big type as it is spoken (gold for the words marked with *)."""
+
+    def __init__(self, t0, t1, qwords, gold=(), cy=1180):
+        self.t0, self.t1, self.qw, self.cy = t0, t1, qwords, cy
+        self.gold = {g.lower() for g in gold}
+        self.f = font(82, "Black")
+        txt = [w["w"] for w in qwords]
+        self.lines, self.sp = _wrap_words(txt, self.f, 900)
+        self.lh = 100
+
+    def active(self, t):
+        return self.t0 - 0.05 <= t <= self.t1 + 0.3
+
+    def draw(self, img, t):
+        if not self.active(t):
+            return
+        a = clamp((t - self.t0 + 0.05) / 0.25) * (1 - ease_out(t, self.t1, 0.3))
+        img *= 1 - 0.55 * a
+        im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(im)
+        q = spring(t, self.t0, 0.4)
+        qf = font(int(260 * (1.4 - 0.4 * q)), "Black")
+        d.text((70, self.cy - 330), "“", font=qf, fill=AQUA + (int(255 * a),))
+        y0 = self.cy - self.lh * len(self.lines) / 2
+        for li, line in enumerate(self.lines):
+            lw = sum(ww for _, _, ww in line) + self.sp * (len(line) - 1)
+            x = (W - lw) / 2
+            for i, w, ww in line:
+                ws = self.qw[i]["s"] - 0.04
+                if t >= ws:
+                    s = spring(t, ws, 0.3)
+                    gold = re.sub(r"[^\wčćšđž]", "", w.lower()) in self.gold
+                    col = (GOLD_HI if gold else WHITE) + (int(255 * a * clamp((t - ws) / 0.08)),)
+                    d.text((x, y0 + li * self.lh + (1 - s) * 24), w, font=self.f, fill=col,
+                           stroke_width=3, stroke_fill=(0, 0, 0, int(200 * a)))
+                x += ww + self.sp
+        arr = np.asarray(im, np.float32)
+        al = arr[..., 3:4] / 255
+        img[:] = img * (1 - al) + arr[..., :3] * al
