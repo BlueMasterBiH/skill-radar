@@ -6,7 +6,7 @@ description: Black-and-gold motion edit for dental clinic talking-head reels in 
 # dental-gold: the clinic's reel template
 
 The person is a marketer, not an engineer. Reply in their language (usually BHS), keep it short, run every command yourself.
-`DG` = this skill's folder. `PY` = a Python with numpy, opencv-python and pillow: use `~/.claude/skills/arcads-cut/.venv/bin/python` when it exists, else run `bash DG/scripts/setup.sh` once and use `DG/.venv/bin/python`.
+`DG` = this skill's folder. `PY` = `DG/.venv/bin/python` (numpy, opencv-python<5, pillow, faster-whisper). If it is missing, run `bash DG/scripts/setup.sh` once.
 
 ## Inputs
 - **The recording**: one person facing the camera; all hooks said one after another, then lead, body and CTA once each, with a pause of 2 s or more between parts. Vertical is best; landscape gets centre-cropped.
@@ -15,6 +15,8 @@ The person is a marketer, not an engineer. Reply in their language (usually BHS)
 ## Workflow
 1. **Prepare**: `PY DG/engine/prepare.py "<clip>" "<script.md>" --out "<clip folder>/<name>_dental-gold" [--hooks 3]`
    - It prints each part with its time range. Check that they look sensible: a hook is 2-5 s, the body is the longest part.
+   - Caption timing comes from Whisper (local, no API key). The first run downloads the model (~500 MB for `small`) and transcribes in about 1x real time on a laptop CPU. The transcript is cached in `<out>/whisper_<model>.json`, so re-runs are instant.
+   - Each part prints `timing: whisper (NN% of words heard)`. `WHISPER_WEAK <part>` means that part fell back to estimated timing. Usually the script does not match what was said (an ad-lib or a changed sentence). Fix the script to match the recording, or rerun with `--whisper-model medium`, which is more exact but about 3x slower. `WHISPER_MISSING` means faster-whisper is not installed: run `PY -m pip install faster-whisper`.
    - `BLOCKS_MISMATCH` means the pauses did not split cleanly. It lists the speech blocks it found; pick one range per part and run again with `--blocks "a-b,c-d,..."` (order: hooks, lead, body, cta).
    - Each `<out>/hook<N>/` gets `clip.mp4`, `words.json`, `face.json` and `script.txt`.
 2. **Write the storyboard**: `<out>/hook<N>/storyboard.json`. This is where your effort goes. Start from `DG/examples/viniri_hook3.storyboard.json` and follow the rules below.
@@ -54,6 +56,6 @@ Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase s
 - **Colours**: black cards, gold accents, white text. Do not bring back teal or red.
 
 ## Troubleshooting
-- **Captions drift a little.** Word times are spread over the detected speech, not transcribed. If a Whisper transcript or SRT is available, write it to `words.json` as `[{"w","s","e"}]` using the script's spelling.
+- **Captions drift a little.** Check the prepare output for `WHISPER_WEAK` on that part (see step 1). Delete `<out>/whisper_*.json` before rerunning with another `--whisper-model` or `--lang` (default `hr`; `bs`/`sr` also work).
 - **Anchor not found.** The phrase is not in `words.json` exactly. Check the spelling in `script.txt`.
 - **Face badge/arrow off.** Edit `face.json` (`[centre x, centre y, width, height]` at 1080x1920).

@@ -13,8 +13,9 @@ The clinic's black-and-gold reel template, packaged as a Claude Code skill.
 
 ## Install
 1. Unzip, drag the `dental-gold` folder into Claude Code and say **"install the dental-gold skill"**. Claude runs `scripts/install.sh`.
-2. For the gold intro, the **arcads-cut** skill must be installed as well. Its Python environment is reused.
-3. Restart Claude Code.
+2. Caption timing uses Whisper (faster-whisper), which runs locally with no API key. `scripts/setup.sh` installs it, and the model downloads on first use.
+3. For the gold intro, the **arcads-cut** skill must be installed as well. Its Python environment is reused.
+4. Restart Claude Code.
 
 ## Use
 Drop in the clip and the script, then type `/dental-gold`. Add "samo hook 3" to edit one version only.
@@ -22,7 +23,7 @@ Drop in the clip and the script, then type `/dental-gold`. Add "samo hook 3" to 
 ## How it works
 | Part | File |
 |---|---|
-| Cut the parts and time the script words | `engine/prepare.py` |
+| Cut the parts and time the script words with Whisper (local, free) | `engine/prepare.py` |
 | What appears on screen and when, anchored to script phrases | `storyboard.json` |
 | Gold opener (uses arcads-cut) | `engine/make_intro.py` |
 | Draw everything and encode | `engine/render.py` |

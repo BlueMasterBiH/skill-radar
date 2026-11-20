@@ -10,16 +10,24 @@ clinic films). The script file lists those parts:
   **CTA:** ...
 
 usage: prepare.py <clip> <script.md> --out <dir> [--hooks 1,3] [--blocks "1.5-4.6,6.7-9.2,..."]
+                  [--whisper-model small] [--lang hr] [--no-whisper]
 
 For each hook it writes <out>/hook<N>/ with clip.mp4 (hook + lead + body + CTA, 1080x1920, 30 fps),
-words.json (script words timed to the speech) and face.json. Without Whisper the word times are spread
-over the detected speech, so they are close but not exact; a real transcript can replace words.json.
+words.json (script words timed to the speech) and face.json.
+
+Word times come from Whisper (faster-whisper, runs locally on the CPU): the recording is transcribed once
+with word timestamps (cached in <out>/whisper_<model>.json), and the script words are matched to the
+heard words, so captions keep the script's spelling but land on the real timing. Words Whisper missed are
+spread between their matched neighbours. Without faster-whisper, or when too few words match, it falls
+back to spreading the words over the detected speech (close but not exact).
 """
 import argparse
+import difflib
 import json
 import re
 import subprocess
 import sys
+import unicodedata
 from pathlib import Path
 
 import cv2
@@ -118,6 +126,86 @@ def align(text, iv):
     return out
 
 
+def transcribe(path, cache, model, lang):
+    """Whole-recording Whisper transcript as [{"w","s","e"}], cached. None when faster-whisper is missing."""
+    if cache.exists():
+        return json.load(open(cache, encoding="utf-8"))
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        print("WHISPER_MISSING: run `PY -m pip install faster-whisper` for exact caption timing; "
+              "using estimated timing for now", flush=True)
+        return None
+    print(f"transcribing with Whisper ({model}, {lang}); the first run downloads the model...", flush=True)
+    m = WhisperModel(model, device="cpu", compute_type="int8")
+    # decode with ffmpeg ourselves: 16 kHz mono float, so PyAV version quirks do not matter
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                         check=True, capture_output=True).stdout
+    audio = np.frombuffer(raw, np.float32)
+    segs, _ = m.transcribe(audio, language=lang, word_timestamps=True, vad_filter=True, beam_size=5,
+                           condition_on_previous_text=False)
+    ws = [{"w": w.word.strip(), "s": round(w.start, 3), "e": round(w.end, 3)}
+          for sg in segs for w in (sg.words or []) if w.word.strip()]
+    json.dump(ws, open(cache, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    return ws
+
+
+def wkey(w):
+    """Compare words without case, punctuation or diacritics (Whisper often drops or swaps č/ć/š/ž/đ)."""
+    w = unicodedata.normalize("NFKD", w.lower().replace("đ", "dj"))
+    return re.sub(r"\W", "", "".join(c for c in w if not unicodedata.combining(c)))
+
+
+def align_whisper(text, heard, a, b):
+    """Script words of one part timed by the Whisper words heard between a and b. None if the match is poor."""
+    words = text.split()
+    heard = [x for x in heard if a - 0.3 <= (x["s"] + x["e"]) / 2 <= b + 0.3]
+    if not words or not heard:
+        return None, 0
+    sk, hk = [wkey(w) for w in words], [wkey(x["w"]) for x in heard]
+    t = [None] * len(words)
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, sk, hk, autojunk=False).get_opcodes():
+        if op == "equal" or (op == "replace" and i2 - i1 == j2 - j1):
+            for k in range(i2 - i1):
+                if op == "equal" or difflib.SequenceMatcher(None, sk[i1 + k], hk[j1 + k]).ratio() >= 0.5:
+                    t[i1 + k] = [heard[j1 + k]["s"], heard[j1 + k]["e"]]
+        elif op == "replace":  # misheard, merged or split words: match close spellings in order
+            j = j1
+            for i in range(i1, i2):
+                best = max(range(j, j2), key=lambda q: difflib.SequenceMatcher(None, sk[i], hk[q]).ratio(), default=None)
+                if best is not None and difflib.SequenceMatcher(None, sk[i], hk[best]).ratio() >= 0.7:
+                    t[i] = [heard[best]["s"], heard[best]["e"]]
+                    j = best + 1
+    hit = sum(x is not None for x in t)
+    if hit < 0.4 * len(words):
+        return None, hit / len(words)
+    # spread unmatched runs between their matched neighbours, weighted by word length
+    k = 0
+    while k < len(words):
+        if t[k] is not None:
+            k += 1
+            continue
+        j = k
+        while j < len(words) and t[j] is None:
+            j += 1
+        lo = t[k - 1][1] if k else min(a, t[j][0] - 0.3 * (j - k))
+        hi = t[j][0] if j < len(words) else max(b, lo + 0.3 * (j - k))
+        wt = [len(sk[i]) + 1.5 for i in range(k, j)]
+        c, tot = lo, sum(wt)
+        for i, x in zip(range(k, j), wt):
+            d = (hi - lo) * x / tot
+            t[i] = [c, c + d]
+            c += d
+        k = j
+    out, prev = [], a - 1
+    for w, (s, e) in zip(words, t):
+        s = max(s, prev)
+        e = max(e, s + 0.06)
+        out.append({"w": w, "s": round(s, 3), "e": round(e, 3)})
+        prev = e
+    return out, hit / len(words)
+
+
 def face_box(path):
     cas = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     cap = cv2.VideoCapture(str(path))
@@ -146,6 +234,10 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--hooks", help="which hooks to build, e.g. 1,3 (default: all)")
     ap.add_argument("--blocks", help="manual speech blocks in order: hook1,hook2,...,lead,body,cta as a-b,c-d,...")
+    ap.add_argument("--whisper-model", default="small",
+                    help="faster-whisper model: small (default), medium (more exact, ~3x slower), large-v3")
+    ap.add_argument("--lang", default="hr", help="Whisper language code; hr suits BHS speech (bs and sr also work)")
+    ap.add_argument("--no-whisper", action="store_true", help="skip Whisper and estimate the word timing")
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -178,7 +270,18 @@ def main():
     sec = dict(zip(order, blocks))
     for k in order:
         print(f"{k:6s} {sec[k][0]:6.2f}-{sec[k][1]:6.2f}  {parts[k][:60]}", flush=True)
-    aligned = {k: align(parts[k], speech(sil, *sec[k])) for k in order}
+    heard = None if a.no_whisper else transcribe(norm, out / f"whisper_{a.whisper_model}.json", a.whisper_model, a.lang)
+    if heard is not None and not heard:
+        print("WHISPER_WEAK: Whisper heard no words in the recording; using estimated timing", flush=True)
+    aligned = {}
+    for k in order:
+        got, rate = align_whisper(parts[k], heard, *sec[k]) if heard else (None, 0)
+        if got:
+            print(f"{k:6s} timing: whisper ({rate:.0%} of words heard)", flush=True)
+        elif heard:
+            print(f"WHISPER_WEAK {k}: only {rate:.0%} of the script words were heard; estimated timing for this part "
+                  "(check the script matches what was said, or try --whisper-model medium)", flush=True)
+        aligned[k] = got or align(parts[k], speech(sil, *sec[k]))
     want = [f"hook{n}" for n in a.hooks.split(",")] if a.hooks else hooks
     for h in want:
         seq = [h, "lead", "body", "cta"]
