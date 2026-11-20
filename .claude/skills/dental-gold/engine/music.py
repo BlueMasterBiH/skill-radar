@@ -1,4 +1,5 @@
 """Original background music for a dental-gold reel, mixed under the voice with ducking.
+The voice is normalised to -15 LUFS (about where Instagram plays reels).
 
 usage: music.py <workdir> [--track song.mp3] [--volume 0.2] [--seed 1]
 Reads <workdir>/dental-gold.mp4 and writes <workdir>/dental-gold_music.mp4.
@@ -65,6 +66,8 @@ def synth(dur, seed=1):
     nb = int(np.ceil(dur / bar)) + 1
     for b in range(nb):
         i0 = int(b * bar * SR)
+        if i0 >= n:
+            break
         ch, rt = chords[b % 4], roots[b % 4]
         ln = int(bar * SR * 1.25)
         seg = sum(pad_voice(midi(m), ln, rng) for m in ch) * env(ln, 0.6, 0.9)
@@ -134,7 +137,7 @@ def main():
                        input=st.tobytes(), check=True)
         src = ["-i", str(wav)]
     fc = (f"[1:a]atrim=0:{dur:.2f},afade=t=out:st={max(0, dur - 2.5):.2f}:d=2.5,volume={a.volume}[m];"
-          "[0:a]asplit=2[v][sc];"
+          "[0:a]loudnorm=I=-15:TP=-1.5:LRA=11,aresample=44100,asplit=2[v][sc];"
           "[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];"
           "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
     out = wd / "dental-gold_music.mp4"
