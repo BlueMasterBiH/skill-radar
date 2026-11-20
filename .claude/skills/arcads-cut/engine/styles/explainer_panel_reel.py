@@ -21,6 +21,8 @@ PANEL_H = 940
 NR = 108                            # node radius
 
 
+STEP_WORD = "STEP"  # the header counter word; dental-gold sets it to KORAK
+
 def bez(p0, p1, p2, p3, n=120):
     s = np.linspace(0, 1, n, dtype=np.float32)[:, None]
     return ((1 - s) ** 3) * p0 + 3 * ((1 - s) ** 2) * s * p1 + 3 * (1 - s) * s * s * p2 + s ** 3 * p3
@@ -224,7 +226,7 @@ class Style:
             kp = self.tx(kick, "mono", 30, (206, 212, 232), 560, 0.18)
             c.over(img, kp, 60, 78 + dy, e)
         steps = sum(1 for nd in self.nodes if t >= nd["t"] - 0.04)
-        st = self.tx(f"STEP {max(steps, 1):02d}/{self.nb:02d}", "mono", 30, (255, 255, 255), 640, 0.12)
+        st = self.tx(f"{STEP_WORD} {max(steps, 1):02d}/{self.nb:02d}", "mono", 30, (255, 255, 255), 640, 0.12)
         c.over(img, st, W - 60 - st.shape[1], 78 + dy, e)
         # progress rail
         y = 150

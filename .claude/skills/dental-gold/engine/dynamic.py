@@ -285,18 +285,17 @@ _lc = {}
 def caption_im(lines):
     key = tuple(lines)
     if key not in _lc:
-        f = E.font(50, "Bold")
-        lh = 66
-        w = int(max(E.text_w(l, f) for l in lines)) + 60
-        h = lh * len(lines) + 40
+        f = E.font(56, "ExtraBold")
+        lh = 72
+        tw = int(max(E.text_w(l, f) for l in lines))
+        w, h = tw + 64, lh * len(lines) + 34
         im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         d = ImageDraw.Draw(im)
+        d.rounded_rectangle((0, 0, w - 1, h - 1), 26, fill=(0, 0, 0, 150))
         for i, l in enumerate(lines):
-            d.text(((w - E.text_w(l, f)) / 2, 14 + i * lh), l, font=f, fill=E.WHITE + (255,),
-                   stroke_width=3, stroke_fill=(0, 0, 0, 255))
-        sh = Image.new("RGBA", im.size, (0, 0, 0, 0))
-        sh.putalpha(im.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * 0.9)))
-        _lc[key] = Image.alpha_composite(Image.alpha_composite(sh, sh), im)
+            d.text(((w - E.text_w(l, f)) / 2, 12 + i * lh), l, font=f, fill=E.WHITE + (255,),
+                   stroke_width=4, stroke_fill=(0, 0, 0, 255))
+        _lc[key] = E.with_shadow(im, 16, 0.35, 6)
     return _lc[key]
 
 
@@ -452,6 +451,12 @@ def main():
             sfx.append([round(tc - 0.05, 3), "whoosh", 0.35])
     sfx.sort()
 
+    intro_cfg = sb.get("intro") or {}
+    intro_p = wd / "intro.mp4"
+    intro_until = T(intro_cfg["until"]) if intro_cfg.get("until") is not None and intro_p.exists() else 0.0
+    if intro_cfg.get("until") is not None and not intro_p.exists():
+        print("NOTE: no intro.mp4 (run make_intro.py), rendering without the explainer intro", flush=True)
+    pan = R.reader(intro_p, W, H) if intro_until > 0 else None
     times = [float(x) for x in a.preview.split(",")] if a.preview else None
     out_path = Path(a.out) if a.out else wd / ("preview_dyn.jpg" if times else "dental-gold.mp4")
     if sb.get("sfx") is False:
@@ -466,6 +471,7 @@ def main():
     prev_z = None
     for i, raw in enumerate(R.reader(wd / "clip.mp4", W, H)):
         t = i / FPS
+        pf = next(pan, None) if pan else None
         if times and not any(abs(t - x) < 0.5 / FPS for x in times):
             if t > max(times):
                 break
@@ -535,7 +541,15 @@ def main():
                 pa = E.clamp((m - 0.6) / 0.4)
                 pp = pip_patch(frame, (face_scr[0], face_scr[1]))
                 E.put(img, pp, 862, 330, 0.85 + 0.15 * E.spring(t, bb.t0, 0.35), pa)
-        if m < 0.5:
+        mi = 0.0
+        if pf is not None and intro_until > 0:
+            mi = 1.0 if t <= intro_until else E.clamp(1 - (t - intro_until) / 0.35)
+            if mi > 0:
+                img = img * (1 - mi) + pf.astype(np.float32) * mi
+        if mi >= 0.5:
+            if two_line:
+                draw_two_line(img, t, caps, 1730)
+        elif m < 0.5:
             for e in ev:
                 e.draw(img, t)
             for l in lock:

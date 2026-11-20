@@ -57,6 +57,7 @@ import importlib
 m = importlib.import_module("styles.explainer_panel_reel")
 m.C1 = np.float32({list(gold)})
 m.C2 = np.float32({[int(v * 0.7) for v in gold]})
+m.STEP_WORD = {intro.get("step_word", "KORAK")!r}
 import render
 sys.argv = ["render.py"] + sys.argv[1:]
 render.main()
