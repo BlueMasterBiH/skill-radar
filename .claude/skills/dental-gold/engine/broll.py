@@ -191,18 +191,20 @@ def implant_icon(d, cx, cy, s, prog):
         d.rounded_rectangle((cx - wv, y, cx + wv, y + 0.05 * s), int(0.02 * s), fill=GOLD + (255,))
     d.polygon([(cx - 0.1 * s, top + 0.6 * s), (cx + 0.1 * s, top + 0.6 * s), (cx, top + 0.72 * s)], fill=GOLD + (255,))
     d.rectangle((cx - 0.07 * s, top - 0.05 * s, cx + 0.07 * s, top + 0.1 * s), fill=GOLD_HI + (255,))
-    off = (1 - prog) * -0.35 * s
+    off = (1 - prog) * -0.15 * s
+    al = int(255 * E.clamp(prog * 2))
     d.polygon(tooth_pts(E.smooth_poly([(-0.5, 0.0), (-0.4, -0.45), (0, -0.38), (0.4, -0.45), (0.5, 0.0), (0.38, 0.25),
                                        (-0.38, 0.25)], 3), cx, top - 0.2 * s + off, 0.42 * s, 0.4 * s),
-              fill=IVORY + (255,), outline=GOLD + (255,), width=3)
+              fill=IVORY + (al,), outline=GOLD + (al,), width=3)
 
 
 def crown_icon(d, cx, cy, s, prog):
     d.rounded_rectangle((cx - 0.16 * s, cy - 0.05 * s, cx + 0.16 * s, cy + 0.4 * s), int(0.05 * s), fill=(200, 160, 120, 255))
-    off = (1 - prog) * -0.35 * s
+    off = (1 - prog) * -0.15 * s
+    al = int(255 * E.clamp(prog * 2))
     d.polygon(tooth_pts(E.smooth_poly([(-0.5, 0.25), (-0.46, -0.3), (-0.2, -0.48), (0, -0.4), (0.2, -0.48), (0.46, -0.3),
                                        (0.5, 0.25)], 3), cx, cy - 0.05 * s + off, 0.46 * s, 0.5 * s),
-              fill=IVORY + (255,), outline=GOLD + (255,), width=3)
+              fill=IVORY + (al,), outline=GOLD + (al,), width=3)
 
 
 def bridge_icon(d, cx, cy, s, prog):
