@@ -1,0 +1,2507 @@
+{
+ "language": "bs",
+ "segments": [
+  {
+   "start": 4.739,
+   "end": 8.68,
+   "text": " Zub te boli i prva misa o ti je vađenje.",
+   "words": [
+    {
+     "word": "Zub",
+     "start": 4.739,
+     "end": 4.819,
+     "score": 0.22
+    },
+    {
+     "word": "te",
+     "start": 4.819,
+     "end": 5.119,
+     "score": 0.681
+    },
+    {
+     "word": "boli",
+     "start": 5.119,
+     "end": 5.519,
+     "score": 0.768
+    },
+    {
+     "word": "i",
+     "start": 5.519,
+     "end": 5.619,
+     "score": 0.94
+    },
+    {
+     "word": "prva",
+     "start": 5.619,
+     "end": 5.919,
+     "score": 0.679
+    },
+    {
+     "word": "misa",
+     "start": 5.919,
+     "end": 6.179,
+     "score": 0.687
+    },
+    {
+     "word": "o",
+     "start": 6.179,
+     "end": 6.3,
+     "score": 0.832
+    },
+    {
+     "word": "ti",
+     "start": 6.3,
+     "end": 6.46,
+     "score": 0.743
+    },
+    {
+     "word": "je",
+     "start": 6.46,
+     "end": 6.68,
+     "score": 0.69
+    },
+    {
+     "word": "vađenje.",
+     "start": 6.68,
+     "end": 8.68,
+     "score": 0.444
+    }
+   ],
+   "avg_logprob": -0.0467838567446887
+  },
+  {
+   "start": 8.68,
+   "end": 16.703,
+   "text": "Ako ti je rečeno da ti treba liječenje živca, a ti bi radije da zub izvadiš, prvo poslušaj ovo.",
+   "words": [
+    {
+     "word": "Ako",
+     "start": 8.68,
+     "end": 8.9,
+     "score": 0.685
+    },
+    {
+     "word": "ti",
+     "start": 8.9,
+     "end": 9.08,
+     "score": 0.666
+    },
+    {
+     "word": "je",
+     "start": 9.08,
+     "end": 9.161,
+     "score": 0.342
+    },
+    {
+     "word": "rečeno",
+     "start": 9.161,
+     "end": 9.641,
+     "score": 0.562
+    },
+    {
+     "word": "da",
+     "start": 9.641,
+     "end": 9.801,
+     "score": 0.664
+    },
+    {
+     "word": "ti",
+     "start": 9.801,
+     "end": 9.881,
+     "score": 0.339
+    },
+    {
+     "word": "treba",
+     "start": 9.881,
+     "end": 10.161,
+     "score": 0.548
+    },
+    {
+     "word": "liječenje",
+     "start": 10.161,
+     "end": 10.681,
+     "score": 0.476
+    },
+    {
+     "word": "živca,",
+     "start": 10.681,
+     "end": 11.001,
+     "score": 0.379
+    },
+    {
+     "word": "a",
+     "start": 11.001,
+     "end": 11.121,
+     "score": 0.854
+    },
+    {
+     "word": "ti",
+     "start": 11.121,
+     "end": 11.321,
+     "score": 0.782
+    },
+    {
+     "word": "bi",
+     "start": 11.321,
+     "end": 11.601,
+     "score": 0.823
+    },
+    {
+     "word": "radije",
+     "start": 11.601,
+     "end": 11.961,
+     "score": 0.518
+    },
+    {
+     "word": "da",
+     "start": 11.961,
+     "end": 12.102,
+     "score": 0.666
+    },
+    {
+     "word": "zub",
+     "start": 12.102,
+     "end": 12.342,
+     "score": 0.732
+    },
+    {
+     "word": "izvadiš,",
+     "start": 12.342,
+     "end": 12.882,
+     "score": 0.616
+    },
+    {
+     "word": "prvo",
+     "start": 12.882,
+     "end": 13.122,
+     "score": 0.58
+    },
+    {
+     "word": "poslušaj",
+     "start": 13.122,
+     "end": 13.682,
+     "score": 0.554
+    },
+    {
+     "word": "ovo.",
+     "start": 13.682,
+     "end": 16.703,
+     "score": 0.727
+    }
+   ],
+   "avg_logprob": -0.0467838567446887
+  },
+  {
+   "start": 16.703,
+   "end": 23.585,
+   "text": "Prije nego što pristaniš da ti izvade zub, pitaj da li postoji druga opcija.",
+   "words": [
+    {
+     "word": "Prije",
+     "start": 16.703,
+     "end": 17.083,
+     "score": 0.637
+    },
+    {
+     "word": "nego",
+     "start": 17.083,
+     "end": 17.303,
+     "score": 0.555
+    },
+    {
+     "word": "što",
+     "start": 17.303,
+     "end": 17.463,
+     "score": 0.433
+    },
+    {
+     "word": "pristaniš",
+     "start": 17.463,
+     "end": 17.984,
+     "score": 0.474
+    },
+    {
+     "word": "da",
+     "start": 17.984,
+     "end": 18.144,
+     "score": 0.714
+    },
+    {
+     "word": "ti",
+     "start": 18.144,
+     "end": 18.284,
+     "score": 0.7
+    },
+    {
+     "word": "izvade",
+     "start": 18.284,
+     "end": 18.704,
+     "score": 0.582
+    },
+    {
+     "word": "zub,",
+     "start": 18.704,
+     "end": 18.924,
+     "score": 0.394
+    },
+    {
+     "word": "pitaj",
+     "start": 18.924,
+     "end": 19.064,
+     "score": 0.193
+    },
+    {
+     "word": "da",
+     "start": 19.064,
+     "end": 19.284,
+     "score": 0.78
+    },
+    {
+     "word": "li",
+     "start": 19.284,
+     "end": 19.444,
+     "score": 0.763
+    },
+    {
+     "word": "postoji",
+     "start": 19.444,
+     "end": 20.264,
+     "score": 0.598
+    },
+    {
+     "word": "druga",
+     "start": 20.264,
+     "end": 20.765,
+     "score": 0.678
+    },
+    {
+     "word": "opcija.",
+     "start": 20.765,
+     "end": 23.585,
+     "score": 0.565
+    }
+   ],
+   "avg_logprob": -0.0467838567446887
+  },
+  {
+   "start": 23.585,
+   "end": 28.027,
+   "text": "Objasniću ti šta je endodunca i koje opcije postoje ako zub ne može ostati.",
+   "words": [
+    {
+     "word": "Objasniću",
+     "start": 23.585,
+     "end": 24.166,
+     "score": 0.453
+    },
+    {
+     "word": "ti",
+     "start": 24.166,
+     "end": 24.306,
+     "score": 0.617
+    },
+    {
+     "word": "šta",
+     "start": 24.306,
+     "end": 24.506,
+     "score": 0.504
+    },
+    {
+     "word": "je",
+     "start": 24.506,
+     "end": 24.686,
+     "score": 0.603
+    },
+    {
+     "word": "endodunca",
+     "start": 24.686,
+     "end": 25.306,
+     "score": 0.517
+    },
+    {
+     "word": "i",
+     "start": 25.306,
+     "end": 25.406,
+     "score": 0.893
+    },
+    {
+     "word": "koje",
+     "start": 25.406,
+     "end": 25.486,
+     "score": 0.005
+    },
+    {
+     "word": "opcije",
+     "start": 25.486,
+     "end": 26.006,
+     "score": 0.478
+    },
+    {
+     "word": "postoje",
+     "start": 26.006,
+     "end": 26.587,
+     "score": 0.627
+    },
+    {
+     "word": "ako",
+     "start": 26.587,
+     "end": 26.847,
+     "score": 0.771
+    },
+    {
+     "word": "zub",
+     "start": 26.847,
+     "end": 27.047,
+     "score": 0.516
+    },
+    {
+     "word": "ne",
+     "start": 27.047,
+     "end": 27.187,
+     "score": 0.728
+    },
+    {
+     "word": "može",
+     "start": 27.187,
+     "end": 27.367,
+     "score": 0.352
+    },
+    {
+     "word": "ostati.",
+     "start": 27.367,
+     "end": 28.027,
+     "score": 0.19
+    }
+   ],
+   "avg_logprob": -0.0467838567446887
+  },
+  {
+   "start": 30.237,
+   "end": 38.44,
+   "text": " Endodunca je liječenje zubnog živca i radimo je u okviru konzervativne stomatologije zajedno sa kompozitnim isprima i uklanjanjem kamenca.",
+   "words": [
+    {
+     "word": "Endodunca",
+     "start": 30.237,
+     "end": 30.737,
+     "score": 0.454
+    },
+    {
+     "word": "je",
+     "start": 30.737,
+     "end": 30.777,
+     "score": 0.09
+    },
+    {
+     "word": "liječenje",
+     "start": 30.777,
+     "end": 31.417,
+     "score": 0.37
+    },
+    {
+     "word": "zubnog",
+     "start": 31.417,
+     "end": 31.817,
+     "score": 0.47
+    },
+    {
+     "word": "živca",
+     "start": 31.817,
+     "end": 32.038,
+     "score": 0.264
+    },
+    {
+     "word": "i",
+     "start": 32.038,
+     "end": 32.098,
+     "score": 0.64
+    },
+    {
+     "word": "radimo",
+     "start": 32.098,
+     "end": 32.638,
+     "score": 0.687
+    },
+    {
+     "word": "je",
+     "start": 32.638,
+     "end": 32.778,
+     "score": 0.412
+    },
+    {
+     "word": "u",
+     "start": 32.778,
+     "end": 32.798,
+     "score": 0.045
+    },
+    {
+     "word": "okviru",
+     "start": 32.798,
+     "end": 33.338,
+     "score": 0.619
+    },
+    {
+     "word": "konzervativne",
+     "start": 33.338,
+     "end": 34.018,
+     "score": 0.447
+    },
+    {
+     "word": "stomatologije",
+     "start": 34.018,
+     "end": 34.918,
+     "score": 0.492
+    },
+    {
+     "word": "zajedno",
+     "start": 34.918,
+     "end": 35.379,
+     "score": 0.502
+    },
+    {
+     "word": "sa",
+     "start": 35.379,
+     "end": 35.419,
+     "score": 0.002
+    },
+    {
+     "word": "kompozitnim",
+     "start": 35.419,
+     "end": 36.119,
+     "score": 0.538
+    },
+    {
+     "word": "isprima",
+     "start": 36.119,
+     "end": 36.659,
+     "score": 0.528
+    },
+    {
+     "word": "i",
+     "start": 36.659,
+     "end": 36.679,
+     "score": 0.398
+    },
+    {
+     "word": "uklanjanjem",
+     "start": 36.679,
+     "end": 37.219,
+     "score": 0.46
+    },
+    {
+     "word": "kamenca.",
+     "start": 37.219,
+     "end": 38.44,
+     "score": 0.704
+    }
+   ],
+   "avg_logprob": -0.038202306904801815
+  },
+  {
+   "start": 38.44,
+   "end": 49.563,
+   "text": "Da li tvoj zub može da se liječi umjesto da se vadi, ne mogu ti reći bez pregleda i snimka, jer to zavisi od toga koliko je zuba ostalo i u kakvom stanju su korijen i kos oko njega.",
+   "words": [
+    {
+     "word": "Da",
+     "start": 38.44,
+     "end": 38.6,
+     "score": 0.722
+    },
+    {
+     "word": "li",
+     "start": 38.6,
+     "end": 38.76,
+     "score": 0.427
+    },
+    {
+     "word": "tvoj",
+     "start": 38.76,
+     "end": 39.0,
+     "score": 0.385
+    },
+    {
+     "word": "zub",
+     "start": 39.0,
+     "end": 39.22,
+     "score": 0.507
+    },
+    {
+     "word": "može",
+     "start": 39.22,
+     "end": 39.48,
+     "score": 0.612
+    },
+    {
+     "word": "da",
+     "start": 39.48,
+     "end": 39.62,
+     "score": 0.412
+    },
+    {
+     "word": "se",
+     "start": 39.62,
+     "end": 39.78,
+     "score": 0.706
+    },
+    {
+     "word": "liječi",
+     "start": 39.78,
+     "end": 40.28,
+     "score": 0.611
+    },
+    {
+     "word": "umjesto",
+     "start": 40.28,
+     "end": 40.64,
+     "score": 0.424
+    },
+    {
+     "word": "da",
+     "start": 40.64,
+     "end": 40.78,
+     "score": 0.416
+    },
+    {
+     "word": "se",
+     "start": 40.78,
+     "end": 40.94,
+     "score": 0.75
+    },
+    {
+     "word": "vadi,",
+     "start": 40.94,
+     "end": 41.62,
+     "score": 0.777
+    },
+    {
+     "word": "ne",
+     "start": 41.62,
+     "end": 41.741,
+     "score": 0.674
+    },
+    {
+     "word": "mogu",
+     "start": 41.741,
+     "end": 41.961,
+     "score": 0.45
+    },
+    {
+     "word": "ti",
+     "start": 41.961,
+     "end": 42.061,
+     "score": 0.574
+    },
+    {
+     "word": "reći",
+     "start": 42.061,
+     "end": 42.241,
+     "score": 0.459
+    },
+    {
+     "word": "bez",
+     "start": 42.241,
+     "end": 42.481,
+     "score": 0.548
+    },
+    {
+     "word": "pregleda",
+     "start": 42.481,
+     "end": 43.021,
+     "score": 0.577
+    },
+    {
+     "word": "i",
+     "start": 43.021,
+     "end": 43.101,
+     "score": 0.776
+    },
+    {
+     "word": "snimka,",
+     "start": 43.101,
+     "end": 43.721,
+     "score": 0.707
+    },
+    {
+     "word": "jer",
+     "start": 43.721,
+     "end": 43.881,
+     "score": 0.283
+    },
+    {
+     "word": "to",
+     "start": 43.881,
+     "end": 44.141,
+     "score": 0.824
+    },
+    {
+     "word": "zavisi",
+     "start": 44.141,
+     "end": 44.721,
+     "score": 0.488
+    },
+    {
+     "word": "od",
+     "start": 44.721,
+     "end": 44.861,
+     "score": 0.419
+    },
+    {
+     "word": "toga",
+     "start": 44.861,
+     "end": 45.262,
+     "score": 0.771
+    },
+    {
+     "word": "koliko",
+     "start": 45.262,
+     "end": 45.882,
+     "score": 0.628
+    },
+    {
+     "word": "je",
+     "start": 45.882,
+     "end": 46.022,
+     "score": 0.419
+    },
+    {
+     "word": "zuba",
+     "start": 46.022,
+     "end": 46.342,
+     "score": 0.646
+    },
+    {
+     "word": "ostalo",
+     "start": 46.342,
+     "end": 46.862,
+     "score": 0.596
+    },
+    {
+     "word": "i",
+     "start": 46.862,
+     "end": 46.882,
+     "score": 0.273
+    },
+    {
+     "word": "u",
+     "start": 46.882,
+     "end": 47.042,
+     "score": 0.86
+    },
+    {
+     "word": "kakvom",
+     "start": 47.042,
+     "end": 47.422,
+     "score": 0.555
+    },
+    {
+     "word": "stanju",
+     "start": 47.422,
+     "end": 47.862,
+     "score": 0.431
+    },
+    {
+     "word": "su",
+     "start": 47.862,
+     "end": 47.902,
+     "score": 0.008
+    },
+    {
+     "word": "korijen",
+     "start": 47.902,
+     "end": 48.463,
+     "score": 0.554
+    },
+    {
+     "word": "i",
+     "start": 48.463,
+     "end": 48.583,
+     "score": 0.861
+    },
+    {
+     "word": "kos",
+     "start": 48.583,
+     "end": 48.963,
+     "score": 0.834
+    },
+    {
+     "word": "oko",
+     "start": 48.963,
+     "end": 49.243,
+     "score": 0.764
+    },
+    {
+     "word": "njega.",
+     "start": 49.243,
+     "end": 49.563,
+     "score": 0.308
+    }
+   ],
+   "avg_logprob": -0.038202306904801815
+  },
+  {
+   "start": 50.865,
+   "end": 59.411,
+   "text": " Kada zub može da se sačuva, liječenjem kanala se iz njega uklanja oboljeli živac, kanal se očiste i zatvori i zub ostaje u ustima.",
+   "words": [
+    {
+     "word": "Kada",
+     "start": 50.865,
+     "end": 51.125,
+     "score": 0.57
+    },
+    {
+     "word": "zub",
+     "start": 51.125,
+     "end": 51.365,
+     "score": 0.677
+    },
+    {
+     "word": "može",
+     "start": 51.365,
+     "end": 51.585,
+     "score": 0.524
+    },
+    {
+     "word": "da",
+     "start": 51.585,
+     "end": 51.746,
+     "score": 0.658
+    },
+    {
+     "word": "se",
+     "start": 51.746,
+     "end": 51.786,
+     "score": 0.028
+    },
+    {
+     "word": "sačuva,",
+     "start": 51.786,
+     "end": 52.526,
+     "score": 0.655
+    },
+    {
+     "word": "liječenjem",
+     "start": 52.526,
+     "end": 53.307,
+     "score": 0.51
+    },
+    {
+     "word": "kanala",
+     "start": 53.307,
+     "end": 53.887,
+     "score": 0.689
+    },
+    {
+     "word": "se",
+     "start": 53.887,
+     "end": 53.967,
+     "score": 0.322
+    },
+    {
+     "word": "iz",
+     "start": 53.967,
+     "end": 54.147,
+     "score": 0.438
+    },
+    {
+     "word": "njega",
+     "start": 54.147,
+     "end": 54.487,
+     "score": 0.529
+    },
+    {
+     "word": "uklanja",
+     "start": 54.487,
+     "end": 54.808,
+     "score": 0.39
+    },
+    {
+     "word": "oboljeli",
+     "start": 54.808,
+     "end": 55.388,
+     "score": 0.58
+    },
+    {
+     "word": "živac,",
+     "start": 55.388,
+     "end": 56.269,
+     "score": 0.603
+    },
+    {
+     "word": "kanal",
+     "start": 56.269,
+     "end": 56.709,
+     "score": 0.585
+    },
+    {
+     "word": "se",
+     "start": 56.709,
+     "end": 56.889,
+     "score": 0.726
+    },
+    {
+     "word": "očiste",
+     "start": 56.889,
+     "end": 57.409,
+     "score": 0.497
+    },
+    {
+     "word": "i",
+     "start": 57.409,
+     "end": 57.489,
+     "score": 0.758
+    },
+    {
+     "word": "zatvori",
+     "start": 57.489,
+     "end": 58.09,
+     "score": 0.631
+    },
+    {
+     "word": "i",
+     "start": 58.09,
+     "end": 58.21,
+     "score": 0.833
+    },
+    {
+     "word": "zub",
+     "start": 58.21,
+     "end": 58.41,
+     "score": 0.69
+    },
+    {
+     "word": "ostaje",
+     "start": 58.41,
+     "end": 58.87,
+     "score": 0.594
+    },
+    {
+     "word": "u",
+     "start": 58.87,
+     "end": 58.89,
+     "score": 0.091
+    },
+    {
+     "word": "ustima.",
+     "start": 58.89,
+     "end": 59.411,
+     "score": 0.476
+    }
+   ],
+   "avg_logprob": -0.04946703288974709
+  },
+  {
+   "start": 59.411,
+   "end": 63.493,
+   "text": "Zato je prijegled prvi korak, a ne vađenje.",
+   "words": [
+    {
+     "word": "Zato",
+     "start": 59.411,
+     "end": 60.371,
+     "score": 0.806
+    },
+    {
+     "word": "je",
+     "start": 60.371,
+     "end": 60.551,
+     "score": 0.76
+    },
+    {
+     "word": "prijegled",
+     "start": 60.551,
+     "end": 60.932,
+     "score": 0.289
+    },
+    {
+     "word": "prvi",
+     "start": 60.932,
+     "end": 61.272,
+     "score": 0.578
+    },
+    {
+     "word": "korak,",
+     "start": 61.272,
+     "end": 61.672,
+     "score": 0.542
+    },
+    {
+     "word": "a",
+     "start": 61.672,
+     "end": 61.832,
+     "score": 0.865
+    },
+    {
+     "word": "ne",
+     "start": 61.832,
+     "end": 61.972,
+     "score": 0.692
+    },
+    {
+     "word": "vađenje.",
+     "start": 61.972,
+     "end": 63.493,
+     "score": 0.604
+    }
+   ],
+   "avg_logprob": -0.04946703288974709
+  },
+  {
+   "start": 63.493,
+   "end": 74.14,
+   "text": "Ako se ipak zub izgubi, ni tada priča nije gotova, jer implantoprotetika, krunjice i mostovi služe upravo tome da se nadoknade izgubljeni zubi i obnovi osmije.",
+   "words": [
+    {
+     "word": "Ako",
+     "start": 63.493,
+     "end": 63.633,
+     "score": 0.355
+    },
+    {
+     "word": "se",
+     "start": 63.633,
+     "end": 63.853,
+     "score": 0.796
+    },
+    {
+     "word": "ipak",
+     "start": 63.853,
+     "end": 64.214,
+     "score": 0.711
+    },
+    {
+     "word": "zub",
+     "start": 64.214,
+     "end": 64.494,
+     "score": 0.722
+    },
+    {
+     "word": "izgubi,",
+     "start": 64.494,
+     "end": 64.974,
+     "score": 0.37
+    },
+    {
+     "word": "ni",
+     "start": 64.974,
+     "end": 65.134,
+     "score": 0.663
+    },
+    {
+     "word": "tada",
+     "start": 65.134,
+     "end": 65.394,
+     "score": 0.629
+    },
+    {
+     "word": "priča",
+     "start": 65.394,
+     "end": 65.775,
+     "score": 0.69
+    },
+    {
+     "word": "nije",
+     "start": 65.775,
+     "end": 65.955,
+     "score": 0.441
+    },
+    {
+     "word": "gotova,",
+     "start": 65.955,
+     "end": 66.455,
+     "score": 0.566
+    },
+    {
+     "word": "jer",
+     "start": 66.455,
+     "end": 66.635,
+     "score": 0.495
+    },
+    {
+     "word": "implantoprotetika,",
+     "start": 66.635,
+     "end": 67.736,
+     "score": 0.456
+    },
+    {
+     "word": "krunjice",
+     "start": 67.736,
+     "end": 68.316,
+     "score": 0.455
+    },
+    {
+     "word": "i",
+     "start": 68.316,
+     "end": 68.396,
+     "score": 0.789
+    },
+    {
+     "word": "mostovi",
+     "start": 68.396,
+     "end": 68.937,
+     "score": 0.569
+    },
+    {
+     "word": "služe",
+     "start": 68.937,
+     "end": 69.417,
+     "score": 0.639
+    },
+    {
+     "word": "upravo",
+     "start": 69.417,
+     "end": 69.797,
+     "score": 0.56
+    },
+    {
+     "word": "tome",
+     "start": 69.797,
+     "end": 70.178,
+     "score": 0.718
+    },
+    {
+     "word": "da",
+     "start": 70.178,
+     "end": 70.338,
+     "score": 0.728
+    },
+    {
+     "word": "se",
+     "start": 70.338,
+     "end": 70.478,
+     "score": 0.641
+    },
+    {
+     "word": "nadoknade",
+     "start": 70.478,
+     "end": 71.198,
+     "score": 0.642
+    },
+    {
+     "word": "izgubljeni",
+     "start": 71.198,
+     "end": 71.759,
+     "score": 0.434
+    },
+    {
+     "word": "zubi",
+     "start": 71.759,
+     "end": 72.039,
+     "score": 0.566
+    },
+    {
+     "word": "i",
+     "start": 72.039,
+     "end": 72.219,
+     "score": 0.882
+    },
+    {
+     "word": "obnovi",
+     "start": 72.219,
+     "end": 72.659,
+     "score": 0.631
+    },
+    {
+     "word": "osmije.",
+     "start": 72.659,
+     "end": 74.14,
+     "score": 0.591
+    }
+   ],
+   "avg_logprob": -0.04946703288974709
+  },
+  {
+   "start": 74.14,
+   "end": 78.483,
+   "text": "Bolji je razlog da dođeš na prijegled, a odluku o zubu donosimo tek posle njega.",
+   "words": [
+    {
+     "word": "Bolji",
+     "start": 74.14,
+     "end": 74.36,
+     "score": 0.3
+    },
+    {
+     "word": "je",
+     "start": 74.36,
+     "end": 74.46,
+     "score": 0.39
+    },
+    {
+     "word": "razlog",
+     "start": 74.46,
+     "end": 74.841,
+     "score": 0.435
+    },
+    {
+     "word": "da",
+     "start": 74.841,
+     "end": 74.981,
+     "score": 0.654
+    },
+    {
+     "word": "dođeš",
+     "start": 74.981,
+     "end": 75.301,
+     "score": 0.465
+    },
+    {
+     "word": "na",
+     "start": 75.301,
+     "end": 75.461,
+     "score": 0.66
+    },
+    {
+     "word": "prijegled,",
+     "start": 75.461,
+     "end": 76.302,
+     "score": 0.416
+    },
+    {
+     "word": "a",
+     "start": 76.302,
+     "end": 76.322,
+     "score": 0.011
+    },
+    {
+     "word": "odluku",
+     "start": 76.322,
+     "end": 76.842,
+     "score": 0.694
+    },
+    {
+     "word": "o",
+     "start": 76.842,
+     "end": 76.902,
+     "score": 0.729
+    },
+    {
+     "word": "zubu",
+     "start": 76.902,
+     "end": 77.302,
+     "score": 0.722
+    },
+    {
+     "word": "donosimo",
+     "start": 77.302,
+     "end": 78.123,
+     "score": 0.604
+    },
+    {
+     "word": "tek",
+     "start": 78.123,
+     "end": 78.183,
+     "score": 0.007
+    },
+    {
+     "word": "posle",
+     "start": 78.183,
+     "end": 78.363,
+     "score": 0.214
+    },
+    {
+     "word": "njega.",
+     "start": 78.363,
+     "end": 78.483,
+     "score": 0.01
+    }
+   ],
+   "avg_logprob": -0.04946703288974709
+  },
+  {
+   "start": 80.045,
+   "end": 84.587,
+   "text": " Ako te zub boli, nemoj čekati nego nas nazovi ili nam pošalji poruku.",
+   "words": [
+    {
+     "word": "Ako",
+     "start": 80.045,
+     "end": 80.286,
+     "score": 0.741
+    },
+    {
+     "word": "te",
+     "start": 80.286,
+     "end": 80.467,
+     "score": 0.717
+    },
+    {
+     "word": "zub",
+     "start": 80.467,
+     "end": 80.668,
+     "score": 0.498
+    },
+    {
+     "word": "boli,",
+     "start": 80.668,
+     "end": 81.151,
+     "score": 0.646
+    },
+    {
+     "word": "nemoj",
+     "start": 81.151,
+     "end": 81.492,
+     "score": 0.453
+    },
+    {
+     "word": "čekati",
+     "start": 81.492,
+     "end": 81.954,
+     "score": 0.599
+    },
+    {
+     "word": "nego",
+     "start": 81.954,
+     "end": 82.195,
+     "score": 0.524
+    },
+    {
+     "word": "nas",
+     "start": 82.195,
+     "end": 82.336,
+     "score": 0.278
+    },
+    {
+     "word": "nazovi",
+     "start": 82.336,
+     "end": 82.738,
+     "score": 0.524
+    },
+    {
+     "word": "ili",
+     "start": 82.738,
+     "end": 82.999,
+     "score": 0.686
+    },
+    {
+     "word": "nam",
+     "start": 82.999,
+     "end": 83.18,
+     "score": 0.462
+    },
+    {
+     "word": "pošalji",
+     "start": 83.18,
+     "end": 83.582,
+     "score": 0.471
+    },
+    {
+     "word": "poruku.",
+     "start": 83.582,
+     "end": 84.587,
+     "score": 0.478
+    }
+   ],
+   "avg_logprob": -0.03904005810618401
+  }
+ ],
+ "words": [
+  {
+   "word": "Zub",
+   "start": 4.739,
+   "end": 4.819,
+   "score": 0.22
+  },
+  {
+   "word": "te",
+   "start": 4.819,
+   "end": 5.119,
+   "score": 0.681
+  },
+  {
+   "word": "boli",
+   "start": 5.119,
+   "end": 5.519,
+   "score": 0.768
+  },
+  {
+   "word": "i",
+   "start": 5.519,
+   "end": 5.619,
+   "score": 0.94
+  },
+  {
+   "word": "prva",
+   "start": 5.619,
+   "end": 5.919,
+   "score": 0.679
+  },
+  {
+   "word": "misa",
+   "start": 5.919,
+   "end": 6.179,
+   "score": 0.687
+  },
+  {
+   "word": "o",
+   "start": 6.179,
+   "end": 6.3,
+   "score": 0.832
+  },
+  {
+   "word": "ti",
+   "start": 6.3,
+   "end": 6.46,
+   "score": 0.743
+  },
+  {
+   "word": "je",
+   "start": 6.46,
+   "end": 6.68,
+   "score": 0.69
+  },
+  {
+   "word": "vađenje.",
+   "start": 6.68,
+   "end": 8.68,
+   "score": 0.444
+  },
+  {
+   "word": "Ako",
+   "start": 8.68,
+   "end": 8.9,
+   "score": 0.685
+  },
+  {
+   "word": "ti",
+   "start": 8.9,
+   "end": 9.08,
+   "score": 0.666
+  },
+  {
+   "word": "je",
+   "start": 9.08,
+   "end": 9.161,
+   "score": 0.342
+  },
+  {
+   "word": "rečeno",
+   "start": 9.161,
+   "end": 9.641,
+   "score": 0.562
+  },
+  {
+   "word": "da",
+   "start": 9.641,
+   "end": 9.801,
+   "score": 0.664
+  },
+  {
+   "word": "ti",
+   "start": 9.801,
+   "end": 9.881,
+   "score": 0.339
+  },
+  {
+   "word": "treba",
+   "start": 9.881,
+   "end": 10.161,
+   "score": 0.548
+  },
+  {
+   "word": "liječenje",
+   "start": 10.161,
+   "end": 10.681,
+   "score": 0.476
+  },
+  {
+   "word": "živca,",
+   "start": 10.681,
+   "end": 11.001,
+   "score": 0.379
+  },
+  {
+   "word": "a",
+   "start": 11.001,
+   "end": 11.121,
+   "score": 0.854
+  },
+  {
+   "word": "ti",
+   "start": 11.121,
+   "end": 11.321,
+   "score": 0.782
+  },
+  {
+   "word": "bi",
+   "start": 11.321,
+   "end": 11.601,
+   "score": 0.823
+  },
+  {
+   "word": "radije",
+   "start": 11.601,
+   "end": 11.961,
+   "score": 0.518
+  },
+  {
+   "word": "da",
+   "start": 11.961,
+   "end": 12.102,
+   "score": 0.666
+  },
+  {
+   "word": "zub",
+   "start": 12.102,
+   "end": 12.342,
+   "score": 0.732
+  },
+  {
+   "word": "izvadiš,",
+   "start": 12.342,
+   "end": 12.882,
+   "score": 0.616
+  },
+  {
+   "word": "prvo",
+   "start": 12.882,
+   "end": 13.122,
+   "score": 0.58
+  },
+  {
+   "word": "poslušaj",
+   "start": 13.122,
+   "end": 13.682,
+   "score": 0.554
+  },
+  {
+   "word": "ovo.",
+   "start": 13.682,
+   "end": 16.703,
+   "score": 0.727
+  },
+  {
+   "word": "Prije",
+   "start": 16.703,
+   "end": 17.083,
+   "score": 0.637
+  },
+  {
+   "word": "nego",
+   "start": 17.083,
+   "end": 17.303,
+   "score": 0.555
+  },
+  {
+   "word": "što",
+   "start": 17.303,
+   "end": 17.463,
+   "score": 0.433
+  },
+  {
+   "word": "pristaniš",
+   "start": 17.463,
+   "end": 17.984,
+   "score": 0.474
+  },
+  {
+   "word": "da",
+   "start": 17.984,
+   "end": 18.144,
+   "score": 0.714
+  },
+  {
+   "word": "ti",
+   "start": 18.144,
+   "end": 18.284,
+   "score": 0.7
+  },
+  {
+   "word": "izvade",
+   "start": 18.284,
+   "end": 18.704,
+   "score": 0.582
+  },
+  {
+   "word": "zub,",
+   "start": 18.704,
+   "end": 18.924,
+   "score": 0.394
+  },
+  {
+   "word": "pitaj",
+   "start": 18.924,
+   "end": 19.064,
+   "score": 0.193
+  },
+  {
+   "word": "da",
+   "start": 19.064,
+   "end": 19.284,
+   "score": 0.78
+  },
+  {
+   "word": "li",
+   "start": 19.284,
+   "end": 19.444,
+   "score": 0.763
+  },
+  {
+   "word": "postoji",
+   "start": 19.444,
+   "end": 20.264,
+   "score": 0.598
+  },
+  {
+   "word": "druga",
+   "start": 20.264,
+   "end": 20.765,
+   "score": 0.678
+  },
+  {
+   "word": "opcija.",
+   "start": 20.765,
+   "end": 23.585,
+   "score": 0.565
+  },
+  {
+   "word": "Objasniću",
+   "start": 23.585,
+   "end": 24.166,
+   "score": 0.453
+  },
+  {
+   "word": "ti",
+   "start": 24.166,
+   "end": 24.306,
+   "score": 0.617
+  },
+  {
+   "word": "šta",
+   "start": 24.306,
+   "end": 24.506,
+   "score": 0.504
+  },
+  {
+   "word": "je",
+   "start": 24.506,
+   "end": 24.686,
+   "score": 0.603
+  },
+  {
+   "word": "endodunca",
+   "start": 24.686,
+   "end": 25.306,
+   "score": 0.517
+  },
+  {
+   "word": "i",
+   "start": 25.306,
+   "end": 25.406,
+   "score": 0.893
+  },
+  {
+   "word": "koje",
+   "start": 25.406,
+   "end": 25.486,
+   "score": 0.005
+  },
+  {
+   "word": "opcije",
+   "start": 25.486,
+   "end": 26.006,
+   "score": 0.478
+  },
+  {
+   "word": "postoje",
+   "start": 26.006,
+   "end": 26.587,
+   "score": 0.627
+  },
+  {
+   "word": "ako",
+   "start": 26.587,
+   "end": 26.847,
+   "score": 0.771
+  },
+  {
+   "word": "zub",
+   "start": 26.847,
+   "end": 27.047,
+   "score": 0.516
+  },
+  {
+   "word": "ne",
+   "start": 27.047,
+   "end": 27.187,
+   "score": 0.728
+  },
+  {
+   "word": "može",
+   "start": 27.187,
+   "end": 27.367,
+   "score": 0.352
+  },
+  {
+   "word": "ostati.",
+   "start": 27.367,
+   "end": 28.027,
+   "score": 0.19
+  },
+  {
+   "word": "Endodunca",
+   "start": 30.237,
+   "end": 30.737,
+   "score": 0.454
+  },
+  {
+   "word": "je",
+   "start": 30.737,
+   "end": 30.777,
+   "score": 0.09
+  },
+  {
+   "word": "liječenje",
+   "start": 30.777,
+   "end": 31.417,
+   "score": 0.37
+  },
+  {
+   "word": "zubnog",
+   "start": 31.417,
+   "end": 31.817,
+   "score": 0.47
+  },
+  {
+   "word": "živca",
+   "start": 31.817,
+   "end": 32.038,
+   "score": 0.264
+  },
+  {
+   "word": "i",
+   "start": 32.038,
+   "end": 32.098,
+   "score": 0.64
+  },
+  {
+   "word": "radimo",
+   "start": 32.098,
+   "end": 32.638,
+   "score": 0.687
+  },
+  {
+   "word": "je",
+   "start": 32.638,
+   "end": 32.778,
+   "score": 0.412
+  },
+  {
+   "word": "u",
+   "start": 32.778,
+   "end": 32.798,
+   "score": 0.045
+  },
+  {
+   "word": "okviru",
+   "start": 32.798,
+   "end": 33.338,
+   "score": 0.619
+  },
+  {
+   "word": "konzervativne",
+   "start": 33.338,
+   "end": 34.018,
+   "score": 0.447
+  },
+  {
+   "word": "stomatologije",
+   "start": 34.018,
+   "end": 34.918,
+   "score": 0.492
+  },
+  {
+   "word": "zajedno",
+   "start": 34.918,
+   "end": 35.379,
+   "score": 0.502
+  },
+  {
+   "word": "sa",
+   "start": 35.379,
+   "end": 35.419,
+   "score": 0.002
+  },
+  {
+   "word": "kompozitnim",
+   "start": 35.419,
+   "end": 36.119,
+   "score": 0.538
+  },
+  {
+   "word": "isprima",
+   "start": 36.119,
+   "end": 36.659,
+   "score": 0.528
+  },
+  {
+   "word": "i",
+   "start": 36.659,
+   "end": 36.679,
+   "score": 0.398
+  },
+  {
+   "word": "uklanjanjem",
+   "start": 36.679,
+   "end": 37.219,
+   "score": 0.46
+  },
+  {
+   "word": "kamenca.",
+   "start": 37.219,
+   "end": 38.44,
+   "score": 0.704
+  },
+  {
+   "word": "Da",
+   "start": 38.44,
+   "end": 38.6,
+   "score": 0.722
+  },
+  {
+   "word": "li",
+   "start": 38.6,
+   "end": 38.76,
+   "score": 0.427
+  },
+  {
+   "word": "tvoj",
+   "start": 38.76,
+   "end": 39.0,
+   "score": 0.385
+  },
+  {
+   "word": "zub",
+   "start": 39.0,
+   "end": 39.22,
+   "score": 0.507
+  },
+  {
+   "word": "može",
+   "start": 39.22,
+   "end": 39.48,
+   "score": 0.612
+  },
+  {
+   "word": "da",
+   "start": 39.48,
+   "end": 39.62,
+   "score": 0.412
+  },
+  {
+   "word": "se",
+   "start": 39.62,
+   "end": 39.78,
+   "score": 0.706
+  },
+  {
+   "word": "liječi",
+   "start": 39.78,
+   "end": 40.28,
+   "score": 0.611
+  },
+  {
+   "word": "umjesto",
+   "start": 40.28,
+   "end": 40.64,
+   "score": 0.424
+  },
+  {
+   "word": "da",
+   "start": 40.64,
+   "end": 40.78,
+   "score": 0.416
+  },
+  {
+   "word": "se",
+   "start": 40.78,
+   "end": 40.94,
+   "score": 0.75
+  },
+  {
+   "word": "vadi,",
+   "start": 40.94,
+   "end": 41.62,
+   "score": 0.777
+  },
+  {
+   "word": "ne",
+   "start": 41.62,
+   "end": 41.741,
+   "score": 0.674
+  },
+  {
+   "word": "mogu",
+   "start": 41.741,
+   "end": 41.961,
+   "score": 0.45
+  },
+  {
+   "word": "ti",
+   "start": 41.961,
+   "end": 42.061,
+   "score": 0.574
+  },
+  {
+   "word": "reći",
+   "start": 42.061,
+   "end": 42.241,
+   "score": 0.459
+  },
+  {
+   "word": "bez",
+   "start": 42.241,
+   "end": 42.481,
+   "score": 0.548
+  },
+  {
+   "word": "pregleda",
+   "start": 42.481,
+   "end": 43.021,
+   "score": 0.577
+  },
+  {
+   "word": "i",
+   "start": 43.021,
+   "end": 43.101,
+   "score": 0.776
+  },
+  {
+   "word": "snimka,",
+   "start": 43.101,
+   "end": 43.721,
+   "score": 0.707
+  },
+  {
+   "word": "jer",
+   "start": 43.721,
+   "end": 43.881,
+   "score": 0.283
+  },
+  {
+   "word": "to",
+   "start": 43.881,
+   "end": 44.141,
+   "score": 0.824
+  },
+  {
+   "word": "zavisi",
+   "start": 44.141,
+   "end": 44.721,
+   "score": 0.488
+  },
+  {
+   "word": "od",
+   "start": 44.721,
+   "end": 44.861,
+   "score": 0.419
+  },
+  {
+   "word": "toga",
+   "start": 44.861,
+   "end": 45.262,
+   "score": 0.771
+  },
+  {
+   "word": "koliko",
+   "start": 45.262,
+   "end": 45.882,
+   "score": 0.628
+  },
+  {
+   "word": "je",
+   "start": 45.882,
+   "end": 46.022,
+   "score": 0.419
+  },
+  {
+   "word": "zuba",
+   "start": 46.022,
+   "end": 46.342,
+   "score": 0.646
+  },
+  {
+   "word": "ostalo",
+   "start": 46.342,
+   "end": 46.862,
+   "score": 0.596
+  },
+  {
+   "word": "i",
+   "start": 46.862,
+   "end": 46.882,
+   "score": 0.273
+  },
+  {
+   "word": "u",
+   "start": 46.882,
+   "end": 47.042,
+   "score": 0.86
+  },
+  {
+   "word": "kakvom",
+   "start": 47.042,
+   "end": 47.422,
+   "score": 0.555
+  },
+  {
+   "word": "stanju",
+   "start": 47.422,
+   "end": 47.862,
+   "score": 0.431
+  },
+  {
+   "word": "su",
+   "start": 47.862,
+   "end": 47.902,
+   "score": 0.008
+  },
+  {
+   "word": "korijen",
+   "start": 47.902,
+   "end": 48.463,
+   "score": 0.554
+  },
+  {
+   "word": "i",
+   "start": 48.463,
+   "end": 48.583,
+   "score": 0.861
+  },
+  {
+   "word": "kos",
+   "start": 48.583,
+   "end": 48.963,
+   "score": 0.834
+  },
+  {
+   "word": "oko",
+   "start": 48.963,
+   "end": 49.243,
+   "score": 0.764
+  },
+  {
+   "word": "njega.",
+   "start": 49.243,
+   "end": 49.563,
+   "score": 0.308
+  },
+  {
+   "word": "Kada",
+   "start": 50.865,
+   "end": 51.125,
+   "score": 0.57
+  },
+  {
+   "word": "zub",
+   "start": 51.125,
+   "end": 51.365,
+   "score": 0.677
+  },
+  {
+   "word": "može",
+   "start": 51.365,
+   "end": 51.585,
+   "score": 0.524
+  },
+  {
+   "word": "da",
+   "start": 51.585,
+   "end": 51.746,
+   "score": 0.658
+  },
+  {
+   "word": "se",
+   "start": 51.746,
+   "end": 51.786,
+   "score": 0.028
+  },
+  {
+   "word": "sačuva,",
+   "start": 51.786,
+   "end": 52.526,
+   "score": 0.655
+  },
+  {
+   "word": "liječenjem",
+   "start": 52.526,
+   "end": 53.307,
+   "score": 0.51
+  },
+  {
+   "word": "kanala",
+   "start": 53.307,
+   "end": 53.887,
+   "score": 0.689
+  },
+  {
+   "word": "se",
+   "start": 53.887,
+   "end": 53.967,
+   "score": 0.322
+  },
+  {
+   "word": "iz",
+   "start": 53.967,
+   "end": 54.147,
+   "score": 0.438
+  },
+  {
+   "word": "njega",
+   "start": 54.147,
+   "end": 54.487,
+   "score": 0.529
+  },
+  {
+   "word": "uklanja",
+   "start": 54.487,
+   "end": 54.808,
+   "score": 0.39
+  },
+  {
+   "word": "oboljeli",
+   "start": 54.808,
+   "end": 55.388,
+   "score": 0.58
+  },
+  {
+   "word": "živac,",
+   "start": 55.388,
+   "end": 56.269,
+   "score": 0.603
+  },
+  {
+   "word": "kanal",
+   "start": 56.269,
+   "end": 56.709,
+   "score": 0.585
+  },
+  {
+   "word": "se",
+   "start": 56.709,
+   "end": 56.889,
+   "score": 0.726
+  },
+  {
+   "word": "očiste",
+   "start": 56.889,
+   "end": 57.409,
+   "score": 0.497
+  },
+  {
+   "word": "i",
+   "start": 57.409,
+   "end": 57.489,
+   "score": 0.758
+  },
+  {
+   "word": "zatvori",
+   "start": 57.489,
+   "end": 58.09,
+   "score": 0.631
+  },
+  {
+   "word": "i",
+   "start": 58.09,
+   "end": 58.21,
+   "score": 0.833
+  },
+  {
+   "word": "zub",
+   "start": 58.21,
+   "end": 58.41,
+   "score": 0.69
+  },
+  {
+   "word": "ostaje",
+   "start": 58.41,
+   "end": 58.87,
+   "score": 0.594
+  },
+  {
+   "word": "u",
+   "start": 58.87,
+   "end": 58.89,
+   "score": 0.091
+  },
+  {
+   "word": "ustima.",
+   "start": 58.89,
+   "end": 59.411,
+   "score": 0.476
+  },
+  {
+   "word": "Zato",
+   "start": 59.411,
+   "end": 60.371,
+   "score": 0.806
+  },
+  {
+   "word": "je",
+   "start": 60.371,
+   "end": 60.551,
+   "score": 0.76
+  },
+  {
+   "word": "prijegled",
+   "start": 60.551,
+   "end": 60.932,
+   "score": 0.289
+  },
+  {
+   "word": "prvi",
+   "start": 60.932,
+   "end": 61.272,
+   "score": 0.578
+  },
+  {
+   "word": "korak,",
+   "start": 61.272,
+   "end": 61.672,
+   "score": 0.542
+  },
+  {
+   "word": "a",
+   "start": 61.672,
+   "end": 61.832,
+   "score": 0.865
+  },
+  {
+   "word": "ne",
+   "start": 61.832,
+   "end": 61.972,
+   "score": 0.692
+  },
+  {
+   "word": "vađenje.",
+   "start": 61.972,
+   "end": 63.493,
+   "score": 0.604
+  },
+  {
+   "word": "Ako",
+   "start": 63.493,
+   "end": 63.633,
+   "score": 0.355
+  },
+  {
+   "word": "se",
+   "start": 63.633,
+   "end": 63.853,
+   "score": 0.796
+  },
+  {
+   "word": "ipak",
+   "start": 63.853,
+   "end": 64.214,
+   "score": 0.711
+  },
+  {
+   "word": "zub",
+   "start": 64.214,
+   "end": 64.494,
+   "score": 0.722
+  },
+  {
+   "word": "izgubi,",
+   "start": 64.494,
+   "end": 64.974,
+   "score": 0.37
+  },
+  {
+   "word": "ni",
+   "start": 64.974,
+   "end": 65.134,
+   "score": 0.663
+  },
+  {
+   "word": "tada",
+   "start": 65.134,
+   "end": 65.394,
+   "score": 0.629
+  },
+  {
+   "word": "priča",
+   "start": 65.394,
+   "end": 65.775,
+   "score": 0.69
+  },
+  {
+   "word": "nije",
+   "start": 65.775,
+   "end": 65.955,
+   "score": 0.441
+  },
+  {
+   "word": "gotova,",
+   "start": 65.955,
+   "end": 66.455,
+   "score": 0.566
+  },
+  {
+   "word": "jer",
+   "start": 66.455,
+   "end": 66.635,
+   "score": 0.495
+  },
+  {
+   "word": "implantoprotetika,",
+   "start": 66.635,
+   "end": 67.736,
+   "score": 0.456
+  },
+  {
+   "word": "krunjice",
+   "start": 67.736,
+   "end": 68.316,
+   "score": 0.455
+  },
+  {
+   "word": "i",
+   "start": 68.316,
+   "end": 68.396,
+   "score": 0.789
+  },
+  {
+   "word": "mostovi",
+   "start": 68.396,
+   "end": 68.937,
+   "score": 0.569
+  },
+  {
+   "word": "služe",
+   "start": 68.937,
+   "end": 69.417,
+   "score": 0.639
+  },
+  {
+   "word": "upravo",
+   "start": 69.417,
+   "end": 69.797,
+   "score": 0.56
+  },
+  {
+   "word": "tome",
+   "start": 69.797,
+   "end": 70.178,
+   "score": 0.718
+  },
+  {
+   "word": "da",
+   "start": 70.178,
+   "end": 70.338,
+   "score": 0.728
+  },
+  {
+   "word": "se",
+   "start": 70.338,
+   "end": 70.478,
+   "score": 0.641
+  },
+  {
+   "word": "nadoknade",
+   "start": 70.478,
+   "end": 71.198,
+   "score": 0.642
+  },
+  {
+   "word": "izgubljeni",
+   "start": 71.198,
+   "end": 71.759,
+   "score": 0.434
+  },
+  {
+   "word": "zubi",
+   "start": 71.759,
+   "end": 72.039,
+   "score": 0.566
+  },
+  {
+   "word": "i",
+   "start": 72.039,
+   "end": 72.219,
+   "score": 0.882
+  },
+  {
+   "word": "obnovi",
+   "start": 72.219,
+   "end": 72.659,
+   "score": 0.631
+  },
+  {
+   "word": "osmije.",
+   "start": 72.659,
+   "end": 74.14,
+   "score": 0.591
+  },
+  {
+   "word": "Bolji",
+   "start": 74.14,
+   "end": 74.36,
+   "score": 0.3
+  },
+  {
+   "word": "je",
+   "start": 74.36,
+   "end": 74.46,
+   "score": 0.39
+  },
+  {
+   "word": "razlog",
+   "start": 74.46,
+   "end": 74.841,
+   "score": 0.435
+  },
+  {
+   "word": "da",
+   "start": 74.841,
+   "end": 74.981,
+   "score": 0.654
+  },
+  {
+   "word": "dođeš",
+   "start": 74.981,
+   "end": 75.301,
+   "score": 0.465
+  },
+  {
+   "word": "na",
+   "start": 75.301,
+   "end": 75.461,
+   "score": 0.66
+  },
+  {
+   "word": "prijegled,",
+   "start": 75.461,
+   "end": 76.302,
+   "score": 0.416
+  },
+  {
+   "word": "a",
+   "start": 76.302,
+   "end": 76.322,
+   "score": 0.011
+  },
+  {
+   "word": "odluku",
+   "start": 76.322,
+   "end": 76.842,
+   "score": 0.694
+  },
+  {
+   "word": "o",
+   "start": 76.842,
+   "end": 76.902,
+   "score": 0.729
+  },
+  {
+   "word": "zubu",
+   "start": 76.902,
+   "end": 77.302,
+   "score": 0.722
+  },
+  {
+   "word": "donosimo",
+   "start": 77.302,
+   "end": 78.123,
+   "score": 0.604
+  },
+  {
+   "word": "tek",
+   "start": 78.123,
+   "end": 78.183,
+   "score": 0.007
+  },
+  {
+   "word": "posle",
+   "start": 78.183,
+   "end": 78.363,
+   "score": 0.214
+  },
+  {
+   "word": "njega.",
+   "start": 78.363,
+   "end": 78.483,
+   "score": 0.01
+  },
+  {
+   "word": "Ako",
+   "start": 80.045,
+   "end": 80.286,
+   "score": 0.741
+  },
+  {
+   "word": "te",
+   "start": 80.286,
+   "end": 80.467,
+   "score": 0.717
+  },
+  {
+   "word": "zub",
+   "start": 80.467,
+   "end": 80.668,
+   "score": 0.498
+  },
+  {
+   "word": "boli,",
+   "start": 80.668,
+   "end": 81.151,
+   "score": 0.646
+  },
+  {
+   "word": "nemoj",
+   "start": 81.151,
+   "end": 81.492,
+   "score": 0.453
+  },
+  {
+   "word": "čekati",
+   "start": 81.492,
+   "end": 81.954,
+   "score": 0.599
+  },
+  {
+   "word": "nego",
+   "start": 81.954,
+   "end": 82.195,
+   "score": 0.524
+  },
+  {
+   "word": "nas",
+   "start": 82.195,
+   "end": 82.336,
+   "score": 0.278
+  },
+  {
+   "word": "nazovi",
+   "start": 82.336,
+   "end": 82.738,
+   "score": 0.524
+  },
+  {
+   "word": "ili",
+   "start": 82.738,
+   "end": 82.999,
+   "score": 0.686
+  },
+  {
+   "word": "nam",
+   "start": 82.999,
+   "end": 83.18,
+   "score": 0.462
+  },
+  {
+   "word": "pošalji",
+   "start": 83.18,
+   "end": 83.582,
+   "score": 0.471
+  },
+  {
+   "word": "poruku.",
+   "start": 83.582,
+   "end": 84.587,
+   "score": 0.478
+  }
+ ]
+}
