@@ -531,7 +531,10 @@ def main():
             for l in lock:
                 l.draw(img, t)
             if two_line:
-                draw_two_line(img, t, caps, 1180)
+                if not any(l.active(t) for l in lock):
+                    busy = any(e.t0 - 0.1 <= t <= e.t1 + 0.25 for e in ev
+                               if type(e).__name__ not in ("Badge", "Strip"))
+                    draw_two_line(img, t, caps, 990 if busy else 1180)
             elif not any(l.active(t) for l in lock):
                 draw_kinetic(img, t, groups, E.CAP_Y)
         elif two_line:
