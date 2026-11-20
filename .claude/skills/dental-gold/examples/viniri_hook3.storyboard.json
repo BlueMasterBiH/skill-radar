@@ -1,0 +1,29 @@
+{
+  "brand": {"gold": [214, 178, 94], "gold_hi": [238, 205, 128], "badge": "Doktorica"},
+  "intro": {"until": 3.3, "key": "tri pitanja", "label": "Tri pitanja", "sub": "PRIJE VINIRA",
+            "kicker": "PRIJE BRUŠENJA", "steps": 4},
+  "events": [
+    {"type": "badge", "at": 3.35, "to": "koje dvije-0.1", "text": "Doktorica"},
+    {"type": "strip", "at": 3.35, "to": "koje dvije-0.1", "text": "3 PITANJA PRIJE VINIRA"},
+    {"type": "lockup", "at": "dvije vrste", "to": "i šta trebaš-0.05", "big": "DVIJE VRSTE", "above": "koje", "below": "radimo"},
+    {"type": "lockup", "at": "brušenje-0.05", "to": "viniri su-0.1", "big": "BRUŠENJE", "above": "na bilo kakvo"},
+    {"type": "card", "at": "minimalno invazivno", "to": "koje se cementira-0.1", "title": "Minimalno invazivno", "icon": "check"},
+    {"type": "veneer_front", "at": "koje se cementira", "to": "uz minimalno-0.1", "title": "Na prednju površinu zuba"},
+    {"type": "lockup", "at": "estetiku", "to": "uz minimalno-0.05", "big": "ESTETIKA", "above": "poboljšava", "below": "osmijeha"},
+    {"type": "veneer_side", "at": "uz minimalno", "to": "kod nas+0.6", "title": "Minimalno brušenje"},
+    {"type": "compare", "at": "kompozitnih", "to": "pa izbor-0.1",
+     "left":  {"title": "Kompozitni", "at": "kompozitnih", "bullets": [["Direktno na zubu", "direktno"]],
+               "active": ["kompozitni viniri", "dok se"]},
+     "right": {"title": "Keramički", "at": "keramičkih", "bullets": [["Izrađuju se u\\nlaboratoriji", "laboratoriji"],
+                                                                      ["Duže drže\\nboju i sjaj", "zadržavaju"]],
+               "active": ["dok se", "pa izbor"]}},
+    {"type": "lockup", "at": "osmijeh traži", "to": "a koliko-0.05", "big": "OSMIJEH", "above": "šta tvoj", "below": "traži"},
+    {"type": "card", "at": "koliko posjeta", "to": "zato prije-0.1", "title": "Broj posjeta", "sub": "dogovaramo na pregledu", "icon": "calendar"},
+    {"type": "lockup", "at": "pitaj", "to": "koliko će-0.05", "big": "PITAJ", "above": "prije prvog termina"},
+    {"type": "checklist", "at": "koliko će", "to": "jer na sva+1.0", "title": "PRIJE PRVOG TERMINA",
+     "items": [["Koliko zuba će se brusiti?", "koliko će"], ["Koja vrsta ti odgovara?", "koja vrsta"],
+               ["Kako će izgledati rezultat?", "kako će"]]},
+    {"type": "lockup", "at": "jasan odgovor", "to": "prije nego što iko-0.05", "big": "JASAN ODGOVOR", "above": "zaslužuješ"},
+    {"type": "comment", "at": "napiši u", "to": "end", "text": "Šta te zanima o vinirima?"}
+  ]
+}
