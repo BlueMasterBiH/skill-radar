@@ -26,7 +26,8 @@ The person is a marketer, not an engineer. Reply in their language (usually BHS)
    - a card is still empty when it shows
    - a lockup collides with a card
 5. **Render**: `PY DG/engine/render.py <out>/hook<N>`. This writes `dental-gold.mp4` (1080x1920, 30 fps, with the voice) in about 2-3 min per minute of video.
-6. **Hand over** the file in one line. Remind them it is a draft: the doctor checks the dental animations and every claim before posting.
+6. **Music** (when asked): `PY DG/engine/music.py <out>/hook<N> [--track song.mp3] [--volume 0.2]`. It writes `dental-gold_music.mp4`, with the music ducked under the voice. Without `--track` it synthesises an original calm track, so there is nothing to license, which matters for paid ads. A song the person sends must be licensed for ads; Instagram's in-app music is not.
+7. **Hand over** the file in one line. Remind them it is a draft: the doctor checks the dental animations and every claim before posting.
 
 ## Storyboard
 Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase starts), `"kod nas+0.6"`, `"pitaj-0.1"`, `"brušenje#2"` (the second time it is said), `"end"`. Phrases match the script words ignoring case and punctuation, so copy them from `script.txt`.
@@ -41,6 +42,7 @@ Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase s
 | `checklist` | at, to, title, items[[text, at]] | Steps or questions said in a row; each item ticks as it is said. |
 | `veneer_front` | at, to, title | Drawn animation: veneers slide onto two incisors, the smile brightens. Needs about 2 s. |
 | `veneer_side` | at, to, title | Drawn animation: a thin front layer marked in gold is removed and the veneer takes its place. Needs about 2 s. |
+| `root_canal` | at, to, title, remove, clean, fill, keep | Drawn animation in 5 steps: inflamed nerve, the nerve is removed, a gold file cleans the canal, the canal is filled and the crown closed, the tooth stays. Anchor `remove`/`clean`/`fill`/`keep` to the words that describe each step; give the cleaning at least ~1.5 s. Needs about 5 s in total. |
 | `comment` | at, to, text | CTA comment box that types the text and pulses the send button. Use it on the CTA, until `end`. |
 | `brand` | gold, gold_hi, badge | Colours (RGB) and the default badge text. |
 | `intro` | until, key, label, sub, kicker, steps | Gold explainer opener. `until` is about when the hook ends (seconds); `key` is the hook's keyword phrase. |
@@ -50,7 +52,7 @@ Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase s
 - **One element at a time** in the card zone (y≈1100-1650). Lockups sit higher, on the chest, so a lockup may overlap a card's lifetime. Two cards may not.
 - **Text only from the script.** Shorten it, never add facts, prices, durations, guarantees or medical claims the doctor did not say.
 - **Lockups**: 1-2 words, caps, the word that carries the sentence. About one every 6-10 s.
-- **Dental animations** go where the doctor describes the procedure. If a topic has no matching animation (implants, whitening, braces...), use a card with the `tooth` icon instead of inventing anatomy.
+- **Dental animations** go where the doctor describes the procedure. Veneers have `veneer_front`/`veneer_side`, root canal treatment (endodoncija) has `root_canal`. If a topic has no matching animation (implants, whitening, braces...), use a card with the `tooth` icon instead of inventing anatomy.
 - **Hook**: intro until the hook ends, then badge + strip for 2-3 s.
 - **CTA**: `comment` with the request in the viewer's words (e.g. "Šta te zanima o vinirima?"). Not a giant "COMMENT X" word, the clinic prefers it subtle.
 - **Colours**: black cards, gold accents, white text. Do not bring back teal or red.

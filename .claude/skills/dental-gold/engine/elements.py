@@ -557,3 +557,111 @@ class VeneerSide:
         put(img, with_shadow(im), 540, self.cy + p[2], p[0], p[1])
 
 
+
+
+# front cross-section of a single-rooted tooth (x right, y down, centre at 0,0; about 1 x 1 units)
+RC_TOOTH = smooth_poly([(-0.46, -0.30), (-0.36, -0.47), (-0.14, -0.40), (0, -0.44), (0.14, -0.40), (0.36, -0.47),
+                        (0.46, -0.30), (0.44, -0.12), (0.34, 0.0), (0.24, 0.25), (0.12, 0.47), (0.0, 0.5),
+                        (-0.12, 0.47), (-0.24, 0.25), (-0.34, 0.0), (-0.44, -0.12)], 4)
+RC_PULP = smooth_poly([(-0.20, -0.25), (-0.12, -0.31), (0, -0.28), (0.12, -0.31), (0.20, -0.25), (0.16, -0.11),
+                       (0.06, 0.04), (0.035, 0.40), (0, 0.44), (-0.035, 0.40), (-0.06, 0.04), (-0.16, -0.11)], 3)
+PULP = (150, 64, 74)      # inflamed nerve, muted rose
+BONE = (86, 76, 66)
+EMPTY = (36, 28, 28)
+
+
+class RootCanal:
+    """cross-section: the inflamed nerve is removed top-down, a gold file cleans the canal, the canal is
+    filled with gold from the apex up, a filling closes the crown and the tooth stays."""
+
+    def __init__(self, t0, t1, title, remove=None, clean=None, fill=None, keep=None, cy=1385):
+        self.t0, self.t1, self.title, self.cy = t0, t1, title, cy
+        self.tr = remove if remove is not None else t0 + 0.6
+        self.tc = clean if clean is not None else self.tr + 1.6
+        self.tf = fill if fill is not None else self.tc + 1.6
+        self.tk = keep if keep is not None else self.tf + 1.4
+
+    def clip_rows(self, layer, y_from, y_to):
+        a = np.array(layer)
+        a[:max(0, int(y_from)), :, 3] = 0
+        a[int(y_to):, :, 3] = 0
+        return Image.fromarray(a)
+
+    def draw(self, img, t):
+        p = pop(t, self.t0, self.t1)
+        if not p:
+            return
+        cw, ch = 760, 540
+        im, d = card_with_title(cw, ch, self.title)
+        cx, cy, tw, th = 235, 328, 230, 390
+        y_top, y_bot = cy - 0.31 * th, cy + 0.44 * th            # pulp extent
+        # bone and gum around the root
+        d.rounded_rectangle((SS * 70, SS * (cy + 0.02 * th), SS * 400, SS * (ch - 18)), SS * 30, fill=BONE + (255,))
+        d.polygon([(SS * x, SS * y) for x, y in [(70, cy - 0.02 * th), (cx - 0.40 * tw, cy - 0.06 * th),
+                   (cx - 0.33 * tw, cy + 0.10 * th), (70, cy + 0.12 * th)]], fill=GUM + (255,))
+        d.polygon([(SS * x, SS * y) for x, y in [(400, cy - 0.02 * th), (cx + 0.40 * tw, cy - 0.06 * th),
+                   (cx + 0.33 * tw, cy + 0.10 * th), (400, cy + 0.12 * th)]], fill=GUM + (255,))
+        d.polygon(shape_at(RC_TOOTH, cx, cy, tw, th), fill=IVORY + (255,), outline=(205, 196, 180, 255), width=SS * 2)
+        pulp = shape_at(RC_PULP, cx, cy, tw, th)
+        u_rm = ease_out(t, self.tr, 0.9)                         # nerve removal, top-down
+        y_cut = y_top + (y_bot - y_top + 4) * u_rm
+        # empty canal after removal, then cleaned (lighter, gold outline)
+        if u_rm > 0:
+            cl = ease_out(t, self.tc, 1.2)
+            L = Image.new("RGBA", im.size, (0, 0, 0, 0))
+            ImageDraw.Draw(L).polygon(pulp, fill=mix(EMPTY, (70, 60, 52), cl) + (255,),
+                                      outline=AQUA + (int(200 * cl),), width=SS * 2)
+            im.alpha_composite(self.clip_rows(L, 0, SS * y_cut))
+        # inflamed nerve with a pain pulse
+        L = Image.new("RGBA", im.size, (0, 0, 0, 0))
+        pulse = 0.5 + 0.5 * math.sin((t - self.t0) * 7.0) if t < self.tr else 0
+        ImageDraw.Draw(L).polygon(pulp, fill=mix(PULP, (196, 92, 100), pulse) + (255,))
+        im.alpha_composite(self.clip_rows(L, SS * y_cut, im.size[1]))
+        # access opening in the crown
+        if t >= self.tr - 0.2:
+            a = clamp((t - self.tr + 0.2) / 0.25)
+            d.ellipse((SS * (cx - 22), SS * (cy - 0.47 * th), SS * (cx + 22), SS * (cy - 0.30 * th)),
+                      fill=EMPTY + (int(255 * a),))
+        # gold file moving in and out of the canal
+        if self.tc <= t < self.tf:
+            k = (t - self.tc) / max(0.1, self.tf - self.tc)
+            depth = 0.5 - 0.5 * math.cos(k * 3 * 2 * math.pi)
+            tip = y_top + 20 + (y_bot - y_top - 30) * depth
+            top = cy - 0.53 * th
+            d.line((SS * cx, SS * top, SS * cx, SS * tip), fill=AQUA + (255,), width=SS * 4)
+            for yy in np.arange(top + 30, tip - 6, 14):
+                d.line((SS * (cx - 5), SS * yy, SS * (cx + 5), SS * (yy + 5)), fill=GOLD_HI + (255,), width=SS * 2)
+            d.rounded_rectangle((SS * (cx - 13), SS * (top - 22), SS * (cx + 13), SS * top), SS * 6,
+                                fill=GOLD_HI + (255,))
+        # gold filling from the apex up, then the crown is closed
+        if t >= self.tf:
+            u = ease_out(t, self.tf, 1.0)
+            y_fill = y_bot + 4 - (y_bot - y_top + 4) * u
+            L = Image.new("RGBA", im.size, (0, 0, 0, 0))
+            ImageDraw.Draw(L).polygon(pulp, fill=AQUA + (255,))
+            im.alpha_composite(self.clip_rows(L, SS * y_fill, im.size[1]))
+            cap = clamp((t - self.tf - 0.9) / 0.35)
+            if cap > 0:
+                d.ellipse((SS * (cx - 24), SS * (cy - 0.48 * th), SS * (cx + 24), SS * (cy - 0.29 * th)),
+                          fill=mix(IVORY_OLD, IVORY, cap) + (int(255 * cap),), outline=AQUA + (int(255 * cap),),
+                          width=SS * 2)
+        if t >= self.tk:
+            g = clamp((t - self.tk) / 0.7)
+            sparkle(d, SS * (cx + 0.42 * tw), SS * (cy - 0.50 * th), SS * 20 * math.sin(math.pi * g), 1)
+            sparkle(d, SS * (cx - 0.46 * tw), SS * (cy - 0.20 * th), SS * 13 * math.sin(math.pi * clamp(g * 1.3 - 0.3)), 1)
+        # step label on the right
+        steps = [(self.t0, "Oboljeli živac"), (self.tr, "Uklanja se živac"), (self.tc, "Kanal se čisti"),
+                 (self.tf, "Kanal se zatvara"), (self.tk, "Zub ostaje")]
+        cur = max(k for k, (ts, _) in enumerate(steps) if t >= ts - 1e-6 or k == 0)
+        ts, label = steps[cur]
+        a = clamp((t - ts) / 0.25) if cur else 1.0
+        fx, fy = 430, 270
+        d.text((SS * fx, SS * (fy - 52)), f"{cur + 1}/5", font=font(28 * SS, "SemiBold"),
+               fill=AQUA + (int(255 * a),))
+        words_ = label.split(" ", 1)
+        d.text((SS * fx, SS * fy + SS * 10 * (1 - a)), words_[0], font=font(44 * SS, "Bold"), fill=WHITE + (int(255 * a),))
+        if len(words_) > 1:
+            d.text((SS * fx, SS * (fy + 54) + SS * 10 * (1 - a)), words_[1], font=font(44 * SS, "Bold"),
+                   fill=WHITE + (int(255 * a),))
+        im = im.resize((cw, ch), Image.LANCZOS)
+        put(img, with_shadow(im), 540, self.cy + p[2], p[0], p[1])

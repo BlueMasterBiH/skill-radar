@@ -60,6 +60,10 @@ def build(sb, words):
             ev.append(E.VeneerFront(T(e["at"]), T(e["to"]), e["title"]))
         elif k == "veneer_side":
             ev.append(E.VeneerSide(T(e["at"]), T(e["to"]), e["title"]))
+        elif k == "root_canal":
+            opt = lambda f: T(e[f]) if e.get(f) is not None else None
+            ev.append(E.RootCanal(T(e["at"]), T(e["to"]), e["title"], opt("remove"), opt("clean"), opt("fill"),
+                                  opt("keep")))
         elif k == "compare":
             cols = []
             for side in ("left", "right"):
