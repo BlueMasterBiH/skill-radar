@@ -34,7 +34,9 @@ Feedback from the clinic: her voice must be clearly on top, music barely there, 
 - `storyboard.json`: `{"brand": ..., "captions": "two_line", "camera": "subtle", "sfx": false, "events": [badge only]}`. Then render with `dynamic.py`. It needs no matte for this.
 - The first render writes `captions.txt`: one caption per line, ` / ` is the line break. Read it and fix every break that cuts a phrase: never end a line on kod, na, u, sa, i, da, se, je, ti, or on an adjective before its noun ("zubnog / živca"). Keep each line under ~30 characters. Render again; the file is used as written, and `CAPTIONS_MISMATCH` means its words do not follow `words.json`.
 - Music: `music.py <dir> --volume 0.05 --no-sfx` (voice at -14 LUFS).
-- Ask for real b-roll (the clinic, the chair, X-rays on screen, the team at work, before/after) and cut it in, rather than drawing graphics.
+- Music the clinic can hear: `--volume 0.18` (ducked under the voice). 0.05 was too quiet.
+- Animations: a few informative ones only (the procedure animations, compare, checklist, 2-3 lockups, comment CTA). Captions move up above a card automatically and hide during a lockup.
+- B-roll: real footage first (ask the clinic). Otherwise free stock from Mixkit (`mixkit.co/free-stock-video/<word>/` lists clips; files are `assets.mixkit.co/videos/<id>/<id>-1080.mp4` or `-720.mp4`; free for commercial use, ads included). Avoid clips where another dentist's face reads as the clinic's team. Event: `{"type": "broll", "kind": "video", "file": "../broll/mk_4883.mp4", "start": 1.0, "focus": 0.41, "at": "...", "to": "..."}`. `focus` slides the 9:16 crop from left (0) to right (1). It is a straight cut with the voice running under it, 2-3 s each, 3-4 per video.
 
 ## Dynamic cut (when they want it livelier, or "not like last time")
 The same storyboard plus camera cuts, giant words behind the speaker, drawn b-roll and sound effects. Needs the arcads-cut skill.

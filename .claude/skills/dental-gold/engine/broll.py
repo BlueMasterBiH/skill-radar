@@ -346,3 +346,40 @@ class Extract:
 
 
 KINDS = {"xray": XRay, "root": Root, "restore": Restore, "pain": Pain, "versus": Versus, "extract": Extract}
+
+
+class Video:
+    """real footage as b-roll: centre-cropped to 9:16 (focus 0..1 moves the crop left/right), slow push-in.
+    marks: none. Extra event fields: file, start (seconds into the clip), focus."""
+
+    def __init__(self, t0, t1, marks, file, start=0.0, focus=0.5, title=""):
+        self.t0, self.t1, self.file, self.start, self.focus = t0, t1, file, float(start), float(focus)
+        self.proc, self.next_i, self.last = None, None, None
+
+    def _open(self, i):
+        import subprocess
+        if self.proc:
+            self.proc.kill()
+        ss = self.start + i / 30.0
+        vf = (f"fps=30,crop='min(iw,ih*9/16)':ih:'(iw-min(iw,ih*9/16))*{self.focus}':0,"
+              f"scale={W}:{H}:flags=lanczos,unsharp=5:5:0.5")
+        self.proc = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{ss:.3f}", "-i", str(self.file), "-vf", vf,
+                                      "-an", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        self.next_i = i
+        self.last = None
+
+    def draw(self, t):
+        i = max(0, int(round((t - self.t0) * 30)))
+        if self.proc is None or i != self.next_i:
+            if not (self.last is not None and i == self.next_i - 1):
+                self._open(i)
+        if i == self.next_i:
+            buf = self.proc.stdout.read(W * H * 3)
+            if len(buf) == W * H * 3:
+                self.last = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32)
+            self.next_i += 1
+        img = self.last if self.last is not None else np.zeros((H, W, 3), np.float32)
+        return push(img, t, self.t0, self.t1, 0.05)
+
+
+KINDS["video"] = Video

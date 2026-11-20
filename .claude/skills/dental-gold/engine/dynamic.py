@@ -351,7 +351,12 @@ def main():
         if e["type"] == "broll":
             marks = {k: T(v) for k, v in e.get("marks", {}).items()}
             kw = {"title": e["title"]} if e.get("title") else {}
-            brolls.append(B.KINDS[e["kind"]](T(e["at"]), T(e["to"]), marks, **kw))
+            if e["kind"] == "video":
+                kw.update(file=(wd / e["file"]) if not Path(e["file"]).is_absolute() else e["file"],
+                          start=e.get("start", 0.0), focus=e.get("focus", 0.5))
+            b = B.KINDS[e["kind"]](T(e["at"]), T(e["to"]), marks, **kw)
+            b.plain = e.get("transition") == "cut" or e["kind"] == "video"
+            brolls.append(b)
     groups = R.caption_groups(words)
     two_line = sb.get("captions") == "two_line"
     caps = None
@@ -508,7 +513,12 @@ def main():
             if mm > 0:
                 m, bb = mm, b
         img = frame
-        if m > 0:
+        if m > 0 and getattr(bb, "plain", False):
+            # real footage: a straight cut, no whip, flash or picture-in-picture
+            m = 1.0 if bb.t0 <= t < bb.t1 else 0.0
+        if m > 0 and getattr(bb, "plain", False):
+            img = bb.draw(t)
+        elif m > 0:
             bimg = bb.draw(min(max(t, bb.t0), bb.t1))
             whip = 1 - m
             zin = 1 + 0.18 * m
@@ -538,7 +548,7 @@ def main():
             elif not any(l.active(t) for l in lock):
                 draw_kinetic(img, t, groups, E.CAP_Y)
         elif two_line:
-            draw_two_line(img, t, caps, 1690)
+            draw_two_line(img, t, caps, 1180 if getattr(bb, "plain", False) else 1690)
         else:
             draw_kinetic(img, t, groups, 1690)
         out = np.clip(img, 0, 255).astype(np.uint8)
