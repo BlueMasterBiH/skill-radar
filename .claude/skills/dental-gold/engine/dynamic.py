@@ -166,6 +166,150 @@ def draw_kinetic(img, t, groups, y):
         return
 
 
+# ---------- two-line sentence captions ----------
+# a caption never ends on these (prepositions, conjunctions, clitics, determiners) ...
+BAD_END = set("""kod na u sa s od za bez do iz o po pri prema kroz uz oko i a ali da ili nego jer ako kada kad
+koji koja koje kojem što sto ti se mi li su ću će ćeš ne ni tvoj tvog tvoja tvoje svoj svog moj ova ove ovaj ovo
+taj ta te koliko kakvom kakav kako zato pa već još tek okviru zajedno umjesto prvi prva prvu prvo drugi druga drugu treći""".split())
+# a new line or caption reads best when it starts with one of these
+GOOD_START = set("i a da ali jer ako nego ili kada kad koji koje u na sa bez od za zato pa ne".split())
+ADJ_END = ("nog", "nim", "nih", "noj", "nom", "vne", "tne", "kog", "kim", "kih", "ske", "ski", "skog", "ivne")
+
+
+def _weak_end(w, nxt=None):
+    k = _k(w)
+    if k in BAD_END:
+        return True
+    return nxt is not None and not re.search(r"[,.?!;:]$", w) and k.endswith(ADJ_END)
+# ... and never starts on these (clitics that lean on the word before)
+BAD_START = set("je se ti mi li su ću će ćeš ga joj ih nam vam".split())
+LINE_MAX = 28
+
+
+def _k(w):
+    return re.sub(r"[^\wčćšđž]", "", w.lower())
+
+
+def _line_split(ws, with_cost=False):
+    """best split of a caption into two lines: balanced, no line ending on a weak word"""
+    txt = [w["w"] for w in ws]
+    total = len(" ".join(txt))
+    if total <= LINE_MAX - 6 or len(ws) == 1:
+        return [" ".join(txt)] if not with_cost else ([" ".join(txt)], 0)
+    best, bk = None, 1
+    for k in range(1, len(ws)):
+        a, b = " ".join(txt[:k]), " ".join(txt[k:])
+        c = abs(len(a) - len(b)) + (40 if max(len(a), len(b)) > LINE_MAX + 2 else 0)
+        c += 20 if _weak_end(txt[k - 1], txt[k]) else 0
+        c += 20 if _k(txt[k]) in BAD_START else 0
+        c -= 5 if _k(txt[k]) in GOOD_START else 0
+        c -= 6 if re.search(r"[,;:]$", txt[k - 1]) else 0
+        if best is None or c < best:
+            best, bk = c, k
+    lines = [" ".join(txt[:bk]), " ".join(txt[bk:])]
+    return (lines, best) if with_cost else lines
+
+
+def captions_from_file(path, words):
+    """captions.txt: one caption per line, ' / ' marks the line break; words must follow words.json in order"""
+    caps, i = [], 0
+    for raw in open(path, encoding="utf-8").read().splitlines():
+        if not raw.strip():
+            continue
+        lines = [l.strip() for l in raw.split(" / ")]
+        toks = " ".join(lines).split()
+        ws = words[i:i + len(toks)]
+        if len(ws) < len(toks) or [_k(w["w"]) for w in ws] != [_k(x) for x in toks]:
+            raise SystemExit(f"CAPTIONS_MISMATCH at '{raw}': expected '{' '.join(w['w'] for w in words[i:i + len(toks)])}'")
+        caps.append({"s": ws[0]["s"], "e": ws[-1]["e"], "lines": lines})
+        i += len(toks)
+    if i != len(words):
+        raise SystemExit(f"CAPTIONS_MISMATCH: captions.txt stops at word {i} of {len(words)}")
+    return caps
+
+
+def sentence_captions(words):
+    """split the words into captions of at most two lines that end where the meaning allows"""
+    n = len(words)
+    INF = 1e9
+
+    def seg_cost(j, k):                       # words j..k-1
+        ws = words[j:k]
+        txt = " ".join(w["w"] for w in ws)
+        if any(re.search(r"[.?!]$", w["w"]) for w in ws[:-1]):
+            return INF                        # never run across a sentence end
+        if len(txt) > 2 * LINE_MAX and k - j > 1:
+            return INF
+        lines, lc = _line_split(ws, True)
+        if len(lines) == 2 and max(len(x) for x in lines) > LINE_MAX + 2:
+            return INF
+        c = 0.01 * (40 - len(txt)) ** 2 + (0.6 * lc if lc > 15 else 0)
+        last, first = _k(ws[-1]["w"]), _k(ws[0]["w"])
+        if re.search(r"[.?!]$", ws[-1]["w"]):
+            c -= 6
+        elif re.search(r"[,;:]$", ws[-1]["w"]):
+            c -= 3
+        elif k < n and words[k]["s"] - ws[-1]["e"] > 0.3:
+            c -= 2
+        if k < n and _weak_end(ws[-1]["w"], words[k]["w"]):
+            c += 14
+        if k < n and _k(words[k]["w"]) in GOOD_START:
+            c -= 2
+        if first in BAD_START:
+            c += 14
+        if ws[-1]["e"] - ws[0]["s"] > 4.0:
+            c += 4
+        return c
+
+    best = [0.0] + [INF] * n
+    prev = [0] * (n + 1)
+    for k in range(1, n + 1):
+        for j in range(max(0, k - 12), k):
+            c = best[j] + seg_cost(j, k)
+            if c < best[k]:
+                best[k], prev[k] = c, j
+    cuts, k = [], n
+    while k > 0:
+        cuts.append((prev[k], k))
+        k = prev[k]
+    caps = []
+    for j, k in reversed(cuts):
+        ws = words[j:k]
+        caps.append({"s": ws[0]["s"], "e": ws[-1]["e"], "lines": _line_split(ws)})
+    return caps
+
+
+_lc = {}
+
+
+def caption_im(lines):
+    key = tuple(lines)
+    if key not in _lc:
+        f = E.font(50, "Bold")
+        lh = 66
+        w = int(max(E.text_w(l, f) for l in lines)) + 60
+        h = lh * len(lines) + 40
+        im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        d = ImageDraw.Draw(im)
+        for i, l in enumerate(lines):
+            d.text(((w - E.text_w(l, f)) / 2, 14 + i * lh), l, font=f, fill=E.WHITE + (255,),
+                   stroke_width=3, stroke_fill=(0, 0, 0, 255))
+        sh = Image.new("RGBA", im.size, (0, 0, 0, 0))
+        sh.putalpha(im.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * 0.9)))
+        _lc[key] = Image.alpha_composite(Image.alpha_composite(sh, sh), im)
+    return _lc[key]
+
+
+def draw_two_line(img, t, caps, y):
+    for k, c in enumerate(caps):
+        end = caps[k + 1]["s"] - 0.03 if k + 1 < len(caps) else c["e"] + 0.6
+        end = min(end, c["e"] + 0.8)
+        if c["s"] - 0.08 <= t < end:
+            a = E.clamp((t - c["s"] + 0.08) / 0.08) * E.clamp((end - t) / 0.08)
+            E.put(img, caption_im(c["lines"]), 540, y, 1.0, a)
+            return
+
+
 # ---------- picture in picture ----------
 def pip_patch(frame, face, w=320, h=420):
     fx, fy = face[0], face[1] + 120
@@ -209,6 +353,17 @@ def main():
             kw = {"title": e["title"]} if e.get("title") else {}
             brolls.append(B.KINDS[e["kind"]](T(e["at"]), T(e["to"]), marks, **kw))
     groups = R.caption_groups(words)
+    two_line = sb.get("captions") == "two_line"
+    caps = None
+    if two_line:
+        ct = wd / "captions.txt"
+        if ct.exists():
+            caps = captions_from_file(ct, words)
+        else:
+            caps = sentence_captions(words)
+            ct.write_text("\n".join(" / ".join(c["lines"]) for c in caps) + "\n", encoding="utf-8")
+            print("WROTE", ct, "(edit it to fix any break, then render again)", flush=True)
+    subtle = sb.get("camera") == "subtle"
 
     # face track per frame (arcads prep), smoothed hard for a calm crop
     ft = wd / ".arc" / "face.json"
@@ -228,12 +383,15 @@ def main():
     t_end = words[-1]["e"] + 0.6
     cuts, last = [], 0.0
     for i in range(1, len(words)):
-        if re.search(r"[,.?!]$", words[i - 1]["w"]) and words[i]["s"] - last >= 1.9:
+        if re.search(r"[.?!]$" if subtle else r"[,.?!]$", words[i - 1]["w"]) and words[i]["s"] - last >= (3.0 if subtle else 1.9):
             cuts.append(words[i]["s"] - 0.04)
             last = words[i]["s"]
-    keys = [(0.0, "M", "open")]
+    keys = [(0.0, "W", "cut")] if subtle else [(0.0, "M", "open")]
     for j, tc in enumerate(cuts):
-        keys.append((tc, CYCLE[j % len(CYCLE)], "push" if j % 3 == 1 else "cut"))
+        if subtle:
+            keys.append((tc, "M" if j % 2 == 0 else "W", "cut"))
+        else:
+            keys.append((tc, CYCLE[j % len(CYCLE)], "push" if j % 3 == 1 else "cut"))
     for e in sb["events"]:
         if e["type"] == "cam":
             tc = T(e["at"])
@@ -253,6 +411,8 @@ def main():
         idx = max(i for i, kk in enumerate(keys) if kk[0] <= t + 1e-6)
         tc, shot, mode = keys[idx]
         z, ty = SHOTS[shot]
+        if subtle and shot == "M":
+            z, ty = 1.14, 540
         if mode == "open":
             u = B.E.ease_out(t, 0, 0.45)
             return 1.35 + (z - 1.35) * u, ty, u < 0.95
@@ -289,6 +449,8 @@ def main():
 
     times = [float(x) for x in a.preview.split(",")] if a.preview else None
     out_path = Path(a.out) if a.out else wd / ("preview_dyn.jpg" if times else "dental-gold.mp4")
+    if sb.get("sfx") is False:
+        sfx = []
     if not times:
         json.dump(sfx, open(wd / "sfx.json", "w"))
         enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
@@ -368,8 +530,12 @@ def main():
                 e.draw(img, t)
             for l in lock:
                 l.draw(img, t)
-            if not any(l.active(t) for l in lock):
+            if two_line:
+                draw_two_line(img, t, caps, 1180)
+            elif not any(l.active(t) for l in lock):
                 draw_kinetic(img, t, groups, E.CAP_Y)
+        elif two_line:
+            draw_two_line(img, t, caps, 1690)
         else:
             draw_kinetic(img, t, groups, 1690)
         out = np.clip(img, 0, 255).astype(np.uint8)

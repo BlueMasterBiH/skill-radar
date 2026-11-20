@@ -29,6 +29,13 @@ The person is a marketer, not an engineer. Reply in their language (usually BHS)
 6. **Music** (when asked): `PY DG/engine/music.py <out>/hook<N> [--track song.mp3] [--volume 0.2]`. It writes `dental-gold_music.mp4`, with the music ducked under the voice. Without `--track` it synthesises an original calm track, so there is nothing to license, which matters for paid ads. A song the person sends must be licensed for ads; Instagram's in-app music is not.
 7. **Hand over** the file in one line. Remind them it is a draft: the doctor checks the dental animations and every claim before posting.
 
+## Clean cut (the clinic's current preference)
+Feedback from the clinic: her voice must be clearly on top, music barely there, no sound effects, very few animations, captions in two lines that break where the sentence makes sense. B-roll only when it is real footage (proof), not drawn.
+- `storyboard.json`: `{"brand": ..., "captions": "two_line", "camera": "subtle", "sfx": false, "events": [badge only]}`. Then render with `dynamic.py`. It needs no matte for this.
+- The first render writes `captions.txt`: one caption per line, ` / ` is the line break. Read it and fix every break that cuts a phrase: never end a line on kod, na, u, sa, i, da, se, je, ti, or on an adjective before its noun ("zubnog / živca"). Keep each line under ~30 characters. Render again; the file is used as written, and `CAPTIONS_MISMATCH` means its words do not follow `words.json`.
+- Music: `music.py <dir> --volume 0.05 --no-sfx` (voice at -14 LUFS).
+- Ask for real b-roll (the clinic, the chair, X-rays on screen, the team at work, before/after) and cut it in, rather than drawing graphics.
+
 ## Dynamic cut (when they want it livelier, or "not like last time")
 The same storyboard plus camera cuts, giant words behind the speaker, drawn b-roll and sound effects. Needs the arcads-cut skill.
 1. Person matte and clean wall: `<arcads>/.venv/bin/python <arcads>/engine/prep.py <out>/hook<N>/clip.mp4 <out>/hook<N>/.arc`. Copy `words.json` into `.arc/` first so it skips its own transcription. On Linux, MediaPipe needs `libegl1 libgles2` (apt). If it crashes after the matte is written, run it again; it resumes.
