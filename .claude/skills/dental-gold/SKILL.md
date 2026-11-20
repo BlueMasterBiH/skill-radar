@@ -73,6 +73,7 @@ Times are seconds or phrases from the script: `"dvije vrste"` (when the phrase s
 - **Colours**: black cards, gold accents, white text. Do not bring back teal or red.
 
 ## Troubleshooting
+- **A long pause between parts** (hook -> lead -> body): `python3 DG/engine/cut_gaps.py <out>/hook<N> --first 2` shortens the first two pauses of 0.9 s or more to 0.4 s (drop `--first` for all of them). It keeps clip, words, matte and face track in sync and keeps the originals in `_before_cut/`. Then render again.
 - **Captions drift a little.** Check the prepare output for `WHISPER_WEAK` on that part (see step 1). Delete `<out>/whisper_*.json` before rerunning with another `--whisper-model` or `--lang` (default `hr`; `bs`/`sr` also work).
 - **Anchor not found.** The phrase is not in `words.json` exactly. Check the spelling in `script.txt`.
 - **Face badge/arrow off.** Edit `face.json` (`[centre x, centre y, width, height]` at 1080x1920).
