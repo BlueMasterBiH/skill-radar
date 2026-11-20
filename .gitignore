@@ -4,3 +4,4 @@ video-editor/*.mp4
 video-editor/vendor/
 video-editor/transcript/*.wav
 video-editor/transcript/run.log
+video-editor/*.ass

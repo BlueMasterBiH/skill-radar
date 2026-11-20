@@ -10,3 +10,7 @@
 - Scripts have 3 alternative hooks recorded back to back: deliver one video per hook (hook + shared lead/body/punchline/CTA).
 - Render with one seeked input per piece (scripts/render.py); trimming many branches of one 1080p100 input got OOM-killed.
 - Google Drive upload from here is capped at 10 MB: send finished MP4s with SendUserFile instead.
+- User wants a real edit, not just cuts: scripts/enhance.py adds word-by-word captions (Inter Display Black, yellow active word,
+  thick outline because the white uniform sits behind them), 1.15x punch-in on every other piece (crop anchored high, face is
+  in the top quarter), phone number box on the CTA piece (clinic green), highpass+denoise+compressor+loudnorm (~-16 LUFS out).
+- Caption word fixes live in FIX in enhance.py (aligner misspells endodoncija, ispunima, kost, osmijeh...).
