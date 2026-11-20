@@ -298,7 +298,7 @@ class Versus:
             d.polygon(tooth_pts(E.RC_TOOTH, cx, cy, 330, 560, SS), fill=IVORY + (int(255 * pl),), outline=GOLD + (int(255 * pl),), width=5)
             d.polygon(tooth_pts(E.RC_PULP, cx, cy, 330, 560, SS), fill=GOLD + (int(255 * pl),))
         if t >= tr - 0.05:
-            lift = E.ease_out(t, tr + 0.1, 0.6) * 160
+            lift = E.ease_out(t, tr + 0.1, 0.6) * 90
             cx, cy = 790, 900 + (1 - pr) * 80
             d.rounded_rectangle((SS * (cx - 220), SS * (cy + 60), SS * (cx + 220), SS * (cy + 330)), SS * 40, fill=GUM + (int(255 * pr),))
             d.polygon(tooth_pts(E.RC_TOOTH, cx, cy - lift, 330, 560, SS), fill=IVORY + (int(255 * pr),), outline=GOLD + (int(255 * pr),), width=5)
