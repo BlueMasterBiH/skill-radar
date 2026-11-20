@@ -7,3 +7,6 @@
 - Recording is quiet (speech around -40 to -45 dBFS). Aligner stretches sentence-final words into the pauses after them,
   so cut points come from silencedetect=noise=-45dB:d=0.6 (transcript/silences.txt), not from word end times.
 - Delivery: no editing app; render cut.mp4 and upload it to the user's Google Drive.
+- Scripts have 3 alternative hooks recorded back to back: deliver one video per hook (hook + shared lead/body/punchline/CTA).
+- Render with one seeked input per piece (scripts/render.py); trimming many branches of one 1080p100 input got OOM-killed.
+- Google Drive upload from here is capped at 10 MB: send finished MP4s with SendUserFile instead.
