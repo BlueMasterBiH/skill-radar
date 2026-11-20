@@ -548,7 +548,7 @@ def main():
             elif not any(l.active(t) for l in lock):
                 draw_kinetic(img, t, groups, E.CAP_Y)
         elif two_line:
-            draw_two_line(img, t, caps, 1180 if getattr(bb, "plain", False) else 1690)
+            draw_two_line(img, t, caps, 1640 if getattr(bb, "plain", False) else 1690)
         else:
             draw_kinetic(img, t, groups, 1690)
         out = np.clip(img, 0, 255).astype(np.uint8)
