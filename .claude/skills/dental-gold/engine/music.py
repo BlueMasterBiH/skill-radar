@@ -91,12 +91,16 @@ def synth(dur, seed=1):
         if b >= 4:                            # soft kick on 1 and 3, shaker on the off-beats
             for k in (0, 2):
                 s0 = i0 + int(k * beat * SR)
+                if s0 >= n:
+                    continue
                 kk = kick(int(0.4 * SR))
                 j1 = min(n, s0 + len(kk))
                 drums[s0:j1] += kk[:j1 - s0] * 0.9
             for k in range(8):
                 if k % 2 == 1:
                     s0 = i0 + int(k * beat / 2 * SR)
+                    if s0 >= n:
+                        continue
                     ln2 = int(0.07 * SR)
                     nz = np.diff(rng.standard_normal(ln2 + 1)) * np.exp(-np.arange(ln2) / SR * 60)
                     j1 = min(n, s0 + ln2)
